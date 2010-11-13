@@ -117,7 +117,7 @@ define('BOX_LOCALIZATION_LANGUAGES', 'Langues');
 define('BOX_LOCALIZATION_ORDERS_STATUS', 'Statut des commandes');
 
 // javascript messages
-define('JS_ERROR', 'Errors have occured during the process of your form!\nPlease make the following corrections:\n\n');
+define('JS_ERROR', 'Error have occured during the process of your form!\nPlease make the following corrections:\n\n');
 
 define('JS_OPTIONS_VALUE_PRICE', '* The new product atribute needs a price value\n');
 define('JS_OPTIONS_VALUE_PRICE_PREFIX', '* The new product atribute needs a price prefix\n');
