@@ -18,20 +18,23 @@
 ?>
 
 <div class="mainBlock">
-  <h1>Welcome to osCommerce Online Merchant v<?php echo osc_get_version(); ?>!</h1>
 
-  <p>osCommerce Online Merchant helps you sell products worldwide with your own online store. Its Administration Tool manages products, customers, orders, newsletters, specials, and more to successfully build the success of your online business.</p>
-  <p>osCommerce has attracted a large community of store owners and developers who support each other and have provided over 6,000 free add-ons that can extend the features and potential of your online store.</p>
+  <h1>Bienvenue sur l'installateur de osCommerce Online Merchant v<?php echo osc_get_version(); ?> FR !</h1>
+
+      <p>osCommerce est une solution E-Commerce en Open Source se développant grâce à sa communauté. Cette solution permet aux propriétaires de magasins d'installer, configurer, utiliser et assurer la maintenance de leur boutique en ligne avec un minimun d'effort et sans les coûts impliqués.</p>
+      <p>osCommerce associe des solutions Open Source pour fournir une plateforme de développement libre et ouverte, qui inclue la <i>puissance</i> du langage script PHP, la <i>stabilité</i> des serveurs Apache, et la <i>rapidité</i> des bases de données MySQL.</p>
+      <p>Sans obligations ni restrictions, osCommerce peut être installé sur tous serveurs où php 4.x à php 5.x et MySQL 3.23 à MySQL 5 sont exécutés, sur tout environnement PHP et MySQL sont supportés, incluant Linux, Solaris, BSD, et Microsoft Windows XX.</p>
+      <p>Pour des questions de performance, il est recommandé d'utiliser au minimum php 5.x et MySQL 4</p>
 </div>
 
 <div class="contentBlock">
   <div class="infoPane">
-    <h3>Server Capabilities</h3>
+    <h3>Compatibilité du serveur</h3>
 
     <div class="infoPaneContents">
       <table border="0" width="100%" cellspacing="0" cellpadding="2">
         <tr>
-          <td><strong>PHP Version</strong></td>
+          <td><strong>Version de PHP</strong></td>
           <td align="right"><?php echo PHP_VERSION; ?></td>
           <td align="right" width="25"><img src="images/<?php echo ((PHP_VERSION >= 4) ? 'tick.gif' : 'cross.gif'); ?>" border="0" width="16" height="16"></td>
         </tr>
@@ -45,7 +48,7 @@
 
       <table border="0" width="100%" cellspacing="0" cellpadding="2">
         <tr>
-          <td><strong>PHP Settings</strong></td>
+          <td><strong>Paramètres de PHP</strong></td>
           <td align="right"></td>
           <td align="right" width="25"></td>
         </tr>
@@ -80,7 +83,7 @@
 
       <table border="0" width="100%" cellspacing="0" cellpadding="2">
         <tr>
-          <td><strong>Required PHP Extensions</strong></td>
+          <td><strong>Extensions de PHP requises</strong></td>
           <td align="right" width="25"></td>
         </tr>
         <tr>
@@ -93,7 +96,7 @@
 
       <table border="0" width="100%" cellspacing="0" cellpadding="2">
         <tr>
-          <td><strong>Optional PHP Extensions</strong></td>
+          <td><strong>Extensions PHP optionnelles</strong></td>
           <td align="right" width="25"></td>
         </tr>
         <tr>
@@ -118,7 +121,7 @@
   </div>
 
   <div class="contentPane">
-    <h2>New Installation</h2>
+    <h2>Nouvelle installation</h2>
 
 <?php
   $configfile_array = array();
@@ -179,8 +182,8 @@
     if (sizeof($configfile_array) > 0) {
 ?>
 
-      <p>The webserver is not able to save the installation parameters to its configuration files.</p>
-      <p>The following files need to have their file permissions set to world-writeable (chmod 777):</p>
+      <p>Le serveur Web ne peut sauvegarder les paramètres d'installation dans les fichiers de configuration</p>
+      <p>Les fichiers suivants doivent avoir des droits d'écriture (chmod 777):</p>
       <p>
 
 <?php
@@ -207,11 +210,11 @@
   if ((sizeof($configfile_array) > 0) || (sizeof($warning_array) > 0)) {
 ?>
 
-    <p>Please correct the above errors and retry the installation procedure with the changes in place.</p>
+    <p>Corrigez les erreurs suivantes et relancez en suite l'installation.</p>
 
 <?php
     if (sizeof($warning_array) > 0) {
-      echo '    <p><i>Changing webserver configuration parameters may require the webserver service to be restarted before the changes take affect.</i></p>' . "\n";
+      echo '    <p><i>Les changements de paramètres du serveur imposent le redémarage du serveur pour prendre effet.</i></p>' . "\n";
     }
 ?>
 
@@ -221,8 +224,8 @@
   } else {
 ?>
 
-    <p>The webserver environment has been verified to proceed with a successful installation and configuration of your online store.</p>
-    <p>Please continue to start the installation procedure.</p>
+<p>L'environnement du serveur a été vérifié en vue de l'installation et de la configuration de votre boutique.</p>
+    <p>Veuillez continuer la procédure d'installation.</p>
     <p align="right"><a href="install.php"><img src="images/button_continue.gif" border="0" alt="Continue" /></a></p>
 
 <?php

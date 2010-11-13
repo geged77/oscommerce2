@@ -39,32 +39,32 @@
 <div class="mainBlock">
   <div class="stepsBox">
     <ol>
-      <li>Database Server</li>
-      <li>Web Server</li>
-      <li>Online Store Settings</li>
-      <li style="font-weight: bold;">Finished!</li>
+      <li>Serveur de base de données</li>
+      <li>Serveur Web</li>
+      <li>Paramétres de la boutique</li>
+      <li style="font-weight: bold;">Fini!</li>
     </ol>
   </div>
 
-  <h1>New Installation</h1>
+  <h1>Nouvelle installation</h1>
 
-  <p>This web-based installation routine will correctly setup and configure osCommerce Online Merchant to run on this server.</p>
-  <p>Please follow the on-screen instructions that will take you through the database server, web server, and store configuration options. If help is needed at any stage, please consult the documentation or seek help at the community support forums.</p>
+  <p>Le système installera et configurera correctement votre boutique sur le serveur.</p>
+  <p>Suivez les instructions à l'écran qui vous sont données pour le serveur SQL, le serveur Web et les paramètres de la boutique. Si vous avez besoin d'aide, veuillez consulter la documentation, la FAQ ou les espaces spécifiques sur le forum.</p>
 </div>
 
 <div class="contentBlock">
   <div class="infoPane">
-    <h3>Step 4: Finished!</h3>
+    <h3>Etape 4: Fini!</h3>
 
     <div class="infoPaneContents">
-      <p>Congratulations on installing and configuring osCommerce Online Merchant as your online store solution!</p>
-      <p>We wish you all the best with the success of your online store and welcome you to join and participate in our community.</p>
-      <p align="right">- The osCommerce Team</p>
+      <p>Félicitation pour l'installation et la configuration de osCommerce Online Merchant comme solution pour votre boutique en ligne.</p>
+      <p>Nous vous souhaitons plein de succès avec votre boutique en ligne ainsi que la bienvenue au sein de notre communauté participative.</p>
+      <p align="right">- L'équipe Oscommerce Francophone</p>
     </div>
   </div>
 
   <div class="contentPane">
-    <h2>Finished!</h2>
+    <h2>Fini!</h2>
 
 <?php
   $dir_fs_document_root = $HTTP_POST_VARS['DIR_FS_DOCUMENT_ROOT'];
@@ -190,7 +190,7 @@
   }
 ?>
 
-    <p>The installation and configuration was successful!</p>
+    <p>Votre Boutique a été installée et configurée avec succès !</p>
 
     <br />
 
@@ -203,18 +203,18 @@
 
     <br />
 
-    <h3>Post-Installation Notes</h3>
+    <h3>Informations post-installation</h3>
 
-    <p>It is recommended to follow the following post-installation steps to secure your osCommerce Online Merchant online store:</p>
+    <p>Il est recommandé de suivre ces étapes de post-installation pour sécuriser votre boutique osCommerce Online Merchant online:</p>
 
     <ol>
-      <li>Delete the <?php echo $dir_fs_document_root . 'install'; ?> directory.</li>
+      <li>Effacer le <?php echo $dir_fs_document_root . 'install'; ?> repertoire.</li>
 
 <?php
   if ($admin_folder == 'admin') {
 ?>
 
-      <li>Rename the Administration Tool directory located at <?php echo $dir_fs_document_root . 'admin'; ?>.</li>
+      <li>Renommer le répertoire de l'outils d'administration localisé: <?php echo $dir_fs_document_root . 'admin'; ?>.</li>
 
 <?php
   }
@@ -222,7 +222,7 @@
   if (file_exists($dir_fs_document_root . 'includes/configure.php') && osc_is_writable($dir_fs_document_root . 'includes/configure.php')) {
 ?>
 
-      <li>Set the permissions on <?php echo $dir_fs_document_root . 'includes/configure.php'; ?> to 644 (or 444 if this file is still writable).</li>
+      <li>Modifier les permissions de <?php echo $dir_fs_document_root . 'includes/configure.php'; ?> sur 644 (ou 444 si ce fichier est toujours accessible en écriture).</li>
 
 <?php
   }
@@ -230,14 +230,14 @@
   if (file_exists($dir_fs_document_root .  $admin_folder . '/includes/configure.php') && osc_is_writable($dir_fs_document_root . $admin_folder . '/includes/configure.php')) {
 ?>
 
-      <li>Set the permissions on <?php echo $dir_fs_document_root . $admin_folder . '/includes/configure.php'; ?> to 644 (or 444 if this file is still writable).</li>
+      <li>Modifier les permissions de <?php echo $dir_fs_document_root . $admin_folder . '/includes/configure.php'; ?> sur 644 (ou 444 si ce fichier est toujours accessible en écriture).</li>
 
 <?php
   }
 ?>
 
-      <li>Review the directory permissions on the Administration Tool -> Tools -> Security Directory Permissions page.</li>
-      <li>The Administration Tool should be further protected using htaccess/htpasswd and can be set-up within the Configuration -> Administrators page.</li>
+      <li>Vérifiez les permissions d'accès aux répertoire avec l'outils d'administration -> Outils -> Page de sécurisation des répertoire.</li>
+      <li>L'outils d'administration peux être protègé avec l'utilisation du couple htaccess/htpasswd et peux être paramètré dans Configuration -> Administrateurs.<b>Fortement recommandé</b></li>
     </ol>
   </div>
 </div>
