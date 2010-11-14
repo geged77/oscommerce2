@@ -218,7 +218,7 @@
     }
 ?>
 
-    <p align="right"><a href="index.php"><img src="images/button_retry.gif" border="0" alt="Retry" /></a></p>
+    <p align="right"><a href="index.php"><img src="images/button_retry.gif" border="0" alt="Réessayer" /></a></p>
 
 <?php
   } else {
@@ -226,7 +226,7 @@
 
 <p>L'environnement du serveur a été vérifié en vue de l'installation et de la configuration de votre boutique.</p>
     <p>Veuillez continuer la procédure d'installation.</p>
-    <p align="right"><a href="install.php"><img src="images/button_continue.gif" border="0" alt="Continue" /></a></p>
+    <p align="right"><a href="install.php"><img src="images/button_continue.gif" border="0" alt="Continuer" /></a></p>
 
 <?php
   }

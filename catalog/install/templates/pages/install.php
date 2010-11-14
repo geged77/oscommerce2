@@ -120,24 +120,24 @@
 
     <table border="0" width="99%" cellspacing="0" cellpadding="5" class="inputForm">
       <tr>
-        <td class="inputField"><?php echo 'Database Server<br />' . osc_draw_input_field('DB_SERVER', 'localhost', 'class="text"'); ?></td>
+        <td class="inputField"><?php echo 'Serveur de base de données<br />' . osc_draw_input_field('DB_SERVER', 'localhost', 'class="text"'); ?></td>
         <td class="inputDescription">Nom du serveur de base de données (hostname ou adresse IP)</td>
       </tr>
       <tr>
-        <td class="inputField"><?php echo 'Username<br />' . osc_draw_input_field('DB_SERVER_USERNAME', null, 'class="text"'); ?></td>
+        <td class="inputField"><?php echo 'Nom d\'utilisateur<br />' . osc_draw_input_field('DB_SERVER_USERNAME', null, 'class="text"'); ?></td>
         <td class="inputDescription">Nom d'utilisateur pour la connexion au serveur.</td>
       </tr>
       <tr>
-        <td class="inputField"><?php echo 'Password<br />' . osc_draw_password_field('DB_SERVER_PASSWORD', 'class="text"'); ?></td>
+        <td class="inputField"><?php echo 'Mot de passe<br />' . osc_draw_password_field('DB_SERVER_PASSWORD', 'class="text"'); ?></td>
         <td class="inputDescription">Mot de passe utilisé avec le nom d'utilisateur.</td>
       </tr>
       <tr>
-        <td class="inputField"><?php echo 'Database Name<br />' . osc_draw_input_field('DB_DATABASE', null, 'class="text"'); ?></td>
+        <td class="inputField"><?php echo 'Nom de la base de données<br />' . osc_draw_input_field('DB_DATABASE', null, 'class="text"'); ?></td>
         <td class="inputDescription">Nom de la base de données à utiliser.</td>
       </tr>
     </table>
 
-    <p align="right"><input type="image" src="images/button_continue.gif" border="0" alt="Continue" id="inputButton" />&nbsp;&nbsp;<a href="index.php"><img src="images/button_cancel.gif" border="0" alt="Cancel" /></a></p>
+    <p align="right"><input type="image" src="images/button_continue.gif" border="0" alt="Continuer" id="inputButton" />&nbsp;&nbsp;<a href="index.php"><img src="images/button_cancel.gif" border="0" alt="Annuler" /></a></p>
 
     </form>
   </div>

@@ -53,23 +53,23 @@
 
     <table border="0" width="99%" cellspacing="0" cellpadding="5" class="inputForm">
       <tr>
-        <td class="inputField"><?php echo 'Store Name<br />' . osc_draw_input_field('CFG_STORE_NAME', null, 'class="text"'); ?></td>
+        <td class="inputField"><?php echo 'Nom de la boutique<br />' . osc_draw_input_field('CFG_STORE_NAME', null, 'class="text"'); ?></td>
         <td class="inputDescription">Le nom de la boutique tel qu'il sera présenté au public.</td>
       </tr>
       <tr>
-        <td class="inputField"><?php echo 'Store Owner Name<br />' . osc_draw_input_field('CFG_STORE_OWNER_NAME', null, 'class="text"'); ?></td>
+        <td class="inputField"><?php echo 'Nom du propriétaire de la boutique<br />' . osc_draw_input_field('CFG_STORE_OWNER_NAME', null, 'class="text"'); ?></td>
         <td class="inputDescription">Le Nom du propriétaire tel qu'il sera présenté au public.</td>
       </tr>
       <tr>
-        <td class="inputField"><?php echo 'Store Owner E-Mail Address<br />' . osc_draw_input_field('CFG_STORE_OWNER_EMAIL_ADDRESS', null, 'class="text"'); ?></td>
+        <td class="inputField"><?php echo 'E-Mail du propriétaire de la boutique<br />' . osc_draw_input_field('CFG_STORE_OWNER_EMAIL_ADDRESS', null, 'class="text"'); ?></td>
         <td class="inputDescription">Email du propriétaire tel qu'il sera présenté au public.</td>
       </tr>
       <tr>
-        <td class="inputField"><?php echo 'Administrator Username<br />' . osc_draw_input_field('CFG_ADMINISTRATOR_USERNAME', null, 'class="text"'); ?></td>
+        <td class="inputField"><?php echo 'Nom d\'utilisateur de l\'administrateur<br />' . osc_draw_input_field('CFG_ADMINISTRATOR_USERNAME', null, 'class="text"'); ?></td>
         <td class="inputDescription">Nom d'utilisateur de l'administrateur de la boutique.</td>
       </tr>
       <tr>
-        <td class="inputField"><?php echo 'Administrator Password<br />' . osc_draw_input_field('CFG_ADMINISTRATOR_PASSWORD', null, 'class="text"'); ?></td>
+        <td class="inputField"><?php echo 'Mot de passe de l\'administrateur<br />' . osc_draw_input_field('CFG_ADMINISTRATOR_PASSWORD', null, 'class="text"'); ?></td>
         <td class="inputDescription">Le Mot de Passe du compte administrateur.</td>
       </tr>
 
@@ -77,7 +77,7 @@
   if (osc_is_writable($dir_fs_document_root) && osc_is_writable($dir_fs_document_root . 'admin')) {
 ?>
       <tr>
-        <td class="inputField"><?php echo 'Administration Directory Name<br />' . osc_draw_input_field('CFG_ADMIN_DIRECTORY', 'admin', 'class="text"'); ?></td>
+        <td class="inputField"><?php echo 'Nom du répertoire d\'administration<br />' . osc_draw_input_field('CFG_ADMIN_DIRECTORY', 'admin', 'class="text"'); ?></td>
         <b class="inputDescription">C'est le répertoire où la section d'administration de la boutique sera installée. <b>Pour des questions de sécurité vous devez le modifier.</b></td>
       </tr>
 <?php
@@ -86,7 +86,7 @@
 
     </table>
 
-    <p align="right"><input type="image" src="images/button_continue.gif" border="0" alt="Continue" id="inputButton" />&nbsp;&nbsp;<a href="index.php"><img src="images/button_cancel.gif" border="0" alt="Cancel" /></a></p>
+    <p align="right"><input type="image" src="images/button_continue.gif" border="0" alt="Continuer" id="inputButton" />&nbsp;&nbsp;<a href="index.php"><img src="images/button_cancel.gif" border="0" alt="Annuler" /></a></p>
 
 <?php
   reset($HTTP_POST_VARS);
