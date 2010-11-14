@@ -33,7 +33,7 @@
   <h1>Nouvelle installation</h1>
 
   <p>Le système installera et configurera correctement votre boutique sur le serveur.</p>
-  <p>Suivez les instructions à l'écran qui vous sont données pour le serveur SQL, le serveur Web et les paramètres de la boutique. Si vous avez besoin d'aide, veuillez consulter la documentation, la FAQ ou les espaces spécifiques sur le forum.</p>
+  <p>Suivez les instructions à l'écran qui vous sont données pour le serveur de base de données, le serveur Web et les paramètres de la boutique. Si vous avez besoin d'aide, veuillez consulter la documentation, la FAQ ou les espaces spécifiques sur le forum.</p>
 </div>
 
 <div class="contentBlock">
@@ -47,30 +47,30 @@
   </div>
 
   <div class="contentPane">
-    <h2>Online Store Settings</h2>
+    <h2>Paramètres de la boutique</h2>
 
     <form name="install" id="installForm" action="install.php?step=4" method="post">
 
     <table border="0" width="99%" cellspacing="0" cellpadding="5" class="inputForm">
       <tr>
         <td class="inputField"><?php echo 'Store Name<br />' . osc_draw_input_field('CFG_STORE_NAME', null, 'class="text"'); ?></td>
-        <td class="inputDescription">Le nom de la Boutique tel qu'il sera présenté au public.</td>
+        <td class="inputDescription">Le nom de la boutique tel qu'il sera présenté au public.</td>
       </tr>
       <tr>
         <td class="inputField"><?php echo 'Store Owner Name<br />' . osc_draw_input_field('CFG_STORE_OWNER_NAME', null, 'class="text"'); ?></td>
-        <td class="inputDescription">Le Nom du Propriétaire tel qu'il sera présenté au public.</td>
+        <td class="inputDescription">Le Nom du propriétaire tel qu'il sera présenté au public.</td>
       </tr>
       <tr>
         <td class="inputField"><?php echo 'Store Owner E-Mail Address<br />' . osc_draw_input_field('CFG_STORE_OWNER_EMAIL_ADDRESS', null, 'class="text"'); ?></td>
-        <td class="inputDescription">Email du Propriétaire tel qu'il sera présenté au public.</td>
+        <td class="inputDescription">Email du propriétaire tel qu'il sera présenté au public.</td>
       </tr>
       <tr>
         <td class="inputField"><?php echo 'Administrator Username<br />' . osc_draw_input_field('CFG_ADMINISTRATOR_USERNAME', null, 'class="text"'); ?></td>
-        <td class="inputDescription">Nom d'utilisateur de l'Administrateur de la boutique.</td>
+        <td class="inputDescription">Nom d'utilisateur de l'administrateur de la boutique.</td>
       </tr>
       <tr>
         <td class="inputField"><?php echo 'Administrator Password<br />' . osc_draw_input_field('CFG_ADMINISTRATOR_PASSWORD', null, 'class="text"'); ?></td>
-        <td class="inputDescription">Le Mot de Passe du compte Administrateur.</td>
+        <td class="inputDescription">Le Mot de Passe du compte administrateur.</td>
       </tr>
 
 <?php
@@ -78,7 +78,7 @@
 ?>
       <tr>
         <td class="inputField"><?php echo 'Administration Directory Name<br />' . osc_draw_input_field('CFG_ADMIN_DIRECTORY', 'admin', 'class="text"'); ?></td>
-        <b class="inputDescription">C"est le répertoire ou la section d'administration de la boutique sera installée. <b>Pour des questions de sécurité vous devez le modifier.</b></td>
+        <b class="inputDescription">C'est le répertoire où la section d'administration de la boutique sera installée. <b>Pour des questions de sécurité vous devez le modifier.</b></td>
       </tr>
 <?php
   }

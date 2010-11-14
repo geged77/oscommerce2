@@ -36,12 +36,12 @@
   <h1>Nouvelle Installation</h1>
 
   <p>Le système installera et configurera correctement votre boutique sur le serveur.</p>
-  <p>Suivez les instructions à l'écran qui vous sont données pour le serveur SQL, le serveur Web et les paramètres de la boutique. Si vous avez besoin d'aide, veuillez consulter la documentation, la FAQ ou les espaces spécifiques sur le forum.</p>
+  <p>Suivez les instructions à l'écran qui vous sont données pour le serveur de base de données, le serveur Web et les paramètres de la boutique. Si vous avez besoin d'aide, veuillez consulter la documentation, la FAQ ou les espaces spécifiques sur le forum.</p>
 </div>
 
 <div class="contentBlock">
   <div class="infoPane">
-    <h3>Etape 2: Serveur web</h3>
+    <h3>Etape 2: Serveur Web</h3>
 
     <div class="infoPaneContents">
       <p>Le serveur Web prend en charge l'affichage des pages de votre boutique en ligne pour vos visiteurs et clients. Assurez-vous que les URL pointent au bon endroit.</p>
@@ -49,7 +49,7 @@
   </div>
 
   <div class="contentPane">
-    <h2>Serveur web</h2>
+    <h2>Serveur Web</h2>
 
     <form name="install" id="installForm" action="install.php?step=3" method="post">
 

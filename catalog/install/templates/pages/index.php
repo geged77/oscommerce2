@@ -210,11 +210,11 @@
   if ((sizeof($configfile_array) > 0) || (sizeof($warning_array) > 0)) {
 ?>
 
-    <p>Corrigez les erreurs suivantes et relancez en suite l'installation.</p>
+    <p>Corrigez les erreurs suivantes et relancez ensuite l'installation.</p>
 
 <?php
     if (sizeof($warning_array) > 0) {
-      echo '    <p><i>Les changements de paramètres du serveur imposent le redémarage du serveur pour prendre effet.</i></p>' . "\n";
+      echo '    <p><i>Les changements de paramètres du serveur imposent le redémarage de celui-ci pour prendre effet.</i></p>' . "\n";
     }
 ?>
 

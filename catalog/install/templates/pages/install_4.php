@@ -41,7 +41,7 @@
     <ol>
       <li>Serveur de base de données</li>
       <li>Serveur Web</li>
-      <li>Paramétres de la boutique</li>
+      <li>Paramètres de la boutique</li>
       <li style="font-weight: bold;">Fini!</li>
     </ol>
   </div>
@@ -49,7 +49,7 @@
   <h1>Nouvelle installation</h1>
 
   <p>Le système installera et configurera correctement votre boutique sur le serveur.</p>
-  <p>Suivez les instructions à l'écran qui vous sont données pour le serveur SQL, le serveur Web et les paramètres de la boutique. Si vous avez besoin d'aide, veuillez consulter la documentation, la FAQ ou les espaces spécifiques sur le forum.</p>
+  <p>Suivez les instructions à l'écran qui vous sont données pour le serveur de base de données, le serveur Web et les paramètres de la boutique. Si vous avez besoin d'aide, veuillez consulter la documentation, la FAQ ou les espaces spécifiques sur le forum.</p>
 </div>
 
 <div class="contentBlock">
@@ -203,7 +203,7 @@
 
     <br />
 
-    <h3>Informations post-installation</h3>
+    <h3>Informations de post-installation</h3>
 
     <p>Il est recommandé de suivre ces étapes de post-installation pour sécuriser votre boutique osCommerce Online Merchant online:</p>
 
@@ -214,7 +214,7 @@
   if ($admin_folder == 'admin') {
 ?>
 
-      <li>Renommer le répertoire de l'outils d'administration localisé: <?php echo $dir_fs_document_root . 'admin'; ?>.</li>
+      <li>Renommer le répertoire de l'outil d'administration localisé: <?php echo $dir_fs_document_root . 'admin'; ?>.</li>
 
 <?php
   }
@@ -236,8 +236,8 @@
   }
 ?>
 
-      <li>Vérifiez les permissions d'accès aux répertoire avec l'outils d'administration -> Outils -> Page de sécurisation des répertoire.</li>
-      <li>L'outils d'administration peux être protègé avec l'utilisation du couple htaccess/htpasswd et peux être paramètré dans Configuration -> Administrateurs.<b>Fortement recommandé</b></li>
+      <li>Vérifiez les permissions d'accès aux répertoires avec l'outil d'administration -> Outils -> Page de sécurisation des répertoires.</li>
+      <li>L'outil d'administration peux être protégé avec l'utilisation du couple htaccess/htpasswd et peux être paramétré dans Configuration -> Administrateurs.<b>Fortement recommandé</b></li>
     </ol>
   </div>
 </div>

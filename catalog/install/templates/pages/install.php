@@ -96,7 +96,7 @@
   <h1>Nouvelle installation</h1>
 
   <p>Le système installera et configurera correctement votre boutique sur le serveur.</p>
-  <p>Suivez les instructions à l'écran qui vous sont données pour le serveur SQL, le serveur Web et les paramètres de la boutique. Si vous avez besoin d'aide, veuillez consulter la documentation, la FAQ ou les espaces spécifiques sur le forum.</p>
+  <p>Suivez les instructions à l'écran qui vous sont données pour le serveur de base de données, le serveur Web et les paramètres de la boutique. Si vous avez besoin d'aide, veuillez consulter la documentation, la FAQ ou les espaces spécifiques sur le forum.</p>
 </div>
 
 <div class="contentBlock">
@@ -105,7 +105,7 @@
 
     <div class="infoPaneContents">
       <p>Le serveur de base de données stocke le contenu de la boutique en ligne tels que les produits, les informations, les renseignements sur les clients et les commandes qui ont été faites..</p>
-      <p>Contactez votre administrateur de serveur si vous ne connaisez pas les paramètres de votre serveur.</p>
+      <p>Contactez l'administrateur du serveur ou votre hébergeur si vous ne connaissez pas les paramètres de votre serveur.</p>
     </div>
   </div>
 
@@ -133,7 +133,7 @@
       </tr>
       <tr>
         <td class="inputField"><?php echo 'Database Name<br />' . osc_draw_input_field('DB_DATABASE', null, 'class="text"'); ?></td>
-        <td class="inputDescription">Nom de la Base de données à utiliser.</td>
+        <td class="inputDescription">Nom de la base de données à utiliser.</td>
       </tr>
     </table>
 
