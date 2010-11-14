@@ -78,7 +78,7 @@
 ?>
       <tr>
         <td class="inputField"><?php echo 'Nom du répertoire d\'administration<br />' . osc_draw_input_field('CFG_ADMIN_DIRECTORY', 'admin', 'class="text"'); ?></td>
-        <b class="inputDescription">C'est le répertoire où la section d'administration de la boutique sera installée. <b>Pour des questions de sécurité vous devez le modifier.</b></td>
+        <td class="inputDescription">C'est le répertoire où la section d'administration de la boutique sera installée.<b> Pour des questions de sécurité vous devez le modifier.</b></td>
       </tr>
 <?php
   }
