@@ -12,7 +12,7 @@
 
 define('HEADING_TITLE', 'Contactez-nous');
 define('NAVBAR_TITLE', 'Contactez-nous');
-define('TEXT_SUCCESS', 'Votre requète a été envoyée avec succès au propriétaire du magasin.');
+define('TEXT_SUCCESS', 'Votre requête a été envoyée avec succès au propriétaire du magasin.');
 define('EMAIL_SUBJECT', 'Requête de ' . STORE_NAME);
 
 define('ENTRY_NAME', 'Nom et Prénom :');
