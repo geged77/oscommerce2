@@ -26,45 +26,45 @@
 <div class="mainBlock">
   <div class="stepsBox">
     <ol>
-      <li>Database Server</li>
-      <li style="font-weight: bold;">Web Server</li>
-      <li>Online Store Settings</li>
-      <li>Finished!</li>
+      <li>Serveur de base de données</li>
+      <li style="font-weight: bold;">Serveur Web</li>
+      <li>Paramètres de la boutique</li>
+      <li>Fini!</li>
     </ol>
   </div>
 
-  <h1>New Installation</h1>
+  <h1>Nouvelle Installation</h1>
 
-  <p>This web-based installation routine will correctly setup and configure osCommerce Online Merchant to run on this server.</p>
-  <p>Please follow the on-screen instructions that will take you through the database server, web server, and store configuration options. If help is needed at any stage, please consult the documentation or seek help at the community support forums.</p>
+  <p>Le système installera et configurera correctement votre boutique sur le serveur.</p>
+  <p>Suivez les instructions à l'écran qui vous sont données pour le serveur de base de données, le serveur Web et les paramètres de la boutique. Si vous avez besoin d'aide, veuillez consulter la documentation, la FAQ ou les espaces spécifiques sur le forum.</p>
 </div>
 
 <div class="contentBlock">
   <div class="infoPane">
-    <h3>Step 2: Web Server</h3>
+    <h3>Etape 2: Serveur Web</h3>
 
     <div class="infoPaneContents">
-      <p>The web server takes care of serving the pages of your online store to your guests and customers. The web server parameters make sure the links to the pages point to the correct location.</p>
+      <p>Le serveur Web prend en charge l'affichage des pages de votre boutique en ligne pour vos visiteurs et clients. Assurez-vous que les URL pointent au bon endroit.</p>
     </div>
   </div>
 
   <div class="contentPane">
-    <h2>Web Server</h2>
+    <h2>Serveur Web</h2>
 
     <form name="install" id="installForm" action="install.php?step=3" method="post">
 
     <table border="0" width="99%" cellspacing="0" cellpadding="5" class="inputForm">
       <tr>
-        <td class="inputField"><?php echo 'WWW Address<br />' . osc_draw_input_field('HTTP_WWW_ADDRESS', $www_location, 'class="text"'); ?></td>
-        <td class="inputDescription">The web address to the online store.</td>
+        <td class="inputField"><?php echo 'URL de la boutique<br />' . osc_draw_input_field('HTTP_WWW_ADDRESS', $www_location, 'class="text"'); ?></td>
+        <td class="inputDescription">Adresse Web de votre boutique en ligne.</td>
       </tr>
       <tr>
-        <td class="inputField"><?php echo 'Webserver Root Directory<br />' . osc_draw_input_field('DIR_FS_DOCUMENT_ROOT', $dir_fs_www_root, 'class="text"'); ?></td>
-        <td class="inputDescription">The directory where the online store is installed on the server.</td>
+        <td class="inputField"><?php echo 'Chemin absolu d\'installation<br />' . osc_draw_input_field('DIR_FS_DOCUMENT_ROOT', $dir_fs_www_root, 'class="text"'); ?></td>
+        <td class="inputDescription">Dossier où est installée votre boutique sur votre serveur Web.</td>
       </tr>
     </table>
 
-    <p align="right"><input type="image" src="images/button_continue.gif" border="0" alt="Continue" id="inputButton" />&nbsp;&nbsp;<a href="index.php"><img src="images/button_cancel.gif" border="0" alt="Cancel" /></a></p>
+    <p align="right"><input type="image" src="images/button_continue.gif" border="0" alt="Continuer" id="inputButton" />&nbsp;&nbsp;<a href="index.php"><img src="images/button_cancel.gif" border="0" alt="Annuler" /></a></p>
 
 <?php
   reset($HTTP_POST_VARS);

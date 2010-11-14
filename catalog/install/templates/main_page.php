@@ -31,7 +31,7 @@
 
 <div id="pageHeader">
   <div>
-    <div style="float: right; padding-top: 40px; padding-right: 15px; color: #000000; font-weight: bold;"><a href="http://www.oscommerce.com" target="_blank">osCommerce Website</a> &nbsp;|&nbsp; <a href="http://www.oscommerce.com/support" target="_blank">Support</a> &nbsp;|&nbsp; <a href="http://www.oscommerce.info" target="_blank">Documentation</a></div>
+    <div style="float: right; padding-top: 40px; padding-right: 15px; color: #000000; font-weight: bold;"><a href="http://www.oscommerce-fr.info" target="_blank">osCommerce France</a> &nbsp;|&nbsp; <a href="http://www.oscommerce.com/forum" target="_blank">Forum Francophone</a> &nbsp;|&nbsp; <a href="http://www.oscommerce.info" target="_blank">Documentation</a></div>
 
     <a href="index.php"><img src="images/oscommerce.png" border="0" title="osCommerce Online Merchant" style="margin: 5px;" /></a>
   </div>
@@ -50,8 +50,8 @@
 </div>
 
 <div id="pageFooter">
-  <p>Copyright &copy; 2000-2010 <a href="http://www.oscommerce.com" target="_blank">osCommerce</a> (<a href="http://www.oscommerce.com/about/copyright" target="_blank">Copyright Policy</a>, <a href="http://www.oscommerce.com/about/trademark" target="_blank">Trademark Policy</a>)<br />osCommerce provides no warranty and is redistributable under the <a href="http://www.fsf.org/licenses/gpl.txt" target="_blank">GNU General Public License</a></p>
-  <p>osCommerce is a registered trademark of Harald Ponce de Leon</p>
+  <p>Copyright &copy; 2000-2010 <a href="http://www.oscommerce-fr.info" target="_blank">osCommerce Francophone</a> (<a href="http://www.oscommerce.com/about/copyright" target="_blank">Copyright Policy</a>, <a href="http://www.oscommerce.com/about/trademark" target="_blank">Trademark Policy</a>)<br />osCommerce provides no warranty and is redistributable under the <a href="http://www.fsf.org/licenses/gpl.txt" target="_blank">GNU General Public License</a></p>
+  <p>osCommerce est une marque déposée de Harald Ponce de Leon</p>
 </div>
 
 </body>
