@@ -165,11 +165,11 @@ define('FORM_REQUIRED_INFORMATION', '* Information requise');
 
 // constants for use in tep_prev_next_display function
 define('TEXT_RESULT_PAGE', 'Pages de résultat :');
-define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS', 'Afficher <b>%d</b> à <b>%d</b> (sur <b>%d</b> produits)');
-define('TEXT_DISPLAY_NUMBER_OF_ORDERS', 'Afficher <b>%d</b> à <b>%d</b> (sur <b>%d</b> orders)');
-define('TEXT_DISPLAY_NUMBER_OF_REVIEWS', 'Afficher <b>%d</b> à <b>%d</b> (sur <b>%d</b> avis)');
-define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS_NEW', 'Afficher <b>%d</b> à <b>%d</b> (sur <b>%d</b> nouveaux produits)');
-define('TEXT_DISPLAY_NUMBER_OF_SPECIALS', 'Afficher <b>%d</b> à <b>%d</b> (sur <b>%d</b> promotions)');
+define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS', 'Afficher <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> produits)');
+define('TEXT_DISPLAY_NUMBER_OF_ORDERS', 'Afficher <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> orders)');
+define('TEXT_DISPLAY_NUMBER_OF_REVIEWS', 'Afficher <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> avis)');
+define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS_NEW', 'Afficher <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> nouveaux produits)');
+define('TEXT_DISPLAY_NUMBER_OF_SPECIALS', 'Afficher <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> promotions)');
 
 define('PREVNEXT_TITLE_FIRST_PAGE', 'Première page');
 define('PREVNEXT_TITLE_PREVIOUS_PAGE', 'Page précédente');
@@ -239,12 +239,12 @@ define('TEXT_UNKNOWN_TAX_RATE', 'Taux de taxation inconnu');
 
 define('TEXT_REQUIRED', '<span class="errorText">Requis</span>');
 
-define('ERROR_TEP_MAIL', '<font face="Verdana, Arial" size="2" color="#ff0000"><b><small>ERREUR:</small> Impossible d\'envoyer l\'email par le serveur SMTP spécifié. Vérifiez le fichier PHP.INI et corrigez le nom du serveur SMTP si nécessaire.</b></font>');
+define('ERROR_TEP_MAIL', '<font face="Verdana, Arial" size="2" color="#ff0000"><strong><small>ERREUR:</small> Impossible d\'envoyer l\'email par le serveur SMTP spécifié. Vérifiez le fichier PHP.INI et corrigez le nom du serveur SMTP si nécessaire.</strong></font>');
 
 define('TEXT_CCVAL_ERROR_INVALID_DATE', 'La date d\'expiration entrée pour cette carte de crédit n\'est pas valide. Veuillez vérifier la date et réessayez.');
 define('TEXT_CCVAL_ERROR_INVALID_NUMBER', 'Le numémero entrée pour cette carte de crédit n\'est pas valide. Veuillez vérifier le numéro et réessayez.');
 define('TEXT_CCVAL_ERROR_UNKNOWN_CARD', 'Le code à 4 chiffres que vous avez entré est : %s. Si ce code est correct, nous n\'acceptons pas ce type de carte crédit. S\'il est erroné veuillez réessayer.');
 
-define('FOOTER_TEXT_BODY', 'Copyright &copy; ' . date('Y') . ' <a href="' . tep_href_link(FILENAME_DEFAULT) . '">' . STORE_NAME . '</a><br />Propulsé par <a href="http://www.oscommerce.com" target="_blank">osCommerce</a><br><font color="gray">Traduction : oscommerce-fr.info - <a href="http://www.oscommerce-fr.info" target="_blank">osCommerce France</a></font>');
+define('FOOTER_TEXT_BODY', 'Copyright &copy; ' . date('Y') . ' <a href="' . tep_href_link(FILENAME_DEFAULT) . '">' . STORE_NAME . '</a><br />Propulsé par <a href="http://www.oscommerce.com" target="_blank">osCommerce</a><br /><font color="gray">Traduction : oscommerce-fr.info - <a href="http://www.oscommerce-fr.info" target="_blank">osCommerce France</a></font>');
 ?>
 
