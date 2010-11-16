@@ -17,6 +17,6 @@ define('HEADING_TITLE', 'Mon mot de passe');
 
 define('MY_PASSWORD_TITLE', 'Mon mot de passe');
 
-define('SUCCESS_PASSWORD_UPDATED', 'Votre mot de passe a été mis à jour avec succès.');
-define('ERROR_CURRENT_PASSWORD_NOT_MATCHING', 'Votre mot de passe courant doit être différent du mot de passe actuellement enregistré sur notre site. Veuillez réessayer.');
+define('SUCCESS_PASSWORD_UPDATED', 'Votre mot de passe a été modifié.');
+define('ERROR_CURRENT_PASSWORD_NOT_MATCHING', 'Votre nouveau mot de passe doit être différent du mot de passe actuellement enregistré sur notre site. Veuillez réessayer.');
 ?>

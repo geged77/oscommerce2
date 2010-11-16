@@ -196,7 +196,7 @@ define('IMAGE_COPY', 'Copier');
 define('IMAGE_COPY_TO', 'Copier vers');
 define('IMAGE_DETAILS', 'Détails');
 define('IMAGE_DELETE', 'Supprimer');
-define('IMAGE_EDIT', 'Editer');
+define('IMAGE_EDIT', 'Modifier');
 define('IMAGE_EMAIL', 'Courrier électronique');
 define('IMAGE_EXPORT', 'Exporter');
 define('IMAGE_ICON_STATUS_GREEN', 'Actif');
@@ -293,6 +293,6 @@ define('ERROR_DESTINATION_DOES_NOT_EXIST', 'Erreur : le chemin cible n\'existe p
 define('ERROR_DESTINATION_NOT_WRITEABLE', 'Erreur : Impossible d\'écrire dans le répertoire cible.');
 define('ERROR_FILE_NOT_SAVED', 'Erreur : fichier transférer non sauvegardé.');
 define('ERROR_FILETYPE_NOT_ALLOWED', 'Erreur : type de fichier transféré non-permis.');
-define('SUCCESS_FILE_SAVED_SUCCESSFULLY', 'Succès : Le fichier transféré a été sauvegardé avec succès.');
+define('SUCCESS_FILE_SAVED_SUCCESSFULLY', 'Réussite : Le fichier transféré a été sauvegardé.');
 define('WARNING_NO_FILE_UPLOADED', 'Attention : fichier non transféré.');
 ?>

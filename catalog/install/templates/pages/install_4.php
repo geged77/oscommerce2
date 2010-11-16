@@ -190,7 +190,7 @@
   }
 ?>
 
-    <p>Votre Boutique a été installée et configurée avec succès !</p>
+    <p>Votre Boutique a été installée et configurée correctement !</p>
 
     <br />
 

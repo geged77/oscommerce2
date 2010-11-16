@@ -17,15 +17,15 @@ define('HEADING_TITLE', 'Confirmation commande');
 
 define('HEADING_SHIPPING_INFORMATION', 'Information sur la livraison');
 define('HEADING_DELIVERY_ADDRESS', 'Adresse de livraison');
-define('HEADING_SHIPPING_METHOD', 'Méthode d\'expédition');
+define('HEADING_SHIPPING_METHOD', 'Mode de livraison');
 define('HEADING_PRODUCTS', 'Produits');
 define('HEADING_TAX', 'TVA');
 define('HEADING_TOTAL', 'Total');
 define('HEADING_BILLING_INFORMATION', 'Information de facturation');
 define('HEADING_BILLING_ADDRESS', 'Adresse de facturation');
-define('HEADING_PAYMENT_METHOD', 'Méthode de paiement');
+define('HEADING_PAYMENT_METHOD', 'Mode de paiement');
 define('HEADING_PAYMENT_INFORMATION', 'Information de paiement');
 define('HEADING_ORDER_COMMENTS', 'Commentaires au sujet de votre commande ');
 
-define('TEXT_EDIT', 'Editer');
+define('TEXT_EDIT', 'Modifier');
 ?>

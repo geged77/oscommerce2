@@ -87,11 +87,11 @@ define('JS_ERROR', 'Des erreurs sont survenues durant le traitement de votre for
 define('JS_REVIEW_TEXT', '* Le \'commentaire\' que vous avez entré doit avoir au moins ' . REVIEW_TEXT_MIN_LENGTH . ' caractères.\n');
 define('JS_REVIEW_RATING', '* Vous devez mettre une appréciation pour cet article.\n');
 
-define('JS_ERROR_NO_PAYMENT_MODULE_SELECTED', '* Veuillez choisir une méthode de paiement pour votre commande.\n');
+define('JS_ERROR_NO_PAYMENT_MODULE_SELECTED', '* Veuillez choisir une Mode de paiement pour votre commande.\n');
 
 define('JS_ERROR_SUBMITTED', 'Ce formulaire a été déjà soumis. Veuillez appuyer sur Ok et attendez jusqu\'à ce que le traitement soit fini.');
 
-define('ERROR_NO_PAYMENT_MODULE_SELECTED', 'Veuillez choisir une méthode de paiement pour votre commande.');
+define('ERROR_NO_PAYMENT_MODULE_SELECTED', 'Veuillez choisir une Mode de paiement pour votre commande.');
 
 define('CATEGORY_COMPANY', 'Détails sociétés');
 define('CATEGORY_PERSONAL', 'Vos détails personnels');
@@ -193,13 +193,13 @@ define('IMAGE_BUTTON_CONFIRM_ORDER', 'Confirmer la commande');
 define('IMAGE_BUTTON_CONTINUE', 'Continuer');
 define('IMAGE_BUTTON_CONTINUE_SHOPPING', 'Continuer vos achats');
 define('IMAGE_BUTTON_DELETE', 'Supprimer');
-define('IMAGE_BUTTON_EDIT_ACCOUNT', 'Editez le compte');
+define('IMAGE_BUTTON_EDIT_ACCOUNT', 'Modifiez le compte');
 define('IMAGE_BUTTON_HISTORY', 'Historique des commandes');
 define('IMAGE_BUTTON_LOGIN', 'Connexion');
 define('IMAGE_BUTTON_IN_CART', 'Ajouter au panier');
-define('IMAGE_BUTTON_NOTIFICATIONS', 'Notifications');
+define('IMAGE_BUTTON_NOTIFICATIONS', 'Alertes produits');
 define('IMAGE_BUTTON_QUICK_FIND', 'Recherche rapide');
-define('IMAGE_BUTTON_REMOVE_NOTIFICATIONS', 'Supprimer les notifications');
+define('IMAGE_BUTTON_REMOVE_NOTIFICATIONS', 'Supprimer les alertes');
 define('IMAGE_BUTTON_REVIEWS', 'Avis des clients');
 define('IMAGE_BUTTON_SEARCH', 'Rechercher');
 define('IMAGE_BUTTON_SHIPPING_OPTIONS', 'Options de livraison');
