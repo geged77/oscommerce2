@@ -5,7 +5,7 @@
   osCommerce, Open Source E-Commerce Solutions
   http://www.oscommerce.com
 
-  Copyright (c) 2010 osCommerce
+  Copyright (c) 2007 osCommerce
 
   Released under the GNU General Public License
 */
@@ -22,11 +22,31 @@
       $languages_selected = $languages[$i]['code'];
     }
   }
-
-  require(DIR_WS_INCLUDES . 'template_top.php');
 ?>
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html <?php echo HTML_PARAMS; ?>>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
+<meta name="robots" content="noindex,nofollow">
+<title><?php echo TITLE; ?></title>
+<link rel="stylesheet" type="text/css" href="includes/stylesheet.css">
+<script language="javascript" src="includes/general.js"></script>
+</head>
+<body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFFF" onload="SetFocus();">
+<!-- header //-->
+<?php require(DIR_WS_INCLUDES . 'header.php'); ?>
+<!-- header_eof //-->
 
-    <table border="0" width="100%" cellspacing="0" cellpadding="2">
+<!-- body //-->
+<table border="0" width="100%" cellspacing="2" cellpadding="2">
+  <tr>
+    <td width="<?php echo BOX_WIDTH; ?>" valign="top"><table border="0" width="<?php echo BOX_WIDTH; ?>" cellspacing="1" cellpadding="1" class="columnLeft">
+<!-- left_navigation //-->
+<?php require(DIR_WS_INCLUDES . 'column_left.php'); ?>
+<!-- left_navigation_eof //-->
+    </table></td>
+<!-- body_text //-->
+    <td width="100%" valign="top"><table border="0" width="100%" cellspacing="0" cellpadding="2">
       <tr>
         <td><table border="0" width="100%" cellspacing="0" cellpadding="2" height="40">
           <tr>
@@ -36,7 +56,7 @@
   if (sizeof($languages_array) > 1) {
 ?>
 
-            <td class="pageHeading" align="right"><?php echo tep_draw_form('adminlanguage', FILENAME_DEFAULT, '', 'get') . tep_draw_pull_down_menu('language', $languages_array, $languages_selected, 'onchange="this.form.submit();"') . tep_hide_session_id() . '</form>'; ?></td>
+            <td class="pageHeading" align="right"><?php echo tep_draw_form('adminlanguage', FILENAME_DEFAULT, '', 'get') . tep_draw_pull_down_menu('language', $languages_array, $languages_selected, 'onChange="this.form.submit();"') . tep_hide_session_id() . '</form>'; ?></td>
 
 <?php
   }
@@ -48,58 +68,65 @@
       <tr>
         <td><table border="0" width="100%" cellspacing="0" cellpadding="2">
 <?php
-  if ( defined('MODULE_ADMIN_DASHBOARD_INSTALLED') && tep_not_null(MODULE_ADMIN_DASHBOARD_INSTALLED) ) {
-    $adm_array = explode(';', MODULE_ADMIN_DASHBOARD_INSTALLED);
-
-    $col = 0;
-
-    for ( $i=0, $n=sizeof($adm_array); $i<$n; $i++ ) {
-      $adm = $adm_array[$i];
-
-      $class = substr($adm, 0, strrpos($adm, '.'));
-
-      if ( !class_exists($class) ) {
-        include(DIR_WS_LANGUAGES . $language . '/modules/dashboard/' . $adm);
-        include(DIR_WS_MODULES . 'dashboard/' . $class . '.php');
-      }
-
-      $ad = new $class();
-
-      if ( $ad->isEnabled() ) {
-        if ($col < 1) {
-          echo '          <tr>' . "\n";
-        }
-
-        $col++;
-
-        if ($col <= 2) {
-          echo '            <td width="50%" valign="top">' . "\n";
-        }
-
-        echo $ad->getOutput();
-
-        if ($col <= 2) {
-          echo '            </td>' . "\n";
-        }
-
-        if ( !isset($adm_array[$i+1]) || ($col == 2) ) {
-          if ( !isset($adm_array[$i+1]) && ($col == 1) ) {
-            echo '            <td width="50%" valign="top">&nbsp;</td>' . "\n";
-          }
-
-          $col = 0;
-
-          echo '  </tr>' . "\n";
+  $file_extension = substr($PHP_SELF, strrpos($PHP_SELF, '.'));
+  $files = array();
+  if ($dir = @dir(DIR_FS_ADMIN . 'includes/modules/index')) {
+    while ($file = $dir->read()) {
+      if (!is_dir($module_directory . $file)) {
+        if (substr($file, strrpos($file, '.')) == $file_extension) {
+          $files[] = $file;
         }
       }
+    }
+    sort($files);
+    $dir->close();
+  }
+
+  $col = 0;
+
+  for ($i=0, $n=sizeof($files); $i<$n; $i++) {
+    if (file_exists(DIR_WS_LANGUAGES . $language . '/modules/index/' . $files[$i])) {
+      include(DIR_WS_LANGUAGES . $language . '/modules/index/' . $files[$i]);
+    }
+
+    if ($col < 1) {
+      echo '          <tr>' . "\n";
+    }
+
+    $col++;
+
+    if ($col <= 2) {
+      echo '            <td width="50%" valign="top">' . "\n";
+    }
+
+    include('includes/modules/index/' . $files[$i]);
+
+    if ($col <= 2) {
+      echo '            </td>' . "\n";
+    }
+
+    if ( !isset($files[$i+1]) || ($col == 2) ) {
+      if ( !isset($files[$i+1]) && ($col == 1) ) {
+        echo '            <td width="50%" valign="top">&nbsp;</td>' . "\n";
+      }
+
+      $col = 0;
+
+      echo '  </tr>' . "\n";
     }
   }
 ?>
         </table></td>
       </tr>
-    </table>
+    </table></td>
+  </tr>
+</table>
+<!-- body_eof //-->
 
-<?php
-  require(DIR_WS_INCLUDES . 'template_bottom.php');
-  require(DIR_WS_INCLUDES . 'application_bottom.php');
-?>
+<!-- footer //-->
+<?php require(DIR_WS_INCLUDES . 'footer.php'); ?>
+<!-- footer_eof //-->
+<br>
+</body>
+</html>
+<?php require(DIR_WS_INCLUDES . 'application_bottom.php'); ?>
