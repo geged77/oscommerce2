@@ -12,12 +12,12 @@
 
 define('HEADING_TITLE', 'Contactez-nous');
 define('NAVBAR_TITLE', 'Contactez-nous');
-define('TEXT_SUCCESS', 'Votre requÃªte a été envoyée avec succès au propriétaire du magasin.');
-define('EMAIL_SUBJECT', 'RequÃªte de ' . STORE_NAME);
+define('TEXT_SUCCESS', 'Votre requÃªte a Ã©tÃ© envoyÃ©e au gestionnaire du site.');
+define('EMAIL_SUBJECT', 'Demande en provenance de ' . STORE_NAME);
 
-define('ENTRY_NAME', 'Nom et Prénom :');
+define('ENTRY_NAME', 'Nom et PrÃ©nom :');
 define('ENTRY_EMAIL', 'Adresse email :');
 define('ENTRY_ENQUIRY', 'Demande de renseignements :');
 
-define('ERROR_ACTION_RECORDER', 'Erreur: Une requête a déja été envoyée.Merci d\'essayer à nouveau dans %s minutes.');
+define('ERROR_ACTION_RECORDER', 'Erreur: Un formulaire de contact vient d\'Ãªtre envoyÃ©. Veuillez rÃ©essayer dans %s minutes.');
 ?>

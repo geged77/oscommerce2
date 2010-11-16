@@ -190,7 +190,7 @@
   }
 ?>
 
-    <p>Votre Boutique a été installée et configurée avec succès !</p>
+    <p>Votre Boutique a été installée et configurée correctement !</p>
 
     <br />
 
@@ -205,10 +205,10 @@
 
     <h3>Informations de post-installation</h3>
 
-    <p>Il est recommandé de suivre ces étapes de post-installation pour sécuriser votre boutique osCommerce Online Merchant online:</p>
+    <p>Il est <strong>fortement recommandé</strong> de suivre ces étapes de post-installation pour sécuriser votre boutique osCommerce Online Merchant online:</p>
 
     <ol>
-      <li>Effacer le <?php echo $dir_fs_document_root . 'install'; ?> repertoire.</li>
+      <li>Effacer le repertoire<?php echo $dir_fs_document_root . 'install'; ?>. </li>
 
 <?php
   if ($admin_folder == 'admin') {
@@ -237,7 +237,7 @@
 ?>
 
       <li>Vérifiez les permissions d'accès aux répertoires avec l'outil d'administration -> Outils -> Page de sécurisation des répertoires.</li>
-      <li>L'outil d'administration peux être protégé avec l'utilisation du couple htaccess/htpasswd et peux être paramétré dans Configuration -> Administrateurs.<b>Fortement recommandé</b></li>
+      <li>L'outil d'administration peux être protégé avec l'utilisation du couple htaccess/htpasswd et peux être paramétré dans Configuration -> Administrateurs.</li>
     </ol>
   </div>
 </div>

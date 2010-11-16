@@ -22,7 +22,7 @@ define('DATE_FORMAT_SHORT', '%d/%m/%Y');  // this is used for strftime()
 define('DATE_FORMAT_LONG', '%A %d %B %Y'); // this is used for strftime()
 define('DATE_FORMAT', 'd/m/Y'); // this is used for date()
 define('DATE_TIME_FORMAT', DATE_FORMAT_SHORT . ' %H:%M:%S');
-define('JQUERY_DATEPICKER_I18N_CODE', ''); // leave empty for en_US; see http://jqueryui.com/demos/datepicker/#localization
+define('JQUERY_DATEPICKER_I18N_CODE', 'fr'); // leave empty for en_US; see http://jqueryui.com/demos/datepicker/#localization
 define('JQUERY_DATEPICKER_FORMAT', 'dd/mm/yy'); // see http://docs.jquery.com/UI/Datepicker/formatDate
 
 ////
@@ -56,8 +56,8 @@ define('HEADER_TITLE_CART_CONTENTS', 'Voir panier');
 define('HEADER_TITLE_CHECKOUT', 'Commander');
 define('HEADER_TITLE_TOP', 'Accueil');
 define('HEADER_TITLE_CATALOG', 'Catalogue');
-define('HEADER_TITLE_LOGOFF', 'Fermeture de session');
-define('HEADER_TITLE_LOGIN', 'Ouverture de session');
+define('HEADER_TITLE_LOGOFF', 'Déconnexion');
+define('HEADER_TITLE_LOGIN', 'Connexion');
 
 // footer text in includes/footer.php
 define('FOOTER_TEXT_REQUESTS_SINCE', 'requêtes depuis le');
@@ -65,7 +65,7 @@ define('FOOTER_TEXT_REQUESTS_SINCE', 'requêtes depuis le');
 // text for gender
 define('MALE', 'Homme');
 define('FEMALE', 'Femme');
-define('MALE_ADDRESS', 'Mr.');
+define('MALE_ADDRESS', 'M.');
 define('FEMALE_ADDRESS', 'Mme.');
 
 // text for date of birth example
@@ -87,11 +87,11 @@ define('JS_ERROR', 'Des erreurs sont survenues durant le traitement de votre for
 define('JS_REVIEW_TEXT', '* Le \'commentaire\' que vous avez entré doit avoir au moins ' . REVIEW_TEXT_MIN_LENGTH . ' caractères.\n');
 define('JS_REVIEW_RATING', '* Vous devez mettre une appréciation pour cet article.\n');
 
-define('JS_ERROR_NO_PAYMENT_MODULE_SELECTED', '* Veuillez choisir une méthode de paiement pour votre commande.\n');
+define('JS_ERROR_NO_PAYMENT_MODULE_SELECTED', '* Veuillez choisir une Mode de paiement pour votre commande.\n');
 
 define('JS_ERROR_SUBMITTED', 'Ce formulaire a été déjà soumis. Veuillez appuyer sur Ok et attendez jusqu\'à ce que le traitement soit fini.');
 
-define('ERROR_NO_PAYMENT_MODULE_SELECTED', 'Veuillez choisir une méthode de paiement pour votre commande.');
+define('ERROR_NO_PAYMENT_MODULE_SELECTED', 'Veuillez choisir une Mode de paiement pour votre commande.');
 
 define('CATEGORY_COMPANY', 'Détails sociétés');
 define('CATEGORY_PERSONAL', 'Vos détails personnels');
@@ -112,12 +112,12 @@ define('ENTRY_LAST_NAME', 'Nom :');
 define('ENTRY_LAST_NAME_ERROR', 'Votre nom doit contenir un minimum de ' . ENTRY_LAST_NAME_MIN_LENGTH . ' caractères.');
 define('ENTRY_LAST_NAME_TEXT', '*');
 define('ENTRY_DATE_OF_BIRTH', 'Date de naissance :');
-define('ENTRY_DATE_OF_BIRTH_ERROR', 'Votre date de naissance doit avoir ce format : JJ/MM/AAAA (ex. 03/02/1961)');
-define('ENTRY_DATE_OF_BIRTH_TEXT', '* (ex. 03/02/1961)');
+define('ENTRY_DATE_OF_BIRTH_ERROR', 'Votre date de naissance doit avoir ce format : JJ/MM/AAAA (ex. 18/02/1961)');
+define('ENTRY_DATE_OF_BIRTH_TEXT', '* (ex. 18/02/1961)');
 define('ENTRY_EMAIL_ADDRESS', 'Adresse email:');
 define('ENTRY_EMAIL_ADDRESS_ERROR', 'Votre adresse email doit contenir un minimum de ' . ENTRY_EMAIL_ADDRESS_MIN_LENGTH . ' caractères.');
 define('ENTRY_EMAIL_ADDRESS_CHECK_ERROR', 'Votre adresse email ne semble pas être valide - veuillez effectuer toutes les corrections nécessaires.');
-define('ENTRY_EMAIL_ADDRESS_ERROR_EXISTS', 'Votre adresse email est déjà enregistrée sur notre site - Veuillez ouvrir une session avec cette adresse email ou créez un compte avec une adresse différente.');
+define('ENTRY_EMAIL_ADDRESS_ERROR_EXISTS', 'Votre adresse email est déjà enregistrée sur notre site - Veuillez vous connecter avec cette adresse email ou créez un compte avec une adresse différente.');
 define('ENTRY_EMAIL_ADDRESS_TEXT', '*');
 define('ENTRY_STREET_ADDRESS', 'Adresse :');
 define('ENTRY_STREET_ADDRESS_ERROR', 'Votre adresse doit contenir un minimum de ' . ENTRY_STREET_ADDRESS_MIN_LENGTH . ' caractères.');
@@ -165,23 +165,23 @@ define('FORM_REQUIRED_INFORMATION', '* Information requise');
 
 // constants for use in tep_prev_next_display function
 define('TEXT_RESULT_PAGE', 'Pages de résultat :');
-define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS', 'Afficher <b>%d</b> à <b>%d</b> (sur <b>%d</b> produits)');
-define('TEXT_DISPLAY_NUMBER_OF_ORDERS', 'Afficher <b>%d</b> à <b>%d</b> (sur <b>%d</b> orders)');
-define('TEXT_DISPLAY_NUMBER_OF_REVIEWS', 'Afficher <b>%d</b> à <b>%d</b> (sur <b>%d</b> critiques)');
-define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS_NEW', 'Afficher <b>%d</b> à <b>%d</b> (sur <b>%d</b> nouveaux produits)');
-define('TEXT_DISPLAY_NUMBER_OF_SPECIALS', 'Afficher <b>%d</b> à <b>%d</b> (sur <b>%d</b> promotions)');
+define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS', 'Afficher <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> produits)');
+define('TEXT_DISPLAY_NUMBER_OF_ORDERS', 'Afficher <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> orders)');
+define('TEXT_DISPLAY_NUMBER_OF_REVIEWS', 'Afficher <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> avis)');
+define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS_NEW', 'Afficher <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> nouveaux produits)');
+define('TEXT_DISPLAY_NUMBER_OF_SPECIALS', 'Afficher <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> promotions)');
 
 define('PREVNEXT_TITLE_FIRST_PAGE', 'Première page');
 define('PREVNEXT_TITLE_PREVIOUS_PAGE', 'Page précédente');
 define('PREVNEXT_TITLE_NEXT_PAGE', 'Page suivante');
 define('PREVNEXT_TITLE_LAST_PAGE', 'Dernière page');
 define('PREVNEXT_TITLE_PAGE_NO', 'Page %d');
-define('PREVNEXT_TITLE_PREV_SET_OF_NO_PAGE', 'Ensemble précédent de %d pages');
-define('PREVNEXT_TITLE_NEXT_SET_OF_NO_PAGE', 'Ensemble suivant de %d pages');
-define('PREVNEXT_BUTTON_FIRST', '&lt;&lt;PREMIER');
+define('PREVNEXT_TITLE_PREV_SET_OF_NO_PAGE', 'les %d pages précédentes');
+define('PREVNEXT_TITLE_NEXT_SET_OF_NO_PAGE', 'les %d pages suivantes');
+define('PREVNEXT_BUTTON_FIRST', '&lt;&lt;PREMIERE');
 define('PREVNEXT_BUTTON_PREV', '[&lt;&lt;&nbsp;Préc]');
 define('PREVNEXT_BUTTON_NEXT', '[Suiv&nbsp;&gt;&gt;]');
-define('PREVNEXT_BUTTON_LAST', 'DERNIER&gt;&gt;');
+define('PREVNEXT_BUTTON_LAST', 'DERNIERE&gt;&gt;');
 
 define('IMAGE_BUTTON_ADD_ADDRESS', 'Ajouter adresse');
 define('IMAGE_BUTTON_ADDRESS_BOOK', 'Carnet d\'adresses');
@@ -193,23 +193,23 @@ define('IMAGE_BUTTON_CONFIRM_ORDER', 'Confirmer la commande');
 define('IMAGE_BUTTON_CONTINUE', 'Continuer');
 define('IMAGE_BUTTON_CONTINUE_SHOPPING', 'Continuer vos achats');
 define('IMAGE_BUTTON_DELETE', 'Supprimer');
-define('IMAGE_BUTTON_EDIT_ACCOUNT', 'Editez le compte');
+define('IMAGE_BUTTON_EDIT_ACCOUNT', 'Modifiez le compte');
 define('IMAGE_BUTTON_HISTORY', 'Historique des commandes');
-define('IMAGE_BUTTON_LOGIN', 'Ouverture de session');
+define('IMAGE_BUTTON_LOGIN', 'Connexion');
 define('IMAGE_BUTTON_IN_CART', 'Ajouter au panier');
-define('IMAGE_BUTTON_NOTIFICATIONS', 'Notifications');
+define('IMAGE_BUTTON_NOTIFICATIONS', 'Alertes produits');
 define('IMAGE_BUTTON_QUICK_FIND', 'Recherche rapide');
-define('IMAGE_BUTTON_REMOVE_NOTIFICATIONS', 'Supprimer les notifications');
-define('IMAGE_BUTTON_REVIEWS', 'Critiques');
+define('IMAGE_BUTTON_REMOVE_NOTIFICATIONS', 'Supprimer les alertes');
+define('IMAGE_BUTTON_REVIEWS', 'Avis des clients');
 define('IMAGE_BUTTON_SEARCH', 'Rechercher');
-define('IMAGE_BUTTON_SHIPPING_OPTIONS', 'Options d\'expédition');
+define('IMAGE_BUTTON_SHIPPING_OPTIONS', 'Options de livraison');
 define('IMAGE_BUTTON_TELL_A_FRIEND', 'Envoyer à un ami');
 define('IMAGE_BUTTON_UPDATE', 'Mise à jour');
 define('IMAGE_BUTTON_UPDATE_CART', 'Mise à jour panier');
-define('IMAGE_BUTTON_WRITE_REVIEW', 'Ecrire une critique');
+define('IMAGE_BUTTON_WRITE_REVIEW', 'Donnez votre avis');
 
 define('SMALL_IMAGE_BUTTON_DELETE', 'Supprimer');
-define('SMALL_IMAGE_BUTTON_EDIT', 'Editer');
+define('SMALL_IMAGE_BUTTON_EDIT', 'Modifier');
 define('SMALL_IMAGE_BUTTON_VIEW', 'Afficher');
 
 define('ICON_ARROW_RIGHT', 'plus');
@@ -219,10 +219,10 @@ define('ICON_SUCCESS', 'Réussi');
 define('ICON_WARNING', 'Attention');
 
 define('TEXT_GREETING_PERSONAL', 'Bienvenue <span class="greetUser">%s!</span> Voudriez vous voir quels <a href="%s"><u>nouveaux produits</u></a> sont disponibles à la vente ?');
-define('TEXT_GREETING_PERSONAL_RELOGON', '<small>Si vous n\'êtes pas %s, merci de vous <a href="%s"><u>reconnecter in</u></a> avec votre compte.</small>');
-define('TEXT_GREETING_GUEST', 'Bienvenue <span class="greetUser">visiteur!</span> Voulez vous <a href="%s"><u>ouvrir une session</u></a>? Ou préférez vous <a href="%s"><u>créer un compte</u></a> ?');
+define('TEXT_GREETING_PERSONAL_RELOGON', '<small>Si vous n\'êtes pas %s, merci de vous <a href="%s"><u>reconnecter </u></a> avec votre compte.</small>');
+define('TEXT_GREETING_GUEST', '<span class="greetUser">Bienvenue!</span> Si vous possédez un compte vous pouvez <a href="%s"><u>vous connecter</u></a>, sinon veuillez <a href="%s"><u>créer un compte</u></a>');
 
-define('TEXT_SORT_PRODUCTS', 'Trier produits ');
+define('TEXT_SORT_PRODUCTS', 'Tri produits ');
 define('TEXT_DESCENDINGLY', 'décroissant');
 define('TEXT_ASCENDINGLY', 'croissant');
 define('TEXT_BY', ' par ');
@@ -231,7 +231,7 @@ define('TEXT_REVIEW_BY', 'par %s');
 define('TEXT_REVIEW_WORD_COUNT', '%s mots');
 define('TEXT_REVIEW_RATING', 'Classement : %s [%s]');
 define('TEXT_REVIEW_DATE_ADDED', 'Date d\'ajout : %s');
-define('TEXT_NO_REVIEWS', 'Il n\'y a pour le moment aucune critique sur ce produit.');
+define('TEXT_NO_REVIEWS', 'Il n\'y a pour le moment aucune avis sur ce produit.');
 
 define('TEXT_NO_NEW_PRODUCTS', 'Il n\'y a pour le moment aucun produits.');
 
@@ -239,12 +239,12 @@ define('TEXT_UNKNOWN_TAX_RATE', 'Taux de taxation inconnu');
 
 define('TEXT_REQUIRED', '<span class="errorText">Requis</span>');
 
-define('ERROR_TEP_MAIL', '<font face="Verdana, Arial" size="2" color="#ff0000"><b><small>TEP ERROR:</small> Impossible d\'envoyer l\'email par le serveur SMTP spécifié. Vérifiez le fichier PHP.INI et corrigez le nom du serveur SMTP si nécessaire.</b></font>');
+define('ERROR_TEP_MAIL', '<font face="Verdana, Arial" size="2" color="#ff0000"><strong><small>ERREUR:</small> Impossible d\'envoyer l\'email par le serveur SMTP spécifié. Vérifiez le fichier PHP.INI et corrigez le nom du serveur SMTP si nécessaire.</strong></font>');
 
 define('TEXT_CCVAL_ERROR_INVALID_DATE', 'La date d\'expiration entrée pour cette carte de crédit n\'est pas valide. Veuillez vérifier la date et réessayez.');
 define('TEXT_CCVAL_ERROR_INVALID_NUMBER', 'Le numémero entrée pour cette carte de crédit n\'est pas valide. Veuillez vérifier le numéro et réessayez.');
 define('TEXT_CCVAL_ERROR_UNKNOWN_CARD', 'Le code à 4 chiffres que vous avez entré est : %s. Si ce code est correct, nous n\'acceptons pas ce type de carte crédit. S\'il est erroné veuillez réessayer.');
 
-define('FOOTER_TEXT_BODY', 'Copyright &copy; ' . date('Y') . ' <a href="' . tep_href_link(FILENAME_DEFAULT) . '">' . STORE_NAME . '</a><br />Powered by <a href="http://www.oscommerce.com" target="_blank">osCommerce</a><br><font color="gray">Traduction : Delaballe / Gnidhal / FoxP2 / Chrysalide - <a href="http://www.oscommerce-fr.info" target="_blank">osCommerce France</a></font>');
+define('FOOTER_TEXT_BODY', 'Copyright &copy; ' . date('Y') . ' <a href="' . tep_href_link(FILENAME_DEFAULT) . '">' . STORE_NAME . '</a><br />Propulsé par <a href="http://www.oscommerce.com" target="_blank">osCommerce</a><br /><font color="gray">Traduction : oscommerce-fr.info - <a href="http://www.oscommerce-fr.info" target="_blank">osCommerce France</a></font>');
 ?>
 

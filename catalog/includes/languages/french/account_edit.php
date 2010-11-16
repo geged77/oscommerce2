@@ -11,11 +11,11 @@
 */
 
 define('NAVBAR_TITLE_1', 'Mon compte');
-define('NAVBAR_TITLE_2', 'Editer compte');
+define('NAVBAR_TITLE_2', 'Modifier compte');
 
 define('HEADING_TITLE', 'Information de mon compte');
 
 define('MY_ACCOUNT_TITLE', 'Mon compte');
 
-define('SUCCESS_ACCOUNT_UPDATED', 'Votre compte a été mis à jour avec succès.');
+define('SUCCESS_ACCOUNT_UPDATED', 'Votre compte a été mis à jour.');
 ?>

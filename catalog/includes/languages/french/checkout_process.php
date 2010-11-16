@@ -21,7 +21,7 @@ define('EMAIL_TEXT_SHIPPING', 'Expédition : ');
 define('EMAIL_TEXT_TOTAL', 'Total :    ');
 define('EMAIL_TEXT_DELIVERY_ADDRESS', 'Adresse de livraison');
 define('EMAIL_TEXT_BILLING_ADDRESS', 'Adresse de facturation');
-define('EMAIL_TEXT_PAYMENT_METHOD', 'Méthode de paiement');
+define('EMAIL_TEXT_PAYMENT_METHOD', 'Mode de paiement');
 
 define('EMAIL_SEPARATOR', '------------------------------------------------------');
 define('TEXT_EMAIL_VIA', 'par l\'intermédiaire de');

@@ -29,8 +29,8 @@ define('NEW_ADDRESS_TITLE', 'Nouvelle entrée carnet d\'adresses');
 define('SELECTED_ADDRESS', 'Adresse choisie');
 define('SET_AS_PRIMARY', 'Sélectionner comme adresse principale.');
 
-define('SUCCESS_ADDRESS_BOOK_ENTRY_DELETED', 'L\'adresse sélectionner a été supprimée avec succès de votre carnet d\'adresses.');
-define('SUCCESS_ADDRESS_BOOK_ENTRY_UPDATED', 'Votre carnet d\'adresses a été mis à jour avec succès.');
+define('SUCCESS_ADDRESS_BOOK_ENTRY_DELETED', 'L\'adresse sélectionner a été supprimée de votre carnet d\'adresses.');
+define('SUCCESS_ADDRESS_BOOK_ENTRY_UPDATED', 'Votre carnet d\'adresses a été mis à jour.');
 
 define('WARNING_PRIMARY_ADDRESS_DELETION', 'L\'adresse principale ne peut pas être suprimée. Veuillez sélectionner une autre adresse comme adresse principale et réessayez.');
 

@@ -73,7 +73,7 @@ define('BOX_HEADING_CATALOG', 'Catalogue');
 define('BOX_CATALOG_CATEGORIES_PRODUCTS', 'Catégories/Produits');
 define('BOX_CATALOG_CATEGORIES_PRODUCTS_ATTRIBUTES', 'Attributs produits');
 define('BOX_CATALOG_MANUFACTURERS', 'Fabricants');
-define('BOX_CATALOG_REVIEWS', 'Critiques');
+define('BOX_CATALOG_REVIEWS', 'Avis des clients');
 define('BOX_CATALOG_SPECIALS', 'Promotions');
 define('BOX_CATALOG_PRODUCTS_EXPECTED', 'Produits en attente');
 
@@ -196,7 +196,7 @@ define('IMAGE_COPY', 'Copier');
 define('IMAGE_COPY_TO', 'Copier vers');
 define('IMAGE_DETAILS', 'Détails');
 define('IMAGE_DELETE', 'Supprimer');
-define('IMAGE_EDIT', 'Editer');
+define('IMAGE_EDIT', 'Modifier');
 define('IMAGE_EMAIL', 'Courrier électronique');
 define('IMAGE_EXPORT', 'Exporter');
 define('IMAGE_ICON_STATUS_GREEN', 'Actif');
@@ -257,23 +257,23 @@ define('ICON_WARNING', 'Attention');
 // constants for use in tep_prev_next_display function
 // constants for use in tep_prev_next_display function
 define('TEXT_RESULT_PAGE', 'Page %s sur %d');
-define('TEXT_DISPLAY_NUMBER_OF_BANNERS', 'Affiche <b>%d</b> à <b>%d</b> (sur <b>%d</b> bannières)');
-define('TEXT_DISPLAY_NUMBER_OF_COUNTRIES', 'Affiche <b>%d</b> à <b>%d</b> (sur <b>%d</b> pays)');
-define('TEXT_DISPLAY_NUMBER_OF_CUSTOMERS', 'Affiche <b>%d</b> à <b>%d</b> (sur <b>%d</b> clients)');
-define('TEXT_DISPLAY_NUMBER_OF_CURRENCIES', 'Affiche <b>%d</b> à <b>%d</b> (sur <b>%d</b> devises)');
-define('TEXT_DISPLAY_NUMBER_OF_LANGUAGES', 'Affiche <b>%d</b> à <b>%d</b> (sur <b>%d</b> langues)');
-define('TEXT_DISPLAY_NUMBER_OF_MANUFACTURERS', 'Affiche <b>%d</b> à <b>%d</b> (sur <b>%d</b> fabricants)');
-define('TEXT_DISPLAY_NUMBER_OF_NEWSLETTERS', 'Affiche <b>%d</b> à <b>%d</b> (sur <b>%d</b> bulletins d\'informations)');
-define('TEXT_DISPLAY_NUMBER_OF_ORDERS', 'Affiche <b>%d</b> à <b>%d</b> (sur <b>%d</b> commandes)');
-define('TEXT_DISPLAY_NUMBER_OF_ORDERS_STATUS', 'Affiche <b>%d</b> à <b>%d</b> (sur <b>%d</b> statuts commandes)');
-define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS', 'Affiche <b>%d</b> à <b>%d</b> (sur <b>%d</b> produits)');
-define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS_EXPECTED', 'Affiche <b>%d</b> à <b>%d</b> (sur <b>%d</b> produits en attente)');
-define('TEXT_DISPLAY_NUMBER_OF_REVIEWS', 'Affiche <b>%d</b> à <b>%d</b> (sur <b>%d</b> critiques produit)');
-define('TEXT_DISPLAY_NUMBER_OF_SPECIALS', 'Affiche <b>%d</b> à <b>%d</b> (sur <b>%d</b> produits en promotion)');
-define('TEXT_DISPLAY_NUMBER_OF_TAX_CLASSES', 'Affiche <b>%d</b> à <b>%d</b> (sur <b>%d</b> classes fiscales)');
-define('TEXT_DISPLAY_NUMBER_OF_TAX_ZONES', 'Affiche <b>%d</b> à <b>%d</b> (sur <b>%d</b> zones fiscales)');
-define('TEXT_DISPLAY_NUMBER_OF_TAX_RATES', 'Affiche <b>%d</b> à <b>%d</b> (sur <b>%d</b> taux fiscal)');
-define('TEXT_DISPLAY_NUMBER_OF_ZONES', 'Affiche <b>%d</b> à <b>%d</b> (sur <b>%d</b> zones)');
+define('TEXT_DISPLAY_NUMBER_OF_BANNERS', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> bannières)');
+define('TEXT_DISPLAY_NUMBER_OF_COUNTRIES', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> pays)');
+define('TEXT_DISPLAY_NUMBER_OF_CUSTOMERS', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> clients)');
+define('TEXT_DISPLAY_NUMBER_OF_CURRENCIES', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> devises)');
+define('TEXT_DISPLAY_NUMBER_OF_LANGUAGES', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> langues)');
+define('TEXT_DISPLAY_NUMBER_OF_MANUFACTURERS', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> fabricants)');
+define('TEXT_DISPLAY_NUMBER_OF_NEWSLETTERS', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> bulletins d\'informations)');
+define('TEXT_DISPLAY_NUMBER_OF_ORDERS', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> commandes)');
+define('TEXT_DISPLAY_NUMBER_OF_ORDERS_STATUS', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> statuts commandes)');
+define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> produits)');
+define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS_EXPECTED', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> produits en attente)');
+define('TEXT_DISPLAY_NUMBER_OF_REVIEWS', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> avis des clients)');
+define('TEXT_DISPLAY_NUMBER_OF_SPECIALS', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> produits en promotion)');
+define('TEXT_DISPLAY_NUMBER_OF_TAX_CLASSES', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> classes fiscales)');
+define('TEXT_DISPLAY_NUMBER_OF_TAX_ZONES', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> zones fiscales)');
+define('TEXT_DISPLAY_NUMBER_OF_TAX_RATES', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> taux fiscal)');
+define('TEXT_DISPLAY_NUMBER_OF_ZONES', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> zones)');
 
 define('PREVNEXT_BUTTON_PREV', '&lt;&lt;');
 define('PREVNEXT_BUTTON_NEXT', '&gt;&gt;');
@@ -293,6 +293,6 @@ define('ERROR_DESTINATION_DOES_NOT_EXIST', 'Erreur : le chemin cible n\'existe p
 define('ERROR_DESTINATION_NOT_WRITEABLE', 'Erreur : Impossible d\'écrire dans le répertoire cible.');
 define('ERROR_FILE_NOT_SAVED', 'Erreur : fichier transférer non sauvegardé.');
 define('ERROR_FILETYPE_NOT_ALLOWED', 'Erreur : type de fichier transféré non-permis.');
-define('SUCCESS_FILE_SAVED_SUCCESSFULLY', 'Succès : Le fichier transféré a été sauvegardé avec succès.');
+define('SUCCESS_FILE_SAVED_SUCCESSFULLY', 'Réussite : Le fichier transféré a été sauvegardé.');
 define('WARNING_NO_FILE_UPLOADED', 'Attention : fichier non transféré.');
 ?>

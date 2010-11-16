@@ -21,7 +21,7 @@ define('HEADING_ORDER_DATE', 'Date de la commande :');
 define('HEADING_ORDER_TOTAL', 'Total de la commande :');
 
 define('HEADING_DELIVERY_ADDRESS', 'Adresse de livraison');
-define('HEADING_SHIPPING_METHOD', 'Méthode d\'expédition');
+define('HEADING_SHIPPING_METHOD', 'Mode de livraison');
 
 define('HEADING_PRODUCTS', 'Produits');
 define('HEADING_TAX', 'Taxe');
@@ -29,11 +29,11 @@ define('HEADING_TOTAL', 'Total');
 
 define('HEADING_BILLING_INFORMATION', 'Information facturation');
 define('HEADING_BILLING_ADDRESS', 'Adresse de facturation');
-define('HEADING_PAYMENT_METHOD', 'Méthode de paiement');
+define('HEADING_PAYMENT_METHOD', 'Mode de paiement');
 
 define('HEADING_ORDER_HISTORY', 'Historique de la commande');
 define('HEADING_COMMENT', 'Commentaires');
-define('TEXT_NO_COMMENTS_AVAILABLE', 'Aucuns commentaires disponibles.');
+define('TEXT_NO_COMMENTS_AVAILABLE', 'Pas de commentaire.');
 
 define('TABLE_HEADING_DOWNLOAD_DATE', 'Liens expirés : ');
 define('TABLE_HEADING_DOWNLOAD_COUNT', ' Téléchargements restants');
