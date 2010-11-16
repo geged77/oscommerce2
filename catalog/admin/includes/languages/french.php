@@ -73,7 +73,7 @@ define('BOX_HEADING_CATALOG', 'Catalogue');
 define('BOX_CATALOG_CATEGORIES_PRODUCTS', 'Catégories/Produits');
 define('BOX_CATALOG_CATEGORIES_PRODUCTS_ATTRIBUTES', 'Attributs produits');
 define('BOX_CATALOG_MANUFACTURERS', 'Fabricants');
-define('BOX_CATALOG_REVIEWS', 'Critiques');
+define('BOX_CATALOG_REVIEWS', 'Avis des clients');
 define('BOX_CATALOG_SPECIALS', 'Promotions');
 define('BOX_CATALOG_PRODUCTS_EXPECTED', 'Produits en attente');
 
@@ -268,7 +268,7 @@ define('TEXT_DISPLAY_NUMBER_OF_ORDERS', 'Affiche <strong>%d</strong> à <strong>
 define('TEXT_DISPLAY_NUMBER_OF_ORDERS_STATUS', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> statuts commandes)');
 define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> produits)');
 define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS_EXPECTED', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> produits en attente)');
-define('TEXT_DISPLAY_NUMBER_OF_REVIEWS', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> critiques produit)');
+define('TEXT_DISPLAY_NUMBER_OF_REVIEWS', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> avis des clients)');
 define('TEXT_DISPLAY_NUMBER_OF_SPECIALS', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> produits en promotion)');
 define('TEXT_DISPLAY_NUMBER_OF_TAX_CLASSES', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> classes fiscales)');
 define('TEXT_DISPLAY_NUMBER_OF_TAX_ZONES', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> zones fiscales)');
