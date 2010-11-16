@@ -21,12 +21,11 @@
     exit('Server Requirement Error: register_globals is disabled in your PHP configuration. This can be enabled in your php.ini configuration file or in the .htaccess file in your catalog directory. Please use PHP 4.3+ if register_globals cannot be enabled on the server.');
   }
 
-// load server configuration parameters
-  if (file_exists('includes/local/configure.php')) { // for developers
-    include('includes/local/configure.php');
-  } else {
-    include('includes/configure.php');
-  }
+// Set the local configuration parameters - mainly for developers
+  if (file_exists('includes/local/configure.php')) include('includes/local/configure.php');
+
+// include server parameters
+  require('includes/configure.php');
 
   if (strlen(DB_SERVER) < 1) {
     if (is_dir('install')) {
@@ -34,8 +33,8 @@
     }
   }
 
-// define the project version --- obsolete, now retrieved with tep_get_version()
-  define('PROJECT_VERSION', 'osCommerce Online Merchant v2.3');
+// define the project version
+  define('PROJECT_VERSION', 'osCommerce Online Merchant v2.2 RC2a');
 
 // some code to solve compatibility issues
   require(DIR_WS_FUNCTIONS . 'compatibility.php');
@@ -57,6 +56,9 @@
 
 // include the list of project database tables
   require(DIR_WS_INCLUDES . 'database_tables.php');
+
+// customization for the design layout
+  define('BOX_WIDTH', 125); // how wide the boxes should be in pixels (default: 125)
 
 // include the database functions
   require(DIR_WS_FUNCTIONS . 'database.php');
@@ -336,12 +338,6 @@
                               }
                               tep_redirect(tep_href_link($goto, tep_get_all_get_params($parameters)));
                               break;
-      // customer removes a product from their shopping cart
-      case 'remove_product' : if (isset($HTTP_GET_VARS['products_id'])) {
-                                $cart->remove($HTTP_GET_VARS['products_id']);
-                              }
-                              tep_redirect(tep_href_link($goto, tep_get_all_get_params($parameters)));
-                              break;
       // performed by the 'buy now' button in product listings and review page
       case 'buy_now' :        if (isset($HTTP_GET_VARS['products_id'])) {
                                 if (tep_has_product_attributes($HTTP_GET_VARS['products_id'])) {
@@ -424,9 +420,6 @@
 // auto expire special products
   require(DIR_WS_FUNCTIONS . 'specials.php');
   tep_expire_specials();
-
-  require(DIR_WS_CLASSES . 'osc_template.php');
-  $oscTemplate = new oscTemplate();
 
 // calculate category path
   if (isset($HTTP_GET_VARS['cPath'])) {

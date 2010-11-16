@@ -43,13 +43,32 @@
   }
 
   if (!tep_is_writable(DIR_FS_CATALOG_IMAGES)) {
-    $messageStack->add(sprintf(ERROR_IMAGES_DIRECTORY_NOT_WRITEABLE, tep_href_link(FILENAME_SEC_DIR_PERMISSIONS)), 'error');
+    $messageStack->add(sprintf(ERROR_IMAGES_DIRECTORY_NOT_WRITEABLE, tep_href_link(FILENAME_SEC_DIR_PERMISSIONS, 'selected_box=tools')), 'error');
   }
-
-  require(DIR_WS_INCLUDES . 'template_top.php');
 ?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html <?php echo HTML_PARAMS; ?>>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
+<title><?php echo TITLE; ?></title>
+<link rel="stylesheet" type="text/css" href="includes/stylesheet.css">
+<script language="javascript" src="includes/general.js"></script>
+</head>
+<body onload="SetFocus();">
+<!-- header //-->
+<?php require(DIR_WS_INCLUDES . 'header.php'); ?>
+<!-- header_eof //-->
 
-    <table border="0" width="100%" cellspacing="0" cellpadding="2">
+<!-- body //-->
+<table border="0" width="100%" cellspacing="2" cellpadding="2">
+  <tr>
+    <td width="<?php echo BOX_WIDTH; ?>" valign="top"><table border="0" width="<?php echo BOX_WIDTH; ?>" cellspacing="1" cellpadding="1" class="columnLeft">
+<!-- left_navigation //-->
+<?php require(DIR_WS_INCLUDES . 'column_left.php'); ?>
+<!-- left_navigation_eof //-->
+    </table></td>
+<!-- body_text //-->
+    <td width="100%" valign="top"><table border="0" width="100%" cellspacing="0" cellpadding="2">
       <tr>
         <td width="100%"><table border="0" width="100%" cellspacing="0" cellpadding="0">
           <tr>
@@ -64,16 +83,13 @@
       <tr>
         <td><?php echo tep_draw_separator('pixel_trans.gif', '1', '10'); ?></td>
       </tr>
-      <tr>
-        <td><?php echo tep_draw_form('logo', FILENAME_STORE_LOGO, 'action=save', 'post', 'enctype="multipart/form-data"'); ?>
-          <table border="0" cellspacing="0" cellpadding="2">
-            <tr>
-              <td class="main" valign="top"><?php echo TEXT_LOGO_IMAGE; ?></td>
-              <td class="main"><?php echo tep_draw_file_field('store_logo'); ?></td>
-              <td class="smallText"><?php echo tep_draw_button(IMAGE_SAVE, 'disk', null, 'primary'); ?></td>
-            </tr>
-          </table>
-        </form></td>
+      <tr><?php echo tep_draw_form('logo', FILENAME_STORE_LOGO, 'action=save', 'post', 'enctype="multipart/form-data"'); ?>
+        <td><table border="0" cellspacing="0" cellpadding="2">
+          <tr>
+            <td class="main" valign="top"><?php echo TEXT_LOGO_IMAGE; ?></td>
+            <td class="main"><?php echo tep_draw_file_field('store_logo'); ?></td>
+          </tr>
+        </table></td>
       </tr>
       <tr>
         <td><?php echo tep_draw_separator('pixel_trans.gif', '1', '10'); ?></td>
@@ -87,9 +103,26 @@
       <tr>
         <td class="main"><?php echo DIR_FS_CATALOG_IMAGES . 'store_logo.png'; ?></td>
       </tr>
-    </table>
+      <tr>
+        <td><?php echo tep_draw_separator('pixel_trans.gif', '1', '10'); ?></td>
+      </tr>
+      <tr>
+        <td><table border="0" width="100%" cellspacing="0" cellpadding="2">
+          <tr>
+            <td class="main" align="right"><?php echo tep_image_submit('button_update.gif', IMAGE_UPDATE); ?></td>
+          </tr>
+        </table></td>
+      </form></tr>
+    </table></td>
+<!-- body_text_eof //-->
+  </tr>
+</table>
+<!-- body_eof //-->
 
-<?php
-  require(DIR_WS_INCLUDES . 'template_bottom.php');
-  require(DIR_WS_INCLUDES . 'application_bottom.php');
-?>
+<!-- footer //-->
+<?php require(DIR_WS_INCLUDES . 'footer.php'); ?>
+<!-- footer_eof //-->
+<br>
+</body>
+</html>
+<?php require(DIR_WS_INCLUDES . 'application_bottom.php'); ?>

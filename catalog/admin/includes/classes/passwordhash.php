@@ -3,7 +3,6 @@
 # Portable PHP password hashing framework.
 #
 # Version 0.3 / genuine.
-# Version 0.3 / osCommerce (silenced @is_readable('/dev/urandom'))
 #
 # Written by Solar Designer <solar at openwall.com> in 2004-2006 and placed in
 # the public domain.  Revised in subsequent years, still public domain.
@@ -49,7 +48,7 @@ class PasswordHash {
 	function get_random_bytes($count)
 	{
 		$output = '';
-		if (@is_readable('/dev/urandom') &&
+		if (is_readable('/dev/urandom') &&
 		    ($fh = @fopen('/dev/urandom', 'rb'))) {
 			$output = fread($fh, $count);
 			fclose($fh);

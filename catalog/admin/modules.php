@@ -5,7 +5,7 @@
   osCommerce, Open Source E-Commerce Solutions
   http://www.oscommerce.com
 
-  Copyright (c) 2010 osCommerce
+  Copyright (c) 2008 osCommerce
 
   Released under the GNU General Public License
 */
@@ -14,18 +14,35 @@
 
   $set = (isset($HTTP_GET_VARS['set']) ? $HTTP_GET_VARS['set'] : '');
 
-  $modules = $cfgModules->getAll();
-
-  if (empty($set) || !$cfgModules->exists($set)) {
-    $set = $modules[0]['code'];
+  if (tep_not_null($set)) {
+    switch ($set) {
+      case 'shipping':
+        $module_type = 'shipping';
+        $module_directory = DIR_FS_CATALOG_MODULES . 'shipping/';
+        $module_key = 'MODULE_SHIPPING_INSTALLED';
+        define('HEADING_TITLE', HEADING_TITLE_MODULES_SHIPPING);
+        break;
+      case 'ordertotal':
+        $module_type = 'order_total';
+        $module_directory = DIR_FS_CATALOG_MODULES . 'order_total/';
+        $module_key = 'MODULE_ORDER_TOTAL_INSTALLED';
+        define('HEADING_TITLE', HEADING_TITLE_MODULES_ORDER_TOTAL);
+        break;
+      case 'actionrecorder':
+        $module_type = 'action_recorder';
+        $module_directory = DIR_FS_CATALOG_MODULES . 'action_recorder/';
+        $module_key = 'MODULE_ACTION_RECORDER_INSTALLED';
+        define('HEADING_TITLE', HEADING_TITLE_MODULES_ACTION_RECORDER);
+        break;
+      case 'payment':
+      default:
+        $module_type = 'payment';
+        $module_directory = DIR_FS_CATALOG_MODULES . 'payment/';
+        $module_key = 'MODULE_PAYMENT_INSTALLED';
+        define('HEADING_TITLE', HEADING_TITLE_MODULES_PAYMENT);
+        break;
+    }
   }
-
-  $module_type = $cfgModules->get($set, 'code');
-  $module_directory = $cfgModules->get($set, 'directory');
-  $module_language_directory = $cfgModules->get($set, 'language_directory');
-  $module_key = $cfgModules->get($set, 'key');;
-  define('HEADING_TITLE', $cfgModules->get($set, 'title'));
-  $template_integration = $cfgModules->get($set, 'template_integration');
 
   $action = (isset($HTTP_GET_VARS['action']) ? $HTTP_GET_VARS['action'] : '');
 
@@ -47,68 +64,43 @@
           $module = new $class;
           if ($action == 'install') {
             $module->install();
-
-            $modules_installed = explode(';', constant($module_key));
-            $modules_installed[] = $class . $file_extension;
-            tep_db_query("update " . TABLE_CONFIGURATION . " set configuration_value = '" . implode(';', $modules_installed) . "' where configuration_key = '" . $module_key . "'");
-            tep_redirect(tep_href_link(FILENAME_MODULES, 'set=' . $set . '&module=' . $class));
           } elseif ($action == 'remove') {
             $module->remove();
-
-            $modules_installed = explode(';', constant($module_key));
-            unset($modules_installed[array_search($class . $file_extension, $modules_installed)]);
-            tep_db_query("update " . TABLE_CONFIGURATION . " set configuration_value = '" . implode(';', $modules_installed) . "' where configuration_key = '" . $module_key . "'");
-            tep_redirect(tep_href_link(FILENAME_MODULES, 'set=' . $set));
           }
         }
         tep_redirect(tep_href_link(FILENAME_MODULES, 'set=' . $set . '&module=' . $class));
         break;
     }
   }
-
-  require(DIR_WS_INCLUDES . 'template_top.php');
-
-  $modules_installed = (defined($module_key) ? explode(';', constant($module_key)) : array());
-  $new_modules_counter = 0;
-
-  $file_extension = substr($PHP_SELF, strrpos($PHP_SELF, '.'));
-  $directory_array = array();
-  if ($dir = @dir($module_directory)) {
-    while ($file = $dir->read()) {
-      if (!is_dir($module_directory . $file)) {
-        if (substr($file, strrpos($file, '.')) == $file_extension) {
-          if (isset($HTTP_GET_VARS['list']) && ($HTTP_GET_VARS['list'] = 'new')) {
-            if (!in_array($file, $modules_installed)) {
-              $directory_array[] = $file;
-            }
-          } else {
-            if (in_array($file, $modules_installed)) {
-              $directory_array[] = $file;
-            } else {
-              $new_modules_counter++;
-            }
-          }
-        }
-      }
-    }
-    sort($directory_array);
-    $dir->close();
-  }
 ?>
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html <?php echo HTML_PARAMS; ?>>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
+<title><?php echo TITLE; ?></title>
+<link rel="stylesheet" type="text/css" href="includes/stylesheet.css">
+<script language="javascript" src="includes/general.js"></script>
+</head>
+<body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFFF">
+<!-- header //-->
+<?php require(DIR_WS_INCLUDES . 'header.php'); ?>
+<!-- header_eof //-->
 
-    <table border="0" width="100%" cellspacing="0" cellpadding="2">
+<!-- body //-->
+<table border="0" width="100%" cellspacing="2" cellpadding="2">
+  <tr>
+    <td width="<?php echo BOX_WIDTH; ?>" valign="top"><table border="0" width="<?php echo BOX_WIDTH; ?>" cellspacing="1" cellpadding="1" class="columnLeft">
+<!-- left_navigation //-->
+<?php require(DIR_WS_INCLUDES . 'column_left.php'); ?>
+<!-- left_navigation_eof //-->
+    </table></td>
+<!-- body_text //-->
+    <td width="100%" valign="top"><table border="0" width="100%" cellspacing="0" cellpadding="2">
       <tr>
         <td width="100%"><table border="0" width="100%" cellspacing="0" cellpadding="0">
           <tr>
             <td class="pageHeading"><?php echo HEADING_TITLE; ?></td>
             <td class="pageHeading" align="right"><?php echo tep_draw_separator('pixel_trans.gif', HEADING_IMAGE_WIDTH, HEADING_IMAGE_HEIGHT); ?></td>
-<?php
-  if (isset($HTTP_GET_VARS['list'])) {
-    echo '            <td class="smallText" align="right">' . tep_draw_button(IMAGE_BACK, 'triangle-1-w', tep_href_link(FILENAME_MODULES, 'set=' . $set)) . '</td>';
-  } else {
-    echo '            <td class="smallText" align="right">' . tep_draw_button(IMAGE_MODULE_INSTALL . ' (' . $new_modules_counter . ')', 'plus', tep_href_link(FILENAME_MODULES, 'set=' . $set . '&list=new')) . '</td>';
-  }
-?>
           </tr>
         </table></td>
       </tr>
@@ -122,18 +114,32 @@
                 <td class="dataTableHeadingContent" align="right"><?php echo TABLE_HEADING_ACTION; ?>&nbsp;</td>
               </tr>
 <?php
+  $file_extension = substr($PHP_SELF, strrpos($PHP_SELF, '.'));
+  $directory_array = array();
+  if ($dir = @dir($module_directory)) {
+    while ($file = $dir->read()) {
+      if (!is_dir($module_directory . $file)) {
+        if (substr($file, strrpos($file, '.')) == $file_extension) {
+          $directory_array[] = $file;
+        }
+      }
+    }
+    sort($directory_array);
+    $dir->close();
+  }
+
   $installed_modules = array();
   for ($i=0, $n=sizeof($directory_array); $i<$n; $i++) {
     $file = $directory_array[$i];
 
-    include($module_language_directory . $language . '/modules/' . $module_type . '/' . $file);
+    include(DIR_FS_CATALOG_LANGUAGES . $language . '/modules/' . $module_type . '/' . $file);
     include($module_directory . $file);
 
     $class = substr($file, 0, strrpos($file, '.'));
     if (tep_class_exists($class)) {
       $module = new $class;
       if ($module->check() > 0) {
-        if (($module->sort_order > 0) && !isset($installed_modules[$module->sort_order])) {
+        if ($module->sort_order > 0) {
           $installed_modules[$module->sort_order] = $file;
         } else {
           $installed_modules[] = $file;
@@ -174,43 +180,26 @@
           echo '              <tr id="defaultSelected" class="dataTableRowSelected" onmouseover="rowOverEffect(this)" onmouseout="rowOutEffect(this)">' . "\n";
         }
       } else {
-        echo '              <tr class="dataTableRow" onmouseover="rowOverEffect(this)" onmouseout="rowOutEffect(this)" onclick="document.location.href=\'' . tep_href_link(FILENAME_MODULES, 'set=' . $set . (isset($HTTP_GET_VARS['list']) ? '&list=new' : '') . '&module=' . $class) . '\'">' . "\n";
+        echo '              <tr class="dataTableRow" onmouseover="rowOverEffect(this)" onmouseout="rowOutEffect(this)" onclick="document.location.href=\'' . tep_href_link(FILENAME_MODULES, 'set=' . $set . '&module=' . $class) . '\'">' . "\n";
       }
 ?>
                 <td class="dataTableContent"><?php echo $module->title; ?></td>
                 <td class="dataTableContent" align="right"><?php if (is_numeric($module->sort_order)) echo $module->sort_order; ?></td>
-                <td class="dataTableContent" align="right"><?php if (isset($mInfo) && is_object($mInfo) && ($class == $mInfo->code) ) { echo tep_image(DIR_WS_IMAGES . 'icon_arrow_right.gif'); } else { echo '<a href="' . tep_href_link(FILENAME_MODULES, 'set=' . $set . (isset($HTTP_GET_VARS['list']) ? '&list=new' : '') . '&module=' . $class) . '">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a>'; } ?>&nbsp;</td>
+                <td class="dataTableContent" align="right"><?php if (isset($mInfo) && is_object($mInfo) && ($class == $mInfo->code) ) { echo tep_image(DIR_WS_IMAGES . 'icon_arrow_right.gif'); } else { echo '<a href="' . tep_href_link(FILENAME_MODULES, 'set=' . $set . '&module=' . $class) . '">' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '</a>'; } ?>&nbsp;</td>
               </tr>
 <?php
     }
   }
 
-  if (!isset($HTTP_GET_VARS['list'])) {
-    ksort($installed_modules);
-    $check_query = tep_db_query("select configuration_value from " . TABLE_CONFIGURATION . " where configuration_key = '" . $module_key . "'");
-    if (tep_db_num_rows($check_query)) {
-      $check = tep_db_fetch_array($check_query);
-      if ($check['configuration_value'] != implode(';', $installed_modules)) {
-        tep_db_query("update " . TABLE_CONFIGURATION . " set configuration_value = '" . implode(';', $installed_modules) . "', last_modified = now() where configuration_key = '" . $module_key . "'");
-      }
-    } else {
-      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Installed Modules', '" . $module_key . "', '" . implode(';', $installed_modules) . "', 'This is automatically updated. No need to edit.', '6', '0', now())");
+  ksort($installed_modules);
+  $check_query = tep_db_query("select configuration_value from " . TABLE_CONFIGURATION . " where configuration_key = '" . $module_key . "'");
+  if (tep_db_num_rows($check_query)) {
+    $check = tep_db_fetch_array($check_query);
+    if ($check['configuration_value'] != implode(';', $installed_modules)) {
+      tep_db_query("update " . TABLE_CONFIGURATION . " set configuration_value = '" . implode(';', $installed_modules) . "', last_modified = now() where configuration_key = '" . $module_key . "'");
     }
-
-    if ($template_integration == true) {
-      $check_query = tep_db_query("select configuration_value from " . TABLE_CONFIGURATION . " where configuration_key = 'TEMPLATE_BLOCK_GROUPS'");
-      if (tep_db_num_rows($check_query)) {
-        $check = tep_db_fetch_array($check_query);
-        $tbgroups_array = explode(';', $check['configuration_value']);
-        if (!in_array($module_type, $tbgroups_array)) {
-          $tbgroups_array[] = $module_type;
-          sort($tbgroups_array);
-          tep_db_query("update " . TABLE_CONFIGURATION . " set configuration_value = '" . implode(';', $tbgroups_array) . "', last_modified = now() where configuration_key = 'TEMPLATE_BLOCK_GROUPS'");
-        }
-      } else {
-        tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Installed Template Block Groups', 'TEMPLATE_BLOCK_GROUPS', '" . $module_type . "', 'This is automatically updated. No need to edit.', '6', '0', now())");
-      }
-    }
+  } else {
+    tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Installed Modules', '" . $module_key . "', '" . implode(';', $installed_modules) . "', 'This is automatically updated. No need to edit.', '6', '0', now())");
   }
 ?>
               <tr>
@@ -226,36 +215,36 @@
       $keys = '';
       reset($mInfo->keys);
       while (list($key, $value) = each($mInfo->keys)) {
-        $keys .= '<strong>' . $value['title'] . '</strong><br />' . $value['description'] . '<br />';
+        $keys .= '<b>' . $value['title'] . '</b><br>' . $value['description'] . '<br>';
 
         if ($value['set_function']) {
           eval('$keys .= ' . $value['set_function'] . "'" . $value['value'] . "', '" . $key . "');");
         } else {
           $keys .= tep_draw_input_field('configuration[' . $key . ']', $value['value']);
         }
-        $keys .= '<br /><br />';
+        $keys .= '<br><br>';
       }
-      $keys = substr($keys, 0, strrpos($keys, '<br /><br />'));
+      $keys = substr($keys, 0, strrpos($keys, '<br><br>'));
 
-      $heading[] = array('text' => '<strong>' . $mInfo->title . '</strong>');
+      $heading[] = array('text' => '<b>' . $mInfo->title . '</b>');
 
       $contents = array('form' => tep_draw_form('modules', FILENAME_MODULES, 'set=' . $set . '&module=' . $HTTP_GET_VARS['module'] . '&action=save'));
       $contents[] = array('text' => $keys);
-      $contents[] = array('align' => 'center', 'text' => '<br />' . tep_draw_button(IMAGE_SAVE, 'disk', null, 'primary') . tep_draw_button(IMAGE_CANCEL, 'close', tep_href_link(FILENAME_MODULES, 'set=' . $set . '&module=' . $HTTP_GET_VARS['module'])));
+      $contents[] = array('align' => 'center', 'text' => '<br>' . tep_image_submit('button_update.gif', IMAGE_UPDATE) . ' <a href="' . tep_href_link(FILENAME_MODULES, 'set=' . $set . '&module=' . $HTTP_GET_VARS['module']) . '">' . tep_image_button('button_cancel.gif', IMAGE_CANCEL) . '</a>');
       break;
     default:
-      $heading[] = array('text' => '<strong>' . $mInfo->title . '</strong>');
+      $heading[] = array('text' => '<b>' . $mInfo->title . '</b>');
 
       if ($mInfo->status == '1') {
         $keys = '';
         reset($mInfo->keys);
         while (list(, $value) = each($mInfo->keys)) {
-          $keys .= '<strong>' . $value['title'] . '</strong><br />';
+          $keys .= '<b>' . $value['title'] . '</b><br>';
           if ($value['use_function']) {
             $use_function = $value['use_function'];
             if (preg_match('/->/', $use_function)) {
               $class_method = explode('->', $use_function);
-              if (!isset(${$class_method[0]}) || !is_object(${$class_method[0]})) {
+              if (!is_object(${$class_method[0]})) {
                 include(DIR_WS_CLASSES . $class_method[0] . '.php');
                 ${$class_method[0]} = new $class_method[0]();
               }
@@ -266,36 +255,34 @@
           } else {
             $keys .= $value['value'];
           }
-          $keys .= '<br /><br />';
+          $keys .= '<br><br>';
         }
-        $keys = substr($keys, 0, strrpos($keys, '<br /><br />'));
+        $keys = substr($keys, 0, strrpos($keys, '<br><br>'));
 
-        $contents[] = array('align' => 'center', 'text' => tep_draw_button(IMAGE_EDIT, 'document', tep_href_link(FILENAME_MODULES, 'set=' . $set . (isset($HTTP_GET_VARS['module']) ? '&module=' . $HTTP_GET_VARS['module'] : '') . '&action=edit')) . tep_draw_button(IMAGE_MODULE_REMOVE, 'minus', tep_href_link(FILENAME_MODULES, 'set=' . $set . '&module=' . $mInfo->code . '&action=remove')));
+        $contents[] = array('align' => 'center', 'text' => '<a href="' . tep_href_link(FILENAME_MODULES, 'set=' . $set . '&module=' . $mInfo->code . '&action=remove') . '">' . tep_image_button('button_module_remove.gif', IMAGE_MODULE_REMOVE) . '</a> <a href="' . tep_href_link(FILENAME_MODULES, 'set=' . $set . (isset($HTTP_GET_VARS['module']) ? '&module=' . $HTTP_GET_VARS['module'] : '') . '&action=edit') . '">' . tep_image_button('button_edit.gif', IMAGE_EDIT) . '</a>');
 
         if (isset($mInfo->signature) && (list($scode, $smodule, $sversion, $soscversion) = explode('|', $mInfo->signature))) {
-          $contents[] = array('text' => '<br />' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '&nbsp;<strong>' . TEXT_INFO_VERSION . '</strong> ' . $sversion . ' (<a href="http://sig.oscommerce.com/' . $mInfo->signature . '" target="_blank">' . TEXT_INFO_ONLINE_STATUS . '</a>)');
+          $contents[] = array('text' => '<br>' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '&nbsp;<b>' . TEXT_INFO_VERSION . '</b> ' . $sversion . ' (<a href="http://sig.oscommerce.com/' . $mInfo->signature . '" target="_blank">' . TEXT_INFO_ONLINE_STATUS . '</a>)');
         }
 
         if (isset($mInfo->api_version)) {
-          $contents[] = array('text' => tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '&nbsp;<strong>' . TEXT_INFO_API_VERSION . '</strong> ' . $mInfo->api_version);
+          $contents[] = array('text' => tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '&nbsp;<b>' . TEXT_INFO_API_VERSION . '</b> ' . $mInfo->api_version);
         }
 
-        $contents[] = array('text' => '<br />' . $mInfo->description);
-        $contents[] = array('text' => '<br />' . $keys);
-      } elseif (isset($HTTP_GET_VARS['list']) && ($HTTP_GET_VARS['list'] == 'new')) {
-        if (isset($mInfo)) {
-          $contents[] = array('align' => 'center', 'text' => tep_draw_button(IMAGE_MODULE_INSTALL, 'plus', tep_href_link(FILENAME_MODULES, 'set=' . $set . '&module=' . $mInfo->code . '&action=install')));
+        $contents[] = array('text' => '<br>' . $mInfo->description);
+        $contents[] = array('text' => '<br>' . $keys);
+      } else {
+        $contents[] = array('align' => 'center', 'text' => '<a href="' . tep_href_link(FILENAME_MODULES, 'set=' . $set . '&module=' . $mInfo->code . '&action=install') . '">' . tep_image_button('button_module_install.gif', IMAGE_MODULE_INSTALL) . '</a>');
 
-          if (isset($mInfo->signature) && (list($scode, $smodule, $sversion, $soscversion) = explode('|', $mInfo->signature))) {
-            $contents[] = array('text' => '<br />' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '&nbsp;<strong>' . TEXT_INFO_VERSION . '</strong> ' . $sversion . ' (<a href="http://sig.oscommerce.com/' . $mInfo->signature . '" target="_blank">' . TEXT_INFO_ONLINE_STATUS . '</a>)');
-          }
-
-          if (isset($mInfo->api_version)) {
-            $contents[] = array('text' => tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '&nbsp;<strong>' . TEXT_INFO_API_VERSION . '</strong> ' . $mInfo->api_version);
-          }
-
-          $contents[] = array('text' => '<br />' . $mInfo->description);
+        if (isset($mInfo->signature) && (list($scode, $smodule, $sversion, $soscversion) = explode('|', $mInfo->signature))) {
+          $contents[] = array('text' => '<br>' . tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '&nbsp;<b>' . TEXT_INFO_VERSION . '</b> ' . $sversion . ' (<a href="http://sig.oscommerce.com/' . $mInfo->signature . '" target="_blank">' . TEXT_INFO_ONLINE_STATUS . '</a>)');
         }
+
+        if (isset($mInfo->api_version)) {
+          $contents[] = array('text' => tep_image(DIR_WS_IMAGES . 'icon_info.gif', IMAGE_ICON_INFO) . '&nbsp;<b>' . TEXT_INFO_API_VERSION . '</b> ' . $mInfo->api_version);
+        }
+
+        $contents[] = array('text' => '<br>' . $mInfo->description);
       }
       break;
   }
@@ -312,9 +299,16 @@
           </tr>
         </table></td>
       </tr>
-    </table>
+    </table></td>
+<!-- body_text_eof //-->
+  </tr>
+</table>
+<!-- body_eof //-->
 
-<?php
-  require(DIR_WS_INCLUDES . 'template_bottom.php');
-  require(DIR_WS_INCLUDES . 'application_bottom.php');
-?>
+<!-- footer //-->
+<?php require(DIR_WS_INCLUDES . 'footer.php'); ?>
+<!-- footer_eof //-->
+<br>
+</body>
+</html>
+<?php require(DIR_WS_INCLUDES . 'application_bottom.php'); ?>
