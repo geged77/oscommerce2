@@ -29,11 +29,11 @@
         result.shift();
 
         if (result[0] == '1') {
-          document.getElementById('mBoxContents').innerHTML = '<p><img src="images/success.gif" align="right" hspace="5" vspace="5" border="0" />Database imported successfully.</p>';
+          document.getElementById('mBoxContents').innerHTML = '<p><img src="images/success.gif" align="right" hspace="5" vspace="5" border="0" />Base de données peuplée correctement.</p>';
 
           setTimeout("document.getElementById('installForm').submit();", 2000);
         } else {
-          document.getElementById('mBoxContents').innerHTML = '<p><img src="images/failed.gif" align="right" hspace="5" vspace="5" border="0" />There was a problem importing the database. The following error had occured:</p><p><strong>%s</strong></p><p>Please verify the connection parameters and try again.</p>'.replace('%s', result[1]);
+          document.getElementById('mBoxContents').innerHTML = '<p><img src="images/failed.gif" align="right" hspace="5" vspace="5" border="0" />Il y a eu un problème durent l\'importation de la base de données. Erreur rencontrée:</p><p><strong>%s</strong></p><p>Vérifiez les paramètres de connexion et recommencez.</p>'.replace('%s', result[1]);
         }
       }
 
@@ -70,7 +70,7 @@
 
     showDiv(document.getElementById('mBox'));
 
-    document.getElementById('mBoxContents').innerHTML = '<p><img src="images/progress.gif" align="right" hspace="5" vspace="5" border="0" />Test de connexion à la base de données..</p>';
+    document.getElementById('mBoxContents').innerHTML = '<p><img src="images/progress.gif" align="right" hspace="5" vspace="5" border="0" />Test de connexion à la base de données.</p>';
 
     dbServer = document.getElementById("DB_SERVER").value;
     dbUsername = document.getElementById("DB_SERVER_USERNAME").value;
