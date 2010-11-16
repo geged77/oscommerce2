@@ -205,7 +205,7 @@
 
     <h3>Informations de post-installation</h3>
 
-    <p>Il est <b>fortement recommandé</b> de suivre ces étapes de post-installation pour sécuriser votre boutique osCommerce Online Merchant online:</p>
+    <p>Il est <strong>fortement recommandé</strong> de suivre ces étapes de post-installation pour sécuriser votre boutique osCommerce Online Merchant online:</p>
 
     <ol>
       <li>Effacer le repertoire<?php echo $dir_fs_document_root . 'install'; ?>. </li>

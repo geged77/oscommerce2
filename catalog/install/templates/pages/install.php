@@ -52,7 +52,7 @@
 
           loadXMLDoc("rpc.php?action=dbImport&server=" + urlEncode(dbServer) + "&username=" + urlEncode(dbUsername) + "&password=" + urlEncode(dbPassword) + "&name=" + urlEncode(dbName), handleHttpResponse_DoImport);
         } else {
-          document.getElementById('mBoxContents').innerHTML = '<p><img src="images/failed.gif" align="right" hspace="5" vspace="5" border="0" />Il y a eu un problème de connexion à votre base de données. Le problème suivant est survenu :</p><p><b>%s</b></p><p>Vérifiez les paramètres de connexion et recommencez.</p>'.replace('%s', result[1]);
+          document.getElementById('mBoxContents').innerHTML = '<p><img src="images/failed.gif" align="right" hspace="5" vspace="5" border="0" />Il y a eu un problème de connexion à votre base de données. Le problème suivant est survenu :</p><p><strong>%s</strong></p><p>Vérifiez les paramètres de connexion et recommencez.</p>'.replace('%s', result[1]);
           formSubmited = false;
         }
       } else {
