@@ -19,7 +19,7 @@
 <title>osCommerce, Open Source E-Commerce Solutions</title>
 
 <meta name="robots" content="noindex,nofollow">
-
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="templates/main_page/stylesheet.css">
 
 <link rel="stylesheet" type="text/css" href="ext/niftycorners/niftyCorners.css">
