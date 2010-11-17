@@ -11,6 +11,18 @@
 */
 
 ////
+// Get the installed version number
+  function tep_get_version() {
+    static $v;
+
+    if (!isset($v)) {
+      $v = trim(implode('', file(DIR_FS_CATALOG . 'includes/version.php')));
+    }
+
+    return $v;
+  }
+
+////
 // Redirect to another page or site
   function tep_redirect($url) {
     global $logger;
@@ -212,6 +224,27 @@
     return $select_string;
   }
 
+  function tep_format_system_info_array($array) {
+
+    $output = '';
+    foreach ($array as $section => $child) {
+      $output .= '[' . $section . ']' . "\n";
+      foreach ($child as $variable => $value) {
+        if (is_array($value)) {
+          $output .= $variable . ' = ' . implode(',', $value) ."\n";
+        } else {
+          $output .= $variable . ' = ' . $value . "\n";
+        }
+      }
+
+    $output .= "\n";
+    }
+    return $output;
+
+  }
+
+
+
   function tep_options_name($options_id) {
     global $languages_id;
 
@@ -377,11 +410,11 @@
 
     if ($html) {
 // HTML Mode
-      $HR = '<hr>';
-      $hr = '<hr>';
+      $HR = '<hr />';
+      $hr = '<hr />';
       if ( ($boln == '') && ($eoln == "\n") ) { // Values not specified, use rational defaults
-        $CR = '<br>';
-        $cr = '<br>';
+        $CR = '<br />';
+        $cr = '<br />';
         $eoln = $cr;
       } else { // Use values supplied
         $CR = $eoln . $boln;
@@ -718,6 +751,18 @@
   }
 
 ////
+// Sets the status of a review
+  function tep_set_review_status($reviews_id, $status) {
+    if ($status == '1') {
+      return tep_db_query("update " . TABLE_REVIEWS . " set reviews_status = '1', last_modified = now() where reviews_id = '" . (int)$reviews_id . "'");
+    } elseif ($status == '0') {
+      return tep_db_query("update " . TABLE_REVIEWS . " set reviews_status = '0', last_modified = now() where reviews_id = '" . (int)$reviews_id . "'");
+    } else {
+      return -1;
+    }
+  }
+
+////
 // Sets the status of a product on special
   function tep_set_specials_status($specials_id, $status) {
     if ($status == '1') {
@@ -746,11 +791,11 @@
     for ($i=0, $n=sizeof($select_array); $i<$n; $i++) {
       $name = ((tep_not_null($key)) ? 'configuration[' . $key . ']' : 'configuration_value');
 
-      $string .= '<br><input type="radio" name="' . $name . '" value="' . $select_array[$i] . '"';
+      $string .= '<br /><input type="radio" name="' . $name . '" value="' . $select_array[$i] . '"';
 
-      if ($key_value == $select_array[$i]) $string .= ' CHECKED';
+      if ($key_value == $select_array[$i]) $string .= ' checked="checked"';
 
-      $string .= '> ' . $select_array[$i];
+      $string .= ' /> ' . $select_array[$i];
     }
 
     return $string;
@@ -762,9 +807,9 @@
     reset($select_array);
     while (list($key, $value) = each($select_array)) {
       if (is_int($key)) $key = $value;
-      $string .= '<br><input type="radio" name="configuration[' . $key_name . ']" value="' . $key . '"';
-      if ($key_value == $key) $string .= ' CHECKED';
-      $string .= '> ' . $value;
+      $string .= '<br /><input type="radio" name="configuration[' . $key_name . ']" value="' . $key . '"';
+      if ($key_value == $key) $string .= ' checked="checked"';
+      $string .= ' /> ' . $value;
     }
 
     return $string;
@@ -778,21 +823,47 @@
     $db_query = tep_db_query("select now() as datetime");
     $db = tep_db_fetch_array($db_query);
 
-    list($system, $host, $kernel) = preg_split('/[\s,]+/', @exec('uname -a'), 5);
+    @list($system, $host, $kernel) = preg_split('/[\s,]+/', @exec('uname -a'), 5);
 
-    return array('date' => tep_datetime_short(date('Y-m-d H:i:s')),
-                 'system' => $system,
-                 'kernel' => $kernel,
-                 'host' => $host,
-                 'ip' => gethostbyname($host),
-                 'uptime' => @exec('uptime'),
-                 'http_server' => $HTTP_SERVER_VARS['SERVER_SOFTWARE'],
-                 'php' => PHP_VERSION,
-                 'zend' => (function_exists('zend_version') ? zend_version() : ''),
-                 'db_server' => DB_SERVER,
-                 'db_ip' => gethostbyname(DB_SERVER),
-                 'db_version' => 'MySQL ' . (function_exists('mysql_get_server_info') ? mysql_get_server_info() : ''),
-                 'db_date' => tep_datetime_short($db['datetime']));
+    $data = array();
+
+    $data['oscommerce']  = array('version' => tep_get_version());
+
+    $data['system'] = array('date' => date('Y-m-d H:i:s O T'),
+                            'os' => PHP_OS,
+                            'kernel' => $kernel,
+                            'uptime' => @exec('uptime'),
+                            'http_server' => $HTTP_SERVER_VARS['SERVER_SOFTWARE']);
+
+    $data['mysql']  = array('version' => (function_exists('mysql_get_server_info') ? mysql_get_server_info() : ''),
+                            'date' => $db['datetime']);
+
+    $data['php']    = array('version' => PHP_VERSION,
+                            'zend' => zend_version(),
+                            'sapi' => PHP_SAPI,
+                            'int_size'	=> defined('PHP_INT_SIZE') ? PHP_INT_SIZE : '',
+                            'safe_mode'	=> (int) @ini_get('safe_mode'),
+                            'open_basedir' => (int) @ini_get('open_basedir'),
+                            'memory_limit' => @ini_get('memory_limit'),
+                            'error_reporting' => error_reporting(),
+                            'display_errors' => (int)@ini_get('display_errors'),
+                            'allow_url_fopen' => (int) @ini_get('allow_url_fopen'),
+                            'allow_url_include' => (int) @ini_get('allow_url_include'),
+                            'file_uploads' => (int) @ini_get('file_uploads'),
+                            'upload_max_filesize' => @ini_get('upload_max_filesize'),
+                            'post_max_size' => @ini_get('post_max_size'),
+                            'disable_functions' => @ini_get('disable_functions'),
+                            'disable_classes' => @ini_get('disable_classes'),
+                            'enable_dl'	=> (int) @ini_get('enable_dl'),
+                            'magic_quotes_gpc' => (int) @ini_get('magic_quotes_gpc'),
+                            'register_globals' => (int) @ini_get('register_globals'),
+                            'filter.default'   => @ini_get('filter.default'),
+                            'zend.ze1_compatibility_mode' => (int) @ini_get('zend.ze1_compatibility_mode'),
+                            'unicode.semantics' => (int) @ini_get('unicode.semantics'),
+                            'zend_thread_safty'	=> (int) function_exists('zend_thread_id'),
+                            'extensions' => get_loaded_extensions());
+
+    return $data;
   }
 
   function tep_generate_category_path($id, $from = 'category', $categories_array = '', $index = 0) {
@@ -831,9 +902,9 @@
       for ($j=0, $k=sizeof($calculated_category_path[$i]); $j<$k; $j++) {
         $calculated_category_path_string .= $calculated_category_path[$i][$j]['text'] . '&nbsp;&gt;&nbsp;';
       }
-      $calculated_category_path_string = substr($calculated_category_path_string, 0, -16) . '<br>';
+      $calculated_category_path_string = substr($calculated_category_path_string, 0, -16) . '<br />';
     }
-    $calculated_category_path_string = substr($calculated_category_path_string, 0, -4);
+    $calculated_category_path_string = substr($calculated_category_path_string, 0, -6);
 
     if (strlen($calculated_category_path_string) < 1) $calculated_category_path_string = TEXT_TOP;
 
@@ -847,9 +918,9 @@
       for ($j=0, $k=sizeof($calculated_category_path[$i]); $j<$k; $j++) {
         $calculated_category_path_string .= $calculated_category_path[$i][$j]['id'] . '_';
       }
-      $calculated_category_path_string = substr($calculated_category_path_string, 0, -1) . '<br>';
+      $calculated_category_path_string = substr($calculated_category_path_string, 0, -1) . '<br />';
     }
-    $calculated_category_path_string = substr($calculated_category_path_string, 0, -4);
+    $calculated_category_path_string = substr($calculated_category_path_string, 0, -6);
 
     if (strlen($calculated_category_path_string) < 1) $calculated_category_path_string = TEXT_TOP;
 
@@ -890,6 +961,22 @@
       if (file_exists(DIR_FS_CATALOG_IMAGES . $product_image['products_image'])) {
         @unlink(DIR_FS_CATALOG_IMAGES . $product_image['products_image']);
       }
+    }
+
+    $product_images_query = tep_db_query("select image from " . TABLE_PRODUCTS_IMAGES . " where products_id = '" . (int)$product_id . "'");
+    if (tep_db_num_rows($product_images_query)) {
+      while ($product_images = tep_db_fetch_array($product_images_query)) {
+        $duplicate_image_query = tep_db_query("select count(*) as total from " . TABLE_PRODUCTS_IMAGES . " where image = '" . tep_db_input($product_images['image']) . "'");
+        $duplicate_image = tep_db_fetch_array($duplicate_image_query);
+
+        if ($duplicate_image['total'] < 2) {
+          if (file_exists(DIR_FS_CATALOG_IMAGES . $product_images['image'])) {
+            @unlink(DIR_FS_CATALOG_IMAGES . $product_images['image']);
+          }
+        }
+      }
+
+      tep_db_query("delete from " . TABLE_PRODUCTS_IMAGES . " where products_id = '" . (int)$product_id . "'");
     }
 
     tep_db_query("delete from " . TABLE_SPECIALS . " where products_id = '" . (int)$product_id . "'");
