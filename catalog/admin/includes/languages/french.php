@@ -295,4 +295,12 @@ define('ERROR_FILE_NOT_SAVED', 'Erreur : fichier transférer non sauvegardé.');
 define('ERROR_FILETYPE_NOT_ALLOWED', 'Erreur : type de fichier transféré non-permis.');
 define('SUCCESS_FILE_SAVED_SUCCESSFULLY', 'Réussite : Le fichier transféré a été sauvegardé.');
 define('WARNING_NO_FILE_UPLOADED', 'Attention : fichier non transféré.');
+
+define('TEXT_TRUE_CONFIG', 'Oui');
+define('TEXT_FALSE_CONFIG', 'Non');
+define('TEXT_ASC_CONFIG', 'Croissant');
+define('TEXT_DESC_CONFIG', 'Décroissant');
+define('TEXT_DATE_EXPECTED_CONFIG', 'Par date');
+define('TEXT_PRODUCT_NAME_CONFIG', 'Par nom produit');
+
 ?>
