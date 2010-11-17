@@ -10,18 +10,18 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Version Checker');
+define('HEADING_TITLE', 'Vérificateur de version');
 
 define('TABLE_HEADING_VERSION', 'Version');
-define('TABLE_HEADING_RELEASED', 'Release Date');
+define('TABLE_HEADING_RELEASED', 'Date de réalisation');
 define('TABLE_HEADING_ACTION', 'Action');
 
-define('TEXT_RELEASE_LINK', 'View Release Annoucement');
+define('TEXT_RELEASE_LINK', 'Voir les annonces de réalisation');
 
-define('TITLE_INSTALLED_VERSION', 'Installed Version:');
+define('TITLE_INSTALLED_VERSION', 'Version installée:');
 
-define('VERSION_RUNNING_LATEST', 'You are running the latest version of osCommerce Online Merchant.');
-define('VERSION_UPGRADES_AVAILABLE', 'A new version is available for download! (osCommerce Online Merchant v%s)');
+define('VERSION_RUNNING_LATEST', 'Vous executer la dernière version d\'oscommerce.');
+define('VERSION_UPGRADES_AVAILABLE', 'Une nouvelle version est disponible en téléchargement! (osCommerce v%s)');
 
-define('ERROR_COULD_NOT_CONNECT', 'Could not connect to the osCommerce website to check for new versions.');
+define('ERROR_COULD_NOT_CONNECT', 'Impossible de se connecter au site internet d\'osCommerce pour vérifier la présence de nouvelles version.');
 ?>

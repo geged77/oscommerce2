@@ -10,12 +10,12 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Store Logo');
+define('HEADING_TITLE', 'Logo de la boutique');
 
-define('TEXT_LOGO_IMAGE', 'New Logo:');
-define('TEXT_FORMAT_AND_LOCATION', 'The store logo must be in PNG format and will be saved as:');
+define('TEXT_LOGO_IMAGE', 'Nouveau Logo:');
+define('TEXT_FORMAT_AND_LOCATION', 'Le logo doit être au format PNG et sera sauver en:');
 
-define('SUCCESS_LOGO_UPDATED', 'Success: The store logo has successfully been updated!');
+define('SUCCESS_LOGO_UPDATED', 'Réussite: le logo de la boutique a été mis à jour avec succès!');
 
-define('ERROR_IMAGES_DIRECTORY_NOT_WRITEABLE', 'Error: The images directory cannot be uploaded to. (<a href="%s">click here to review the directory permissions</a>)');
+define('ERROR_IMAGES_DIRECTORY_NOT_WRITEABLE', 'Erreur: Le répertoire des images n\'est accessible en écriture. (<a href="%s">cliquez ici pour revoir les permissions sur le répertoire</a>)');
 ?>
