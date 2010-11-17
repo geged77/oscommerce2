@@ -81,30 +81,11 @@
         break;
     }
   }
-?>
-<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html <?php echo HTML_PARAMS; ?>>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
-<title><?php echo TITLE; ?></title>
-<link rel="stylesheet" type="text/css" href="includes/stylesheet.css">
-<script language="javascript" src="includes/general.js"></script>
-</head>
-<body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFFF" onload="SetFocus();">
-<!-- header //-->
-<?php require(DIR_WS_INCLUDES . 'header.php'); ?>
-<!-- header_eof //-->
 
-<!-- body //-->
-<table border="0" width="100%" cellspacing="2" cellpadding="2">
-  <tr>
-    <td width="<?php echo BOX_WIDTH; ?>" valign="top"><table border="0" width="<?php echo BOX_WIDTH; ?>" cellspacing="1" cellpadding="1" class="columnLeft">
-<!-- left_navigation //-->
-<?php require(DIR_WS_INCLUDES . 'column_left.php'); ?>
-<!-- left_navigation_eof //-->
-    </table></td>
-<!-- body_text //-->
-    <td width="100%" valign="top"><table border="0" width="100%" cellspacing="0" cellpadding="2">
+  require(DIR_WS_INCLUDES . 'template_top.php');
+?>
+
+    <table border="0" width="100%" cellspacing="0" cellpadding="2">
       <tr>
         <td><table border="0" width="100%" cellspacing="0" cellpadding="2" height="40">
           <tr>
@@ -123,13 +104,13 @@
                 <td class="smallText" align="right">
 <?php
   echo tep_draw_form('filter', FILENAME_ACTION_RECORDER, '', 'get');
-  echo tep_draw_pull_down_menu('module', $modules_list_array, null, 'onChange="this.form.submit();"');
+  echo tep_draw_pull_down_menu('module', $modules_list_array, null, 'onchange="this.form.submit();"');
   echo tep_draw_hidden_field('search') . tep_hide_session_id() . '</form>';
 ?>
                 </td>
               </tr>
             </table></td>
-            <td class="pageHeading" align="right"><?php echo '<a href="' . tep_href_link(FILENAME_ACTION_RECORDER, 'action=expire' . (isset($HTTP_GET_VARS['module']) && in_array($HTTP_GET_VARS['module'], $modules_array) ? '&module=' . $HTTP_GET_VARS['module'] : '')) . '">' . tep_image_button('button_delete.gif', IMAGE_DELETE) . '</a>'; ?></td>
+            <td class="smallText" align="right"><?php echo tep_draw_button(IMAGE_DELETE, 'trash', tep_href_link(FILENAME_ACTION_RECORDER, 'action=expire' . (isset($HTTP_GET_VARS['module']) && in_array($HTTP_GET_VARS['module'], $modules_array) ? '&module=' . $HTTP_GET_VARS['module'] : '')), 'primary'); ?></td>
           </tr>
         </table></td>
       </tr>
@@ -205,10 +186,10 @@
   switch ($action) {
     default:
       if (isset($aInfo) && is_object($aInfo)) {
-        $heading[] = array('text' => '<b>' . $aInfo->module . '</b>');
+        $heading[] = array('text' => '<strong>' . $aInfo->module . '</strong>');
 
-        $contents[] = array('text' => TEXT_INFO_IDENTIFIER . '<br><br>' . (!empty($aInfo->identifier) ? '<a href="' . tep_href_link(FILENAME_ACTION_RECORDER, 'search=' . $aInfo->identifier) . '"><u>' . tep_output_string_protected($aInfo->identifier) . '</u></a>': '(empty)'));
-        $contents[] = array('text' => '<br>' . TEXT_INFO_DATE_ADDED . ' ' . tep_datetime_short($aInfo->date_added));
+        $contents[] = array('text' => TEXT_INFO_IDENTIFIER . '<br /><br />' . (!empty($aInfo->identifier) ? '<a href="' . tep_href_link(FILENAME_ACTION_RECORDER, 'search=' . $aInfo->identifier) . '"><u>' . tep_output_string_protected($aInfo->identifier) . '</u></a>': '(empty)'));
+        $contents[] = array('text' => '<br />' . TEXT_INFO_DATE_ADDED . ' ' . tep_datetime_short($aInfo->date_added));
       }
       break;
   }
@@ -225,16 +206,9 @@
           </tr>
         </table></td>
       </tr>
-    </table></td>
-<!-- body_text_eof //-->
-  </tr>
-</table>
-<!-- body_eof //-->
+    </table>
 
-<!-- footer //-->
-<?php require(DIR_WS_INCLUDES . 'footer.php'); ?>
-<!-- footer_eof //-->
-<br>
-</body>
-</html>
-<?php require(DIR_WS_INCLUDES . 'application_bottom.php'); ?>
+<?php
+  require(DIR_WS_INCLUDES . 'template_bottom.php');
+  require(DIR_WS_INCLUDES . 'application_bottom.php');
+?>
