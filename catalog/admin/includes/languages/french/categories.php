@@ -10,93 +10,93 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Categories / Products');
-define('HEADING_TITLE_SEARCH', 'Search:');
-define('HEADING_TITLE_GOTO', 'Go To:');
+define('HEADING_TITLE', 'Catégories / Produits');
+define('HEADING_TITLE_SEARCH', 'Rechercher :');
+define('HEADING_TITLE_GOTO', 'Aller à :');
 
 define('TABLE_HEADING_ID', 'ID');
-define('TABLE_HEADING_CATEGORIES_PRODUCTS', 'Categories / Products');
+define('TABLE_HEADING_CATEGORIES_PRODUCTS', 'Catégories / Produits');
 define('TABLE_HEADING_ACTION', 'Action');
-define('TABLE_HEADING_STATUS', 'Status');
+define('TABLE_HEADING_STATUS', 'Statut');
 
-define('TEXT_NEW_PRODUCT', 'New Product in &quot;%s&quot;');
-define('TEXT_CATEGORIES', 'Categories:');
-define('TEXT_SUBCATEGORIES', 'Subcategories:');
-define('TEXT_PRODUCTS', 'Products:');
-define('TEXT_PRODUCTS_PRICE_INFO', 'Price:');
-define('TEXT_PRODUCTS_TAX_CLASS', 'Tax Class:');
-define('TEXT_PRODUCTS_AVERAGE_RATING', 'Average Rating:');
-define('TEXT_PRODUCTS_QUANTITY_INFO', 'Quantity:');
-define('TEXT_DATE_ADDED', 'Date Added:');
-define('TEXT_DATE_AVAILABLE', 'Date Available:');
-define('TEXT_LAST_MODIFIED', 'Last Modified:');
-define('TEXT_IMAGE_NONEXISTENT', 'IMAGE DOES NOT EXIST');
-define('TEXT_NO_CHILD_CATEGORIES_OR_PRODUCTS', 'Please insert a new category or product in this level.');
-define('TEXT_PRODUCT_MORE_INFORMATION', 'For more information, please visit this products <a href="http://%s" target="blank"><u>webpage</u></a>.');
-define('TEXT_PRODUCT_DATE_ADDED', 'This product was added to our catalog on %s.');
-define('TEXT_PRODUCT_DATE_AVAILABLE', 'This product will be in stock on %s.');
+define('TEXT_NEW_PRODUCT', 'Nouveau Produit dans &quot;%s&quot;');
+define('TEXT_CATEGORIES', 'Catégories :');
+define('TEXT_SUBCATEGORIES', 'Sous-catégories :');
+define('TEXT_PRODUCTS', 'Produits :');
+define('TEXT_PRODUCTS_PRICE_INFO', 'Prix :');
+define('TEXT_PRODUCTS_TAX_CLASS', 'Classe Fiscale :');
+define('TEXT_PRODUCTS_AVERAGE_RATING', 'Ratio moyen :');
+define('TEXT_PRODUCTS_QUANTITY_INFO', 'Quantité :');
+define('TEXT_DATE_ADDED', 'Date d\'ajout :');
+define('TEXT_DATE_AVAILABLE', 'Date disponibilité :');
+define('TEXT_LAST_MODIFIED', 'Dernière modification :');
+define('TEXT_IMAGE_NONEXISTENT', 'L\'IMAGE N\'EXISTE PAS');
+define('TEXT_NO_CHILD_CATEGORIES_OR_PRODUCTS', 'Veuillez créer une nouvelle catégorie ou un produit dans ce niveau.');
+define('TEXT_PRODUCT_MORE_INFORMATION', 'Pour plus d\'information, merci de visiter cette <a href="http://%s" target="blank"><u>page web</u></a> de produits.');
+define('TEXT_PRODUCT_DATE_ADDED', 'Ce produit a été ajouté à notre catalogue le %s.');
+define('TEXT_PRODUCT_DATE_AVAILABLE', 'Ce produit sera en stock le %s.');
 
-define('TEXT_EDIT_INTRO', 'Please make any necessary changes');
-define('TEXT_EDIT_CATEGORIES_ID', 'Category ID:');
-define('TEXT_EDIT_CATEGORIES_NAME', 'Category Name:');
-define('TEXT_EDIT_CATEGORIES_IMAGE', 'Category Image:');
-define('TEXT_EDIT_SORT_ORDER', 'Sort Order:');
+define('TEXT_EDIT_INTRO', 'Merci de faire les changements nécessaires');
+define('TEXT_EDIT_CATEGORIES_ID', 'ID de la catégorie :');
+define('TEXT_EDIT_CATEGORIES_NAME', 'Nom de la catégorie :');
+define('TEXT_EDIT_CATEGORIES_IMAGE', 'Image de la catégorie :');
+define('TEXT_EDIT_SORT_ORDER', 'Ordre de tri :');
 
-define('TEXT_INFO_COPY_TO_INTRO', 'Please choose a new category you wish to copy this product to');
-define('TEXT_INFO_CURRENT_CATEGORIES', 'Current Categories:');
+define('TEXT_INFO_COPY_TO_INTRO', 'Veuillez choisir une nouvelle catégorie dans laquelle vous voulez copier ce produit');
+define('TEXT_INFO_CURRENT_CATEGORIES', 'Catégories courantes :');
 
-define('TEXT_INFO_HEADING_NEW_CATEGORY', 'New Category');
-define('TEXT_INFO_HEADING_EDIT_CATEGORY', 'Edit Category');
-define('TEXT_INFO_HEADING_DELETE_CATEGORY', 'Delete Category');
-define('TEXT_INFO_HEADING_MOVE_CATEGORY', 'Move Category');
-define('TEXT_INFO_HEADING_DELETE_PRODUCT', 'Delete Product');
-define('TEXT_INFO_HEADING_MOVE_PRODUCT', 'Move Product');
-define('TEXT_INFO_HEADING_COPY_TO', 'Copy To');
+define('TEXT_INFO_HEADING_NEW_CATEGORY', 'Nouvelle la catégorie');
+define('TEXT_INFO_HEADING_EDIT_CATEGORY', 'Editer la catégorie');
+define('TEXT_INFO_HEADING_DELETE_CATEGORY', 'Supprimer la catégorie');
+define('TEXT_INFO_HEADING_MOVE_CATEGORY', 'Déplacer la catégorie');
+define('TEXT_INFO_HEADING_DELETE_PRODUCT', 'Supprimer le produit');
+define('TEXT_INFO_HEADING_MOVE_PRODUCT', 'Déplacer le produit');
+define('TEXT_INFO_HEADING_COPY_TO', 'Copier vers');
 
-define('TEXT_DELETE_CATEGORY_INTRO', 'Are you sure you want to delete this category?');
-define('TEXT_DELETE_PRODUCT_INTRO', 'Are you sure you want to permanently delete this product?');
+define('TEXT_DELETE_CATEGORY_INTRO', 'Etes vous sûr de vouloir supprimer cette catégorie ?');
+define('TEXT_DELETE_PRODUCT_INTRO', 'Etes vous sûr de vouloir supprimer définitivement ce produit ?');
 
-define('TEXT_DELETE_WARNING_CHILDS', '<strong>WARNING:</strong> There are %s (child-)categories still linked to this category!');
-define('TEXT_DELETE_WARNING_PRODUCTS', '<strong>WARNING:</strong> There are %s products still linked to this category!');
+define('TEXT_DELETE_WARNING_CHILDS', '<b>ATTENTION :</b> Il y a %s (sous-)catégories liées à cette catégorie !');
+define('TEXT_DELETE_WARNING_PRODUCTS', '<b>ATTENTION :</b> Il y a %s produits liées à cette catégorie !');
 
-define('TEXT_MOVE_PRODUCTS_INTRO', 'Please select which category you wish <strong>%s</strong> to reside in');
-define('TEXT_MOVE_CATEGORIES_INTRO', 'Please select which category you wish <strong>%s</strong> to reside in');
-define('TEXT_MOVE', 'Move <strong>%s</strong> to:');
+define('TEXT_MOVE_PRODUCTS_INTRO', 'Veuillez sélectionner la catégorie ou vous voudriez que <b>%s</b> soit placé');
+define('TEXT_MOVE_CATEGORIES_INTRO', 'Veuillez sélectionner la catégorie ou vous voudriez que <b>%s</b> soit placé');
+define('TEXT_MOVE', 'Déplacer <b>%s</b> vers :');
 
-define('TEXT_NEW_CATEGORY_INTRO', 'Please fill out the following information for the new category');
-define('TEXT_CATEGORIES_NAME', 'Category Name:');
-define('TEXT_CATEGORIES_IMAGE', 'Category Image:');
-define('TEXT_SORT_ORDER', 'Sort Order:');
+define('TEXT_NEW_CATEGORY_INTRO', 'Veuillez compléter les informations suivantes pour la nouvelle catégorie');
+define('TEXT_CATEGORIES_NAME', 'Nom de la catégorie :');
+define('TEXT_CATEGORIES_IMAGE', 'Image de la catégorie :');
+define('TEXT_SORT_ORDER', 'Ordre de tri :');
 
-define('TEXT_PRODUCTS_STATUS', 'Products Status:');
-define('TEXT_PRODUCTS_DATE_AVAILABLE', 'Date Available:');
-define('TEXT_PRODUCT_AVAILABLE', 'In Stock');
-define('TEXT_PRODUCT_NOT_AVAILABLE', 'Out of Stock');
-define('TEXT_PRODUCTS_MANUFACTURER', 'Products Manufacturer:');
-define('TEXT_PRODUCTS_NAME', 'Products Name:');
-define('TEXT_PRODUCTS_DESCRIPTION', 'Products Description:');
-define('TEXT_PRODUCTS_QUANTITY', 'Products Quantity:');
-define('TEXT_PRODUCTS_MODEL', 'Products Model:');
-define('TEXT_PRODUCTS_IMAGE', 'Products Image:');
-define('TEXT_PRODUCTS_MAIN_IMAGE', 'Main Image');
-define('TEXT_PRODUCTS_LARGE_IMAGE', 'Large Image');
-define('TEXT_PRODUCTS_ADD_LARGE_IMAGE', 'Add Large Image');
-define('TEXT_PRODUCTS_LARGE_IMAGE_DELETE_TITLE', 'Delete Large Product Image?');
-define('TEXT_PRODUCTS_LARGE_IMAGE_CONFIRM_DELETE', 'Please confirm the removal of the large product image.');
-define('TEXT_PRODUCTS_URL', 'Products URL:');
-define('TEXT_PRODUCTS_URL_WITHOUT_HTTP', '<small>(without http://)</small>');
-define('TEXT_PRODUCTS_PRICE_NET', 'Products Price (Net):');
-define('TEXT_PRODUCTS_PRICE_GROSS', 'Products Price (Gross):');
-define('TEXT_PRODUCTS_WEIGHT', 'Products Weight:');
+define('TEXT_PRODUCTS_STATUS', 'Statut des produits :');
+define('TEXT_PRODUCTS_DATE_AVAILABLE', 'Date de disponibilité :');
+define('TEXT_PRODUCT_AVAILABLE', 'En stock');
+define('TEXT_PRODUCT_NOT_AVAILABLE', 'Hors stock');
+define('TEXT_PRODUCTS_MANUFACTURER', 'Fabricant du produit :');
+define('TEXT_PRODUCTS_NAME', 'Nom du produit :');
+define('TEXT_PRODUCTS_DESCRIPTION', 'Description du produit :');
+define('TEXT_PRODUCTS_QUANTITY', 'Quantité de produit :');
+define('TEXT_PRODUCTS_MODEL', 'Modèle du produit :');
+define('TEXT_PRODUCTS_IMAGE', 'Image du produit :');
+define('TEXT_PRODUCTS_MAIN_IMAGE', 'Image principale');
+define('TEXT_PRODUCTS_LARGE_IMAGE', 'Image large');
+define('TEXT_PRODUCTS_ADD_LARGE_IMAGE', 'Ajouter image large');
+define('TEXT_PRODUCTS_LARGE_IMAGE_DELETE_TITLE', 'Supprimer image large du produit?');
+define('TEXT_PRODUCTS_LARGE_IMAGE_CONFIRM_DELETE', 'Veuillez confirmer la suppression de l\'image large du produit.');
+define('TEXT_PRODUCTS_URL', 'URL du produit :');
+define('TEXT_PRODUCTS_URL_WITHOUT_HTTP', '<small>(sans http://)</small>');
+define('TEXT_PRODUCTS_PRICE_NET', 'Prix du produit (HT) :');
+define('TEXT_PRODUCTS_PRICE_GROSS', 'Prix du produit (TTC) :');
+define('TEXT_PRODUCTS_WEIGHT', 'Poids du produit :');
 
-define('EMPTY_CATEGORY', 'Empty Category');
+define('EMPTY_CATEGORY', 'Catégorie vide');
 
-define('TEXT_HOW_TO_COPY', 'Copy Method:');
-define('TEXT_COPY_AS_LINK', 'Link product');
-define('TEXT_COPY_AS_DUPLICATE', 'Duplicate product');
+define('TEXT_HOW_TO_COPY', 'Méthode de copie :');
+define('TEXT_COPY_AS_LINK', 'Lien produit');
+define('TEXT_COPY_AS_DUPLICATE', 'Dupliquer produit');
 
-define('ERROR_CANNOT_LINK_TO_SAME_CATEGORY', 'Error: Can not link products in the same category.');
-define('ERROR_CATALOG_IMAGE_DIRECTORY_NOT_WRITEABLE', 'Error: Catalog images directory is not writeable: ' . DIR_FS_CATALOG_IMAGES);
-define('ERROR_CATALOG_IMAGE_DIRECTORY_DOES_NOT_EXIST', 'Error: Catalog images directory does not exist: ' . DIR_FS_CATALOG_IMAGES);
-define('ERROR_CANNOT_MOVE_CATEGORY_TO_PARENT', 'Error: Category cannot be moved into child category.');
+define('ERROR_CANNOT_LINK_TO_SAME_CATEGORY', 'Erreur : Impossible de lier des produits dans la même catégorie.');
+define('ERROR_CATALOG_IMAGE_DIRECTORY_NOT_WRITEABLE', 'Erreur : Impossible d\'écrire dans le répertoire images : ' . DIR_FS_CATALOG_IMAGES);
+define('ERROR_CATALOG_IMAGE_DIRECTORY_DOES_NOT_EXIST', 'Erreur : Le répertoire d\'images n\'existe pas : ' . DIR_FS_CATALOG_IMAGES);
+define('ERROR_CANNOT_MOVE_CATEGORY_TO_PARENT', 'Erreur : La catégorie ne peut pas être déplacée dans la sous-catégorie.');
 ?>

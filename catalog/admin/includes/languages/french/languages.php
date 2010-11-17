@@ -10,23 +10,23 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Languages');
+define('HEADING_TITLE', 'Langues');
 
-define('TABLE_HEADING_LANGUAGE_NAME', 'Language');
+define('TABLE_HEADING_LANGUAGE_NAME', 'Langue');
 define('TABLE_HEADING_LANGUAGE_CODE', 'Code');
 define('TABLE_HEADING_ACTION', 'Action');
 
-define('TEXT_INFO_EDIT_INTRO', 'Please make any necessary changes');
-define('TEXT_INFO_LANGUAGE_NAME', 'Name:');
-define('TEXT_INFO_LANGUAGE_CODE', 'Code:');
-define('TEXT_INFO_LANGUAGE_IMAGE', 'Image:');
-define('TEXT_INFO_LANGUAGE_DIRECTORY', 'Directory:');
-define('TEXT_INFO_LANGUAGE_SORT_ORDER', 'Sort Order:');
-define('TEXT_INFO_INSERT_INTRO', 'Please enter the new language with its related data');
-define('TEXT_INFO_DELETE_INTRO', 'Are you sure you want to delete this language?');
-define('TEXT_INFO_HEADING_NEW_LANGUAGE', 'New Language');
-define('TEXT_INFO_HEADING_EDIT_LANGUAGE', 'Edit Language');
-define('TEXT_INFO_HEADING_DELETE_LANGUAGE', 'Delete Language');
+define('TEXT_INFO_EDIT_INTRO', 'Veuillez faire les changements nécessaires');
+define('TEXT_INFO_LANGUAGE_NAME', 'Nom :');
+define('TEXT_INFO_LANGUAGE_CODE', 'Code :');
+define('TEXT_INFO_LANGUAGE_IMAGE', 'Image :');
+define('TEXT_INFO_LANGUAGE_DIRECTORY', 'Répertoire :');
+define('TEXT_INFO_LANGUAGE_SORT_ORDER', 'Ordre de tri :');
+define('TEXT_INFO_INSERT_INTRO', 'Veuillez entrer la nouvelle langue avec ses données liées');
+define('TEXT_INFO_DELETE_INTRO', 'Etes vous sûr de vouloir supprimer cette langue ?');
+define('TEXT_INFO_HEADING_NEW_LANGUAGE', 'Nouvelle langue');
+define('TEXT_INFO_HEADING_EDIT_LANGUAGE', 'Editer la langue');
+define('TEXT_INFO_HEADING_DELETE_LANGUAGE', 'Supprimer la langue');
 
-define('ERROR_REMOVE_DEFAULT_LANGUAGE', 'Error: The default language can not be removed. Please set another language as default, and try again.');
+define('ERROR_REMOVE_DEFAULT_LANGUAGE', 'Erreur : La langue par défaut ne peut être supprimée. Merci de choisir une nouvelle langue par défaut et réessayer.');
 ?>
