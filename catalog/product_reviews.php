@@ -53,7 +53,7 @@
   <h1><?php echo $products_name; ?></h1>
 </div>
 
-<div class="contentContainer">
+<div class="contentText">
 
 <?php
   if (tep_not_null($product_info['products_image'])) {
@@ -114,7 +114,7 @@
   if (($reviews_split->number_of_rows > 0) && ((PREV_NEXT_BAR_LOCATION == '2') || (PREV_NEXT_BAR_LOCATION == '3'))) {
 ?>
 
-  <div class="contentText">
+  <div class="contentText" style="clear: both;">
     <p style="float: right;"><?php echo TEXT_RESULT_PAGE . ' ' . $reviews_split->display_links(MAX_DISPLAY_PAGE_LINKS, tep_get_all_get_params(array('page', 'info'))); ?></p>
 
     <p><?php echo $reviews_split->display_count(TEXT_DISPLAY_NUMBER_OF_REVIEWS); ?></p>
