@@ -26,7 +26,7 @@
       <li>Serveur de base de données</li>
       <li>Serveur Web</li>
       <li style="font-weight: bold;">Paramètres de la boutique</li>
-      <li>Fini!</li>
+      <li>Terminé!</li>
     </ol>
   </div>
 
@@ -41,7 +41,7 @@
     <h3>Etape 3: Paramètres de la boutique</h3>
 
     <div class="infoPaneContents">
-<p>Vous pouvez definir ici le nom de votre Boutique et l'Email de contact du propriétaire.</p>
+<p>Vous devez definir ici le nom de votre Boutique et l'Email de contact du propriétaire.</p>
       <p>Egalement, le Nom d'utilisateur et le Mot de passe utilisés pour accéder à l'Administration protégée de votre boutique.</p>
     </div>
   </div>

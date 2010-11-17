@@ -42,7 +42,7 @@
       <li>Serveur de base de données</li>
       <li>Serveur Web</li>
       <li>Paramètres de la boutique</li>
-      <li style="font-weight: bold;">Fini!</li>
+      <li style="font-weight: bold;">Terminé!</li>
     </ol>
   </div>
 
@@ -64,7 +64,7 @@
   </div>
 
   <div class="contentPane">
-    <h2>Fini!</h2>
+    <h2>Terminé!</h2>
 
 <?php
   $dir_fs_document_root = $HTTP_POST_VARS['DIR_FS_DOCUMENT_ROOT'];

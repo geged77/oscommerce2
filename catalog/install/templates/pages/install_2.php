@@ -29,7 +29,7 @@
       <li>Serveur de base de données</li>
       <li style="font-weight: bold;">Serveur Web</li>
       <li>Paramètres de la boutique</li>
-      <li>Fini!</li>
+      <li>Terminé!</li>
     </ol>
   </div>
 
