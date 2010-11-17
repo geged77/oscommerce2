@@ -28,7 +28,7 @@ class mc360 {
     function validate_cfg(){
         $this->valid_cfg = false;
         if (empty($this->apikey)){
-            $this->complain('You have not entered your API key. Please read the installation instructions.');
+            $this->complain('Vous n\'avez pas saisi votre clé API. Consultez les instructions d\'installation.');
             return;
         }
         
@@ -37,7 +37,7 @@ class mc360 {
             $api = new MCAPI('notused','notused');
             $res = $api->ping();
             if ($api->errorMessage!=''){
-                $this->complain('Server said: "'.$api->errorMessage.'". Your API key is likely invalid. Please read the installation instructions.');
+                $this->complain('Le serveur dit: "'.$api->errorMessage.'". Votre clé API semble invalide. Consultez les instructions d\'installation.');
                 return;
             } else {
                 $this->key_valid = true;
@@ -51,7 +51,7 @@ class mc360 {
         }
         
         if (empty($this->store_id)){
-            $this->complain('Your Store ID has not been set. This is not good. Contact support.');
+            $this->complain('Votre ID de site n\'a pas été définie. Ce n\'est pas normal. Contactez le support.');
         } else {
             $this->valid_cfg = true;
         }
@@ -176,7 +176,7 @@ class mc360 {
         $res = $api->campaignEcommAddOrder($mcorder);
         if ($api->errorMessage!=''){
             if ($this->debug) {
-              $debug_email .= 'Error:' . "\n" .
+              $debug_email .= 'Erreur:' . "\n" .
                                $api->errorMessage . "\n";
             }
         } else {

@@ -264,7 +264,7 @@
               $keys .= tep_call_function($use_function, $value['value']);
             }
           } else {
-            $keys .= $value['value'];
+            $keys .= tep_localise_select($value['value']);
           }
           $keys .= '<br /><br />';
         }
