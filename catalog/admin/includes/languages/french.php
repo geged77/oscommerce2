@@ -302,5 +302,7 @@ define('TEXT_ASC_CONFIG', 'Croissant');
 define('TEXT_DESC_CONFIG', 'Décroissant');
 define('TEXT_DATE_EXPECTED_CONFIG', 'Par date');
 define('TEXT_PRODUCT_NAME_CONFIG', 'Par nom produit');
+define('TEXT_LEFT_COLUMN_CONFIG', 'Colonne de gauche');
+define('TEXT_RIGHT_COLUMN_CONFIG', 'Colonne de droite');
 
 ?>
