@@ -32,7 +32,7 @@ define('TEXT_INFO_CURRENCY_EXAMPLE', 'Exemple de sortie :');
 define('TEXT_INFO_INSERT_INTRO', 'Merci de rentrer la nouvelle devise avec ces donées liées');
 define('TEXT_INFO_DELETE_INTRO', 'Etes vous sur de vouloir supprimer cette devise ?');
 define('TEXT_INFO_HEADING_NEW_CURRENCY', 'Nouvelle devise');
-define('TEXT_INFO_HEADING_EDIT_CURRENCY', 'Editer devise');
+define('TEXT_INFO_HEADING_EDIT_CURRENCY', 'Modifier devise');
 define('TEXT_INFO_HEADING_DELETE_CURRENCY', 'Supprimer devise');
 define('TEXT_INFO_SET_AS_DEFAULT', TEXT_SET_DEFAULT . ' (Requiert une mise à jour manuelle de la valeur de la devise)');
 define('TEXT_INFO_CURRENCY_UPDATED', 'Le taux de change pour %s (%s) a été mis à jour avec succès par l\'intermédiaire de %s.');

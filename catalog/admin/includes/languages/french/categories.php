@@ -46,15 +46,15 @@ define('TEXT_INFO_COPY_TO_INTRO', 'Veuillez choisir une nouvelle catégorie dans
 define('TEXT_INFO_CURRENT_CATEGORIES', 'Catégories courantes :');
 
 define('TEXT_INFO_HEADING_NEW_CATEGORY', 'Nouvelle la catégorie');
-define('TEXT_INFO_HEADING_EDIT_CATEGORY', 'Editer la catégorie');
+define('TEXT_INFO_HEADING_EDIT_CATEGORY', 'Modifier la catégorie');
 define('TEXT_INFO_HEADING_DELETE_CATEGORY', 'Supprimer la catégorie');
 define('TEXT_INFO_HEADING_MOVE_CATEGORY', 'Déplacer la catégorie');
 define('TEXT_INFO_HEADING_DELETE_PRODUCT', 'Supprimer le produit');
 define('TEXT_INFO_HEADING_MOVE_PRODUCT', 'Déplacer le produit');
 define('TEXT_INFO_HEADING_COPY_TO', 'Copier vers');
 
-define('TEXT_DELETE_CATEGORY_INTRO', 'Etes vous sûr de vouloir supprimer cette catégorie ?');
-define('TEXT_DELETE_PRODUCT_INTRO', 'Etes vous sûr de vouloir supprimer définitivement ce produit ?');
+define('TEXT_DELETE_CATEGORY_INTRO', 'Confirmez la suppression de cette catégorie');
+define('TEXT_DELETE_PRODUCT_INTRO', 'Confirmez la suppression de définitivement ce produit');
 
 define('TEXT_DELETE_WARNING_CHILDS', '<b>ATTENTION :</b> Il y a %s (sous-)catégories liées à cette catégorie !');
 define('TEXT_DELETE_WARNING_PRODUCTS', '<b>ATTENTION :</b> Il y a %s produits liées à cette catégorie !');

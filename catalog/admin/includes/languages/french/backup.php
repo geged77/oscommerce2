@@ -32,7 +32,7 @@ define('TEXT_INFO_USE_ZIP', 'Utiliser ZIP');
 define('TEXT_INFO_USE_NO_COMPRESSION', 'Pas de compression (Pur SQL)');
 define('TEXT_INFO_DOWNLOAD_ONLY', 'Télécharger seulement (ne pas le stocker côté serveur)');
 define('TEXT_INFO_BEST_THROUGH_HTTPS', 'Le meilleur serait le cas d\'une connexion HTTPS');
-define('TEXT_DELETE_INTRO', 'Etes vous sûr de vouloir supprimer cette sauvegarde ?');
+define('TEXT_DELETE_INTRO', 'Confirmez la suppression de cette sauvegarde');
 define('TEXT_NO_EXTENSION', 'Aucune');
 define('TEXT_BACKUP_DIRECTORY', 'Répertoire de sauvegarde :');
 define('TEXT_LAST_RESTORATION', 'Dernière restauration :');

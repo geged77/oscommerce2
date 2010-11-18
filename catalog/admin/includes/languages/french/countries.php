@@ -24,6 +24,6 @@ define('TEXT_INFO_ADDRESS_FORMAT', 'Address Format:');
 define('TEXT_INFO_INSERT_INTRO', 'Veuillez entrer le nouveau pays avec ses données');
 define('TEXT_INFO_DELETE_INTRO', 'Etes-vous sûr de vouloir supprimer ce pays?');
 define('TEXT_INFO_HEADING_NEW_COUNTRY', 'Nouveau pays');
-define('TEXT_INFO_HEADING_EDIT_COUNTRY', 'Editer le pays');
+define('TEXT_INFO_HEADING_EDIT_COUNTRY', 'Modifier le pays');
 define('TEXT_INFO_HEADING_DELETE_COUNTRY', 'Effacer le pays');
 ?>

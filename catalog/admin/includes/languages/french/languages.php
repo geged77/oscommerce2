@@ -23,9 +23,9 @@ define('TEXT_INFO_LANGUAGE_IMAGE', 'Image :');
 define('TEXT_INFO_LANGUAGE_DIRECTORY', 'Répertoire :');
 define('TEXT_INFO_LANGUAGE_SORT_ORDER', 'Ordre de tri :');
 define('TEXT_INFO_INSERT_INTRO', 'Veuillez entrer la nouvelle langue avec ses données liées');
-define('TEXT_INFO_DELETE_INTRO', 'Etes vous sûr de vouloir supprimer cette langue ?');
+define('TEXT_INFO_DELETE_INTRO', 'Confirmez la suppression de cette langue');
 define('TEXT_INFO_HEADING_NEW_LANGUAGE', 'Nouvelle langue');
-define('TEXT_INFO_HEADING_EDIT_LANGUAGE', 'Editer la langue');
+define('TEXT_INFO_HEADING_EDIT_LANGUAGE', 'Modifier la langue');
 define('TEXT_INFO_HEADING_DELETE_LANGUAGE', 'Supprimer la langue');
 
 define('ERROR_REMOVE_DEFAULT_LANGUAGE', 'Erreur : La langue par défaut ne peut être supprimée. Merci de choisir une nouvelle langue par défaut et réessayer.');

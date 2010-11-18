@@ -101,7 +101,7 @@ define('BOX_HEADING_TOOLS', 'Tools');
 define('BOX_TOOLS_ACTION_RECORDER', 'Enregistreur d\'actions');
 define('BOX_TOOLS_BACKUP', 'Sauvegarde de base de données');
 define('BOX_TOOLS_BANNER_MANAGER', 'Gestionnaire de bannières');
-define('BOX_TOOLS_CACHE', 'Contr&ocirc;le du cache');
+define('BOX_TOOLS_CACHE', 'Contrôle du cache');
 define('BOX_TOOLS_DEFINE_LANGUAGE', 'Définissez langues');
 define('BOX_TOOLS_MAIL', 'Envoyez un courrier électronique');
 define('BOX_TOOLS_NEWSLETTER_MANAGER', 'Gestionnaire de bulletin d\'information');
