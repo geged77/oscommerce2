@@ -12,7 +12,7 @@
 
 define('HEADING_TITLE', 'Les meilleurs clients');
 
-define('TABLE_HEADING_NUMBER', 'No.');
+define('TABLE_HEADING_NUMBER', 'N°');
 define('TABLE_HEADING_CUSTOMERS', 'Clients');
-define('TABLE_HEADING_TOTAL_PURCHASED', 'Total acheté');
+define('TABLE_HEADING_TOTAL_PURCHASED', 'Total achats');
 ?>

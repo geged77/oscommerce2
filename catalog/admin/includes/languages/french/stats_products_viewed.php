@@ -12,7 +12,7 @@
 
 define('HEADING_TITLE', 'Les produits les plus consultés');
 
-define('TABLE_HEADING_NUMBER', 'No.');
+define('TABLE_HEADING_NUMBER', 'N°');
 define('TABLE_HEADING_PRODUCTS', 'Produits');
 define('TABLE_HEADING_VIEWED', 'Vu');
 ?>

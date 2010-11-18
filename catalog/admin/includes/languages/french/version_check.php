@@ -13,15 +13,15 @@
 define('HEADING_TITLE', 'Vérificateur de version');
 
 define('TABLE_HEADING_VERSION', 'Version');
-define('TABLE_HEADING_RELEASED', 'Date de réalisation');
+define('TABLE_HEADING_RELEASED', 'Date de mise à jour');
 define('TABLE_HEADING_ACTION', 'Action');
 
-define('TEXT_RELEASE_LINK', 'Voir les annonces de réalisation');
+define('TEXT_RELEASE_LINK', 'Voir les annonces de mise à jour');
 
 define('TITLE_INSTALLED_VERSION', 'Version installée:');
 
-define('VERSION_RUNNING_LATEST', 'Vous executer la dernière version d\'oscommerce.');
-define('VERSION_UPGRADES_AVAILABLE', 'Une nouvelle version est disponible en téléchargement! (osCommerce v%s)');
+define('VERSION_RUNNING_LATEST', 'Vous utilisez la dernière version d\'oscommerce.');
+define('VERSION_UPGRADES_AVAILABLE', 'Une nouvelle version est disponible en téléchargement (osCommerce v%s)');
 
-define('ERROR_COULD_NOT_CONNECT', 'Impossible de se connecter au site internet d\'osCommerce pour vérifier la présence de nouvelles version.');
+define('ERROR_COULD_NOT_CONNECT', 'Impossible de se connecter au site osCommerce pour vérifier la présence de nouvelles versions.');
 ?>

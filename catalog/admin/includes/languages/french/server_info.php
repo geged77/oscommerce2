@@ -10,23 +10,23 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Server Information');
+define('HEADING_TITLE', 'Informations serveur');
 
-define('TITLE_SERVER_HOST', 'Server Host:');
-define('TITLE_SERVER_OS', 'Server OS:');
-define('TITLE_SERVER_DATE', 'Server Date:');
-define('TITLE_SERVER_UP_TIME', 'Server Up Time:');
-define('TITLE_HTTP_SERVER', 'HTTP Server:');
-define('TITLE_PHP_VERSION', 'PHP Version:');
+define('TITLE_SERVER_HOST', 'Serveur:');
+define('TITLE_SERVER_OS', 'Système d\'exploitation:');
+define('TITLE_SERVER_DATE', 'Date serveur:');
+define('TITLE_SERVER_UP_TIME', 'Heure serveur:');
+define('TITLE_HTTP_SERVER', 'Serveur HTTP:');
+define('TITLE_PHP_VERSION', 'Version PHP:');
 define('TITLE_ZEND_VERSION', 'Zend:');
-define('TITLE_DATABASE_HOST', 'Database Host:');
-define('TITLE_DATABASE', 'Database:');
-define('TITLE_DATABASE_DATE', 'Database Date:');
+define('TITLE_DATABASE_HOST', 'Serveur BDD:');
+define('TITLE_DATABASE', 'Base de données:');
+define('TITLE_DATABASE_DATE', 'Date BDD:');
 
-define('TEXT_EXPORT_INTRO', 'The following information can be submitted to osCommerce by clicking on the Send button. You can also save the information to a file by clicking Save. This information is totally anonymous and cannot be used to identify an individual system. It will be used for support and development purposes only.');
-define('TEXT_EXPORT_INFO', 'Export Server Information');
+define('TEXT_EXPORT_INTRO', 'Les informations suivantes peuvent être envoyées à osCommerce en cliquant sur le bouton Envoyer. Vous pouvez aussi les enregistrer dans un fichier en cliquant sur Sauver. Ces informations sont totalement anonymes et ne permettent pas d\'identifier un système en particulier. Elles seront utilisées uniquement pour le support et le développement de nouvelles options.');
+define('TEXT_EXPORT_INFO', 'Exporter les informations serveur');
 
-define('SUCCESS_INFO_SUBMIT', 'Your information has been submitted sucessfully.');
-define('ERROR_INFO_SUBMIT', 'Could not connect to the osCommerce website to submit your configuration. Please try again later');
+define('SUCCESS_INFO_SUBMIT', 'Vos informations ont été correctement envoyées.');
+define('ERROR_INFO_SUBMIT', 'Connexion impossible au site osCommerce pour l\'envpoi de ces informations. Ré-essayez plus tard');
 
 ?>

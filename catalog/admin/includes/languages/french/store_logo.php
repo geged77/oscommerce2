@@ -15,7 +15,7 @@ define('HEADING_TITLE', 'Logo de la boutique');
 define('TEXT_LOGO_IMAGE', 'Nouveau Logo:');
 define('TEXT_FORMAT_AND_LOCATION', 'Le logo doit être au format PNG et sera sauver en:');
 
-define('SUCCESS_LOGO_UPDATED', 'Réussite: le logo de la boutique a été mis à jour avec succès!');
+define('SUCCESS_LOGO_UPDATED', 'Réussite: le logo de la boutique a été mis à jour');
 
-define('ERROR_IMAGES_DIRECTORY_NOT_WRITEABLE', 'Erreur: Le répertoire des images n\'est accessible en écriture. (<a href="%s">cliquez ici pour revoir les permissions sur le répertoire</a>)');
+define('ERROR_IMAGES_DIRECTORY_NOT_WRITEABLE', 'Erreur: Le répertoire des images est en lecture seule. (<a href="%s">cliquez ici pour revoir les permissions sur le répertoire</a>)');
 ?>

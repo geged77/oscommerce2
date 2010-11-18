@@ -10,11 +10,11 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Security Directory Permissions');
+define('HEADING_TITLE', 'Sécurité des Dossiers');
 
-define('TABLE_HEADING_DIRECTORIES', 'Directories');
-define('TABLE_HEADING_WRITABLE', 'Writable');
-define('TABLE_HEADING_RECOMMENDED', 'Recommended');
+define('TABLE_HEADING_DIRECTORIES', 'Dossier');
+define('TABLE_HEADING_WRITABLE', 'Ecriture autorisée');
+define('TABLE_HEADING_RECOMMENDED', 'Recommandé');
 
-define('TEXT_DIRECTORY', 'Directory:');
+define('TEXT_DIRECTORY', 'Dossier:');
 ?>

@@ -10,38 +10,38 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Reviews');
+define('HEADING_TITLE', 'Avis des clients');
 
-define('TABLE_HEADING_PRODUCTS', 'Products');
-define('TABLE_HEADING_RATING', 'Rating');
-define('TABLE_HEADING_DATE_ADDED', 'Date Added');
+define('TABLE_HEADING_PRODUCTS', 'Produits');
+define('TABLE_HEADING_RATING', 'Note');
+define('TABLE_HEADING_DATE_ADDED', 'Date d\'ajout');
 define('TABLE_HEADING_ACTION', 'Action');
-define('TABLE_HEADING_STATUS', 'Status');
+define('TABLE_HEADING_STATUS', 'Statut');
 
-define('ENTRY_PRODUCT', 'Product:');
-define('ENTRY_FROM', 'From:');
+define('ENTRY_PRODUCT', 'Produit:');
+define('ENTRY_FROM', 'De:');
 define('ENTRY_DATE', 'Date:');
-define('ENTRY_REVIEW', 'Review:');
-define('ENTRY_REVIEW_TEXT', '<small><font color="#ff0000"><strong>NOTE:</strong></font></small>&nbsp;HTML is not translated!&nbsp;');
-define('ENTRY_RATING', 'Rating:');
+define('ENTRY_REVIEW', 'Avis:');
+define('ENTRY_REVIEW_TEXT', '<small><font color="#ff0000"><strong>NB:</strong></font></small>&nbsp;HTML n\'est pas interprété!&nbsp;');
+define('ENTRY_RATING', 'Note:');
 
-define('TEXT_INFO_DELETE_REVIEW_INTRO', 'Are you sure you want to delete this review?');
+define('TEXT_INFO_DELETE_REVIEW_INTRO', 'Confirmez la suppression de cet avis client');
 
-define('TEXT_INFO_DATE_ADDED', 'Date Added:');
-define('TEXT_INFO_LAST_MODIFIED', 'Last Modified:');
-define('TEXT_INFO_IMAGE_NONEXISTENT', 'IMAGE DOES NOT EXIST');
-define('TEXT_INFO_REVIEW_AUTHOR', 'Author:');
-define('TEXT_INFO_REVIEW_RATING', 'Rating:');
-define('TEXT_INFO_REVIEW_READ', 'Read:');
-define('TEXT_INFO_REVIEW_SIZE', 'Size:');
-define('TEXT_INFO_REVIEW_STATUS', 'Review Status:');
-define('TEXT_INFO_PRODUCTS_AVERAGE_RATING', 'Average Rating:');
+define('TEXT_INFO_DATE_ADDED', 'Date d\ajout:');
+define('TEXT_INFO_LAST_MODIFIED', 'Dernière modification:');
+define('TEXT_INFO_IMAGE_NONEXISTENT', 'IMAGE INTROUVABLE');
+define('TEXT_INFO_REVIEW_AUTHOR', 'Auteur:');
+define('TEXT_INFO_REVIEW_RATING', 'Note:');
+define('TEXT_INFO_REVIEW_READ', 'Lu:');
+define('TEXT_INFO_REVIEW_SIZE', 'Taille:');
+define('TEXT_INFO_REVIEW_STATUS', 'Statut de l\'avis:');
+define('TEXT_INFO_PRODUCTS_AVERAGE_RATING', 'Note moyenne:');
 
-define('TEXT_REVIEW_PUBLISHED', 'Published');
-define('TEXT_REVIEW_NOT_PUBLISHED', 'Not Published');
+define('TEXT_REVIEW_PUBLISHED', 'Publié');
+define('TEXT_REVIEW_NOT_PUBLISHED', 'Non publié');
 
-define('TEXT_OF_5_STARS', '%s of 5 Stars!');
-define('TEXT_GOOD', '<small><font color="#ff0000"><strong>GOOD</strong></font></small>');
-define('TEXT_BAD', '<small><font color="#ff0000"><strong>BAD</strong></font></small>');
-define('TEXT_INFO_HEADING_DELETE_REVIEW', 'Delete Review');
+define('TEXT_OF_5_STARS', '%s sur 5 étoiles!');
+define('TEXT_GOOD', '<small><font color="#ff0000"><strong>BON</strong></font></small>');
+define('TEXT_BAD', '<small><font color="#ff0000"><strong>Mauvais</strong></font></small>');
+define('TEXT_INFO_HEADING_DELETE_REVIEW', 'Supprimer Avis');
 ?>

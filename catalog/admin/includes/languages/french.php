@@ -105,7 +105,7 @@ define('BOX_TOOLS_CACHE', 'Contrôle du cache');
 define('BOX_TOOLS_DEFINE_LANGUAGE', 'Définissez langues');
 define('BOX_TOOLS_MAIL', 'Envoyez un courrier électronique');
 define('BOX_TOOLS_NEWSLETTER_MANAGER', 'Gestionnaire de bulletin d\'information');
-define('BOX_TOOLS_SEC_DIR_PERMISSIONS', 'Security Directory Permissions');
+define('BOX_TOOLS_SEC_DIR_PERMISSIONS', 'Sécurité des répertoires');
 define('BOX_TOOLS_SERVER_INFO', 'Renseignements sur serveur');
 define('BOX_TOOLS_VERSION_CHECK', 'Vérificateur de version');
 define('BOX_TOOLS_WHOS_ONLINE', 'Qui est en ligne');
@@ -132,10 +132,10 @@ define('JS_PRODUCTS_IMAGE', '* Le nouveau produit necessite une image\n');
 
 define('JS_SPECIALS_PRODUCTS_PRICE', '* Un nouveau prix pour ce produit doit être fixé\n');
 
-define('JS_GENDER', '* La valeur de \'Genre\' doit être choisie.\n');
+define('JS_GENDER', '* La valeur de \'Civilité\' doit être choisie.\n');
 define('JS_FIRST_NAME', '* L\'entrée \'Prénom\' doit avoir au moins ' . ENTRY_FIRST_NAME_MIN_LENGTH . ' caractères.\n');
 define('JS_LAST_NAME', '* L\'entrée \'Nom\' doit avoir au moins ' . ENTRY_LAST_NAME_MIN_LENGTH . ' caractères.\n');
-define('JS_DOB', '* L\'entrée \'Date de naissance\' doit avoir la forme: xx/xx/xxxx (10/09/1975).\n');
+define('JS_DOB', '* L\'entrée \'Date de naissance\' doit avoir la forme: xx/xx/xxxx (21/05/1975).\n');
 define('JS_EMAIL_ADDRESS', '* L\'entrée \'Adresse électronique\' doit avoir au moins ' . ENTRY_EMAIL_ADDRESS_MIN_LENGTH . ' caractères.\n');
 define('JS_ADDRESS', '* L\'entrée \'Adresse\' doit avoir au moins ' . ENTRY_STREET_ADDRESS_MIN_LENGTH . ' caractères.\n');
 define('JS_POST_CODE', '* L\'entrée \'Code postal\' doit avoir au moins ' . ENTRY_POSTCODE_MIN_LENGTH . ' caractères.\n');
@@ -155,7 +155,7 @@ define('CATEGORY_CONTACT', 'Contact');
 define('CATEGORY_COMPANY', 'Société');
 define('CATEGORY_OPTIONS', 'Options');
 
-define('ENTRY_GENDER', 'Genre :');
+define('ENTRY_GENDER', 'Civilité :');
 define('ENTRY_GENDER_ERROR', '&nbsp;<span class="errorText">requis</span>');
 define('ENTRY_FIRST_NAME', 'Prénom :');
 define('ENTRY_FIRST_NAME_ERROR', '&nbsp;<span class="errorText">min. ' . ENTRY_FIRST_NAME_MIN_LENGTH . ' caract.</span>');
@@ -206,7 +206,7 @@ define('IMAGE_ICON_STATUS_RED_LIGHT', 'Désactiver');
 define('IMAGE_ICON_INFO', 'Info');
 define('IMAGE_INSERT', 'Insérer');
 define('IMAGE_LOCK', 'Verouilller');
-define('IMAGE_MODULE_INSTALL', 'Installez le module');
+define('IMAGE_MODULE_INSTALL', 'Installer le module');
 define('IMAGE_MODULE_REMOVE', 'Supprimer le module');
 define('IMAGE_MOVE', 'Déplacer');
 define('IMAGE_NEW_BANNER', 'Nouvelle bannière');
@@ -272,7 +272,7 @@ define('TEXT_DISPLAY_NUMBER_OF_REVIEWS', 'Affiche <strong>%d</strong> à <strong
 define('TEXT_DISPLAY_NUMBER_OF_SPECIALS', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> produits en promotion)');
 define('TEXT_DISPLAY_NUMBER_OF_TAX_CLASSES', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> classes fiscales)');
 define('TEXT_DISPLAY_NUMBER_OF_TAX_ZONES', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> zones fiscales)');
-define('TEXT_DISPLAY_NUMBER_OF_TAX_RATES', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> taux fiscal)');
+define('TEXT_DISPLAY_NUMBER_OF_TAX_RATES', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> taux de TVA)');
 define('TEXT_DISPLAY_NUMBER_OF_ZONES', 'Affiche <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> zones)');
 
 define('PREVNEXT_BUTTON_PREV', '&lt;&lt;');
@@ -282,8 +282,8 @@ define('TEXT_DEFAULT', 'défaut');
 define('TEXT_SET_DEFAULT', 'mettre par défaut');
 define('TEXT_FIELD_REQUIRED', '&nbsp;<span class="fieldRequired">* Requis</span>');
 
-define('TEXT_CACHE_CATEGORIES', 'Boîte catégories');
-define('TEXT_CACHE_MANUFACTURERS', 'Boîte fabricants');
+define('TEXT_CACHE_CATEGORIES', 'Bloc catégories');
+define('TEXT_CACHE_MANUFACTURERS', 'Bloc fabricants');
 define('TEXT_CACHE_ALSO_PURCHASED', 'Module d\'achat supplémentaire');
 
 define('TEXT_NONE', '--aucun--');

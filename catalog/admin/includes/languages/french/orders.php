@@ -10,70 +10,70 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Orders');
-define('HEADING_TITLE_SEARCH', 'Order ID:');
-define('HEADING_TITLE_STATUS', 'Status:');
+define('HEADING_TITLE', 'Commandes');
+define('HEADING_TITLE_SEARCH', 'ID de Commande:');
+define('HEADING_TITLE_STATUS', 'Statut:');
 
-define('TABLE_HEADING_COMMENTS', 'Comments');
-define('TABLE_HEADING_CUSTOMERS', 'Customers');
-define('TABLE_HEADING_ORDER_TOTAL', 'Order Total');
-define('TABLE_HEADING_DATE_PURCHASED', 'Date Purchased');
-define('TABLE_HEADING_STATUS', 'Status');
+define('TABLE_HEADING_COMMENTS', 'Commentaires');
+define('TABLE_HEADING_CUSTOMERS', 'Clients');
+define('TABLE_HEADING_ORDER_TOTAL', 'Total commande');
+define('TABLE_HEADING_DATE_PURCHASED', 'Date d\'achat');
+define('TABLE_HEADING_STATUS', 'Statut');
 define('TABLE_HEADING_ACTION', 'Action');
-define('TABLE_HEADING_QUANTITY', 'Qty.');
-define('TABLE_HEADING_PRODUCTS_MODEL', 'Model');
-define('TABLE_HEADING_PRODUCTS', 'Products');
-define('TABLE_HEADING_TAX', 'Tax');
+define('TABLE_HEADING_QUANTITY', 'Qté.');
+define('TABLE_HEADING_PRODUCTS_MODEL', 'Réf./Modèle');
+define('TABLE_HEADING_PRODUCTS', 'Produit');
+define('TABLE_HEADING_TAX', 'TVA');
 define('TABLE_HEADING_TOTAL', 'Total');
-define('TABLE_HEADING_PRICE_EXCLUDING_TAX', 'Price (ex)');
-define('TABLE_HEADING_PRICE_INCLUDING_TAX', 'Price (inc)');
-define('TABLE_HEADING_TOTAL_EXCLUDING_TAX', 'Total (ex)');
-define('TABLE_HEADING_TOTAL_INCLUDING_TAX', 'Total (inc)');
+define('TABLE_HEADING_PRICE_EXCLUDING_TAX', 'Prix (HT)');
+define('TABLE_HEADING_PRICE_INCLUDING_TAX', 'Prix (TTC)');
+define('TABLE_HEADING_TOTAL_EXCLUDING_TAX', 'Total (HT)');
+define('TABLE_HEADING_TOTAL_INCLUDING_TAX', 'Total (TTC)');
 
-define('TABLE_HEADING_CUSTOMER_NOTIFIED', 'Customer Notified');
-define('TABLE_HEADING_DATE_ADDED', 'Date Added');
+define('TABLE_HEADING_CUSTOMER_NOTIFIED', 'Client informé');
+define('TABLE_HEADING_DATE_ADDED', 'Date d\'ajout');
 
-define('ENTRY_CUSTOMER', 'Customer:');
-define('ENTRY_SOLD_TO', 'SOLD TO:');
-define('ENTRY_DELIVERY_TO', 'Delivery To:');
-define('ENTRY_SHIP_TO', 'SHIP TO:');
-define('ENTRY_SHIPPING_ADDRESS', 'Shipping Address:');
-define('ENTRY_BILLING_ADDRESS', 'Billing Address:');
-define('ENTRY_PAYMENT_METHOD', 'Payment Method:');
-define('ENTRY_CREDIT_CARD_TYPE', 'Credit Card Type:');
-define('ENTRY_CREDIT_CARD_OWNER', 'Credit Card Owner:');
-define('ENTRY_CREDIT_CARD_NUMBER', 'Credit Card Number:');
-define('ENTRY_CREDIT_CARD_EXPIRES', 'Credit Card Expires:');
-define('ENTRY_SUB_TOTAL', 'Sub-Total:');
-define('ENTRY_TAX', 'Tax:');
-define('ENTRY_SHIPPING', 'Shipping:');
+define('ENTRY_CUSTOMER', 'Client:');
+define('ENTRY_SOLD_TO', 'Facturé à:');
+define('ENTRY_DELIVERY_TO', 'Destinataire:');
+define('ENTRY_SHIP_TO', 'Livré à:');
+define('ENTRY_SHIPPING_ADDRESS', 'Adresse de livraison:');
+define('ENTRY_BILLING_ADDRESS', 'Adresse de facturation:');
+define('ENTRY_PAYMENT_METHOD', 'Mode de paiement:');
+define('ENTRY_CREDIT_CARD_TYPE', 'Type de CB:');
+define('ENTRY_CREDIT_CARD_OWNER', 'Titulaire CB:');
+define('ENTRY_CREDIT_CARD_NUMBER', 'N° de CB:');
+define('ENTRY_CREDIT_CARD_EXPIRES', 'Expiration CB:');
+define('ENTRY_SUB_TOTAL', 'Sous-Total:');
+define('ENTRY_TAX', 'TVA:');
+define('ENTRY_SHIPPING', 'Port:');
 define('ENTRY_TOTAL', 'Total:');
-define('ENTRY_DATE_PURCHASED', 'Date Purchased:');
-define('ENTRY_STATUS', 'Status:');
-define('ENTRY_DATE_LAST_UPDATED', 'Date Last Updated:');
-define('ENTRY_NOTIFY_CUSTOMER', 'Notify Customer:');
-define('ENTRY_NOTIFY_COMMENTS', 'Append Comments:');
-define('ENTRY_PRINTABLE', 'Print Invoice');
+define('ENTRY_DATE_PURCHASED', 'Date d\'achat:');
+define('ENTRY_STATUS', 'Statut:');
+define('ENTRY_DATE_LAST_UPDATED', 'Dernière mise à jour:');
+define('ENTRY_NOTIFY_CUSTOMER', 'Informer le client:');
+define('ENTRY_NOTIFY_COMMENTS', 'Ajouter un commentaire:');
+define('ENTRY_PRINTABLE', 'Afficher une facture');
 
-define('TEXT_INFO_HEADING_DELETE_ORDER', 'Delete Order');
-define('TEXT_INFO_DELETE_INTRO', 'Are you sure you want to delete this order?');
-define('TEXT_INFO_RESTOCK_PRODUCT_QUANTITY', 'Restock product quantity');
-define('TEXT_DATE_ORDER_CREATED', 'Date Created:');
-define('TEXT_DATE_ORDER_LAST_MODIFIED', 'Last Modified:');
-define('TEXT_INFO_PAYMENT_METHOD', 'Payment Method:');
+define('TEXT_INFO_HEADING_DELETE_ORDER', 'Supprimer commande');
+define('TEXT_INFO_DELETE_INTRO', 'Confirmez la supression de cette commande');
+define('TEXT_INFO_RESTOCK_PRODUCT_QUANTITY', 'Remettre les produits en stock');
+define('TEXT_DATE_ORDER_CREATED', 'Date de création:');
+define('TEXT_DATE_ORDER_LAST_MODIFIED', 'Dernière modification:');
+define('TEXT_INFO_PAYMENT_METHOD', 'Mode de paiement:');
 
-define('TEXT_ALL_ORDERS', 'All Orders');
-define('TEXT_NO_ORDER_HISTORY', 'No Order History Available');
+define('TEXT_ALL_ORDERS', 'Toutes les commandes');
+define('TEXT_NO_ORDER_HISTORY', 'Pas d\'historique de commande disponible');
 
 define('EMAIL_SEPARATOR', '------------------------------------------------------');
-define('EMAIL_TEXT_SUBJECT', 'Order Update');
-define('EMAIL_TEXT_ORDER_NUMBER', 'Order Number:');
-define('EMAIL_TEXT_INVOICE_URL', 'Detailed Invoice:');
-define('EMAIL_TEXT_DATE_ORDERED', 'Date Ordered:');
-define('EMAIL_TEXT_STATUS_UPDATE', 'Your order has been updated to the following status.' . "\n\n" . 'New status: %s' . "\n\n" . 'Please reply to this email if you have any questions.' . "\n");
-define('EMAIL_TEXT_COMMENTS_UPDATE', 'The comments for your order are' . "\n\n%s\n\n");
+define('EMAIL_TEXT_SUBJECT', 'Mise à jour commande');
+define('EMAIL_TEXT_ORDER_NUMBER', 'Numéro de commande:');
+define('EMAIL_TEXT_INVOICE_URL', 'Facture:');
+define('EMAIL_TEXT_DATE_ORDERED', 'Date d\'achat:');
+define('EMAIL_TEXT_STATUS_UPDATE', 'Votre commande a changé de statut (état de traitement).' . "\n\n" . 'Nouveau statut: %s' . "\n\n" . 'Veuillez répondre à ce mail pour tout complément d\'information.' . "\n");
+define('EMAIL_TEXT_COMMENTS_UPDATE', 'Les commentaires éventuels sur votre commande sont :' . "\n\n%s\n\n");
 
-define('ERROR_ORDER_DOES_NOT_EXIST', 'Error: Order does not exist.');
-define('SUCCESS_ORDER_UPDATED', 'Success: Order has been successfully updated.');
-define('WARNING_ORDER_NOT_UPDATED', 'Warning: Nothing to change. The order was not updated.');
+define('ERROR_ORDER_DOES_NOT_EXIST', 'Erreur: La commande est introuvable.');
+define('SUCCESS_ORDER_UPDATED', 'Réussite: Commande mise à jour.');
+define('WARNING_ORDER_NOT_UPDATED', 'Attention: Aucun changement enregistré.');
 ?>
