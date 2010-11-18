@@ -10,5 +10,5 @@
   Released under the GNU General Public License
 */
 
-define('WARNING_CONFIG_FILE_WRITEABLE', 'I am able to write to the configuration file: ' . DIR_FS_CATALOG . 'includes/configure.php. This is a potential security risk - please set the right user permissions on this file.');
+define('WARNING_CONFIG_FILE_WRITEABLE', 'Il est possible d\'écrire dans les fichiers de configuration: ' . DIR_FS_CATALOG . 'includes/configure.php. C\'est une faille de sécurité potentielle - Modifiez les droits sur ce fichier (CHMOD 444).');
 ?>

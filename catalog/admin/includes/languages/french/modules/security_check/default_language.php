@@ -10,5 +10,5 @@
   Released under the GNU General Public License
 */
 
-define('ERROR_NO_DEFAULT_LANGUAGE_DEFINED', 'Error: There is currently no default language set. Please set one at: Administration Tool->Localization->Languages');
+define('ERROR_NO_DEFAULT_LANGUAGE_DEFINED', 'Erreur: Aucune langue par défaut n\'est définie. Veuillez la définir dans: Administration Outils->Localisation->Langues');
 ?>

@@ -10,6 +10,6 @@
   Released under the GNU General Public License
 */
 
-define('WARNING_SESSION_DIRECTORY_NON_EXISTENT', 'The sessions directory does not exist: ' . tep_session_save_path() . '. Sessions will not work until this directory is created.');
-define('WARNING_SESSION_DIRECTORY_NOT_WRITEABLE', 'I am not able to write to the sessions directory: ' . tep_session_save_path() . '. Sessions will not work until the right user permissions are set.');
+define('WARNING_SESSION_DIRECTORY_NON_EXISTENT', 'Le répertoire de sessions n\'existe pas: ' . tep_session_save_path() . '. Les sessions ne fonctionneront pas tant que ce dossier ne sera pas créé.');
+define('WARNING_SESSION_DIRECTORY_NOT_WRITEABLE', 'Ecriture impossible dans le répertoire de sessions: ' . tep_session_save_path() . '. Les sessions ne fonctionneront pas tant que des droits corrects ne seront pas attribués à ce dossier.');
 ?>

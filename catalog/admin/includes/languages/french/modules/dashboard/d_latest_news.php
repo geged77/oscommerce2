@@ -10,12 +10,12 @@
   Released under the GNU General Public License
 */
 
-define('MODULE_ADMIN_DASHBOARD_LATEST_NEWS_TITLE', 'Lastest News');
-define('MODULE_ADMIN_DASHBOARD_LATEST_NEWS_DESCRIPTION', 'Show the lastest osCommerce News');
+define('MODULE_ADMIN_DASHBOARD_LATEST_NEWS_TITLE', 'Dernières nouveautés');
+define('MODULE_ADMIN_DASHBOARD_LATEST_NEWS_DESCRIPTION', 'Affiche les dernières nouveautés osCommerce');
 define('MODULE_ADMIN_DASHBOARD_LATEST_NEWS_DATE', 'Date');
-define('MODULE_ADMIN_DASHBOARD_LATEST_NEWS_FEED_ERROR', 'Could not connect to the osCommerce News feed. The next attempt will be performed within 24 hours.');
-define('MODULE_ADMIN_DASHBOARD_LATEST_NEWS_ICON_NEWSLETTER', 'Sign-Up for the osCommerce Newsletter');
-define('MODULE_ADMIN_DASHBOARD_LATEST_NEWS_ICON_FACEBOOK', 'Become an osCommerce Fan on Facebook');
-define('MODULE_ADMIN_DASHBOARD_LATEST_NEWS_ICON_TWITTER', 'Follow osCommerce on Twitter');
-define('MODULE_ADMIN_DASHBOARD_LATEST_NEWS_ICON_RSS', 'Subscribe to the osCommerce News RSS Feed');
+define('MODULE_ADMIN_DASHBOARD_LATEST_NEWS_FEED_ERROR', 'Impossible de se connecter au flux des nouveautés osCommerce. La prochaines tentative sera effectuée dans 24 heures.');
+define('MODULE_ADMIN_DASHBOARD_LATEST_NEWS_ICON_NEWSLETTER', 'Abonnez-vous à la Newsletter osCommerce');
+define('MODULE_ADMIN_DASHBOARD_LATEST_NEWS_ICON_FACEBOOK', 'Devenir Fan osCommerce sur Facebook');
+define('MODULE_ADMIN_DASHBOARD_LATEST_NEWS_ICON_TWITTER', 'Suivre osCommerce sur Twitter');
+define('MODULE_ADMIN_DASHBOARD_LATEST_NEWS_ICON_RSS', 'S\'abonner au flux RSS des News osCommerce');
 ?>

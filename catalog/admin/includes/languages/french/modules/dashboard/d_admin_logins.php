@@ -10,7 +10,7 @@
   Released under the GNU General Public License
 */
 
-define('MODULE_ADMIN_DASHBOARD_ADMIN_LOGINS_TITLE', 'Last Administrator Logins');
-define('MODULE_ADMIN_DASHBOARD_ADMIN_LOGINS_DESCRIPTION', 'Show the last successful and failed administrator logins');
+define('MODULE_ADMIN_DASHBOARD_ADMIN_LOGINS_TITLE', 'Dernières connexions administrateurs');
+define('MODULE_ADMIN_DASHBOARD_ADMIN_LOGINS_DESCRIPTION', 'Affiche les dernières tentatives de connexions à l\'administration (réussies ou échouées)');
 define('MODULE_ADMIN_DASHBOARD_ADMIN_LOGINS_DATE', 'Date');
 ?>

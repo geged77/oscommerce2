@@ -10,7 +10,7 @@
   Released under the GNU General Public License
 */
 
-define('MODULE_ADMIN_DASHBOARD_TOTAL_REVENUE_TITLE', 'Total Revenue Chart (last 30 days)');
-define('MODULE_ADMIN_DASHBOARD_TOTAL_REVENUE_DESCRIPTION', 'Show the total revenue chart of the last 30 days');
-define('MODULE_ADMIN_DASHBOARD_TOTAL_REVENUE_CHART_LINK', 'Total Revenue');
+define('MODULE_ADMIN_DASHBOARD_TOTAL_REVENUE_TITLE', 'Graphique chiffre d\'affaire (Derniers 30 jours)');
+define('MODULE_ADMIN_DASHBOARD_TOTAL_REVENUE_DESCRIPTION', 'Affiche le chiffre d\'affaire des 30 derniers jours');
+define('MODULE_ADMIN_DASHBOARD_TOTAL_REVENUE_CHART_LINK', 'Chiffre d\'affaire');
 ?>
