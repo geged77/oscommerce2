@@ -12,5 +12,5 @@
 
 define('MODULE_ADMIN_DASHBOARD_TOTAL_REVENUE_TITLE', 'Graphique chiffre d\'affaire (Derniers 30 jours)');
 define('MODULE_ADMIN_DASHBOARD_TOTAL_REVENUE_DESCRIPTION', 'Affiche le chiffre d\'affaire des 30 derniers jours');
-define('MODULE_ADMIN_DASHBOARD_TOTAL_REVENUE_CHART_LINK', 'Chiffre d\'affaire');
+define('MODULE_ADMIN_DASHBOARD_TOTAL_REVENUE_CHART_LINK', 'Chiffre d\\\'affaire');
 ?>
