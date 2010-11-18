@@ -17,6 +17,6 @@ define('SUB_TITLE_FROM', 'De :');
 define('SUB_TITLE_DATE', 'Date :');
 define('SUB_TITLE_REVIEW', 'Avis :');
 define('SUB_TITLE_RATING', 'Classement :');
-define('TEXT_OF_5_STARS', '%s sur 5 étoiles !');
+define('TEXT_OF_5_STARS', '%s sur 5 Ã©toiles !');
 define('TEXT_CLICK_TO_ENLARGE', 'Cliquer pour agrandir ');
 ?>

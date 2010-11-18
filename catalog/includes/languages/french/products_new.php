@@ -13,7 +13,7 @@
 define('NAVBAR_TITLE', 'Nouveaux produits');
 define('HEADING_TITLE', 'Nouveaux produits');
 
-define('TEXT_DATE_ADDED', 'Ajouté le :');
+define('TEXT_DATE_ADDED', 'AjoutÃ© le :');
 define('TEXT_MANUFACTURER', 'Fabricant :');
 define('TEXT_PRICE', 'Prix :');
 ?>

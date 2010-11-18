@@ -11,5 +11,5 @@
 */
 
 define('NAVBAR_TITLE', 'Promotions');
-define('HEADING_TITLE', 'Profitez-en tant qu\'ils sont à ce prix !');
+define('HEADING_TITLE', 'Profitez-en tant qu\'ils sont Ã  ce prix !');
 ?>

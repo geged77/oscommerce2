@@ -10,8 +10,8 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Expédition &amp; retours');
-define('HEADING_TITLE', 'Expédition &amp; retours');
+define('NAVBAR_TITLE', 'ExpÃ©dition &amp; retours');
+define('HEADING_TITLE', 'ExpÃ©dition &amp; retours');
 
-define('TEXT_INFORMATION', 'Insérer ici vos informations expédition &amp; retours.');
+define('TEXT_INFORMATION', 'InsÃ©rer ici vos informations expÃ©dition &amp; retours.');
 ?>

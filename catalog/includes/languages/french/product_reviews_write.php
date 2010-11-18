@@ -21,6 +21,6 @@ define('TEXT_GOOD', '<small><font color="#ff0000"><strong>BON</strong></font></s
 
 define('TEXT_CLICK_TO_ENLARGE', 'Cliquer pour agrandir');
 
-define('TEXT_REVIEW_RECEIVED', 'Merci d\'avoir donné votre avis. Il a été soumis à l\'administrateur du site et sera publié prochainement.');
+define('TEXT_REVIEW_RECEIVED', 'Merci d\'avoir donnÃ© votre avis. Il a Ã©tÃ© soumis Ã  l\'administrateur du site et sera publiÃ© prochainement.');
 
 ?>

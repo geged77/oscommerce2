@@ -12,5 +12,5 @@
 
 define('NAVBAR_TITLE', 'Avis des clients');
 define('HEADING_TITLE', 'Lisez ce que les autres pensent');
-define('TEXT_OF_5_STARS', '%s sur 5 étoiles !');
+define('TEXT_OF_5_STARS', '%s sur 5 Ã©toiles !');
 ?>

@@ -14,5 +14,5 @@ define('NAVBAR_TITLE', 'Avis des clients');
 
 define('TEXT_CLICK_TO_ENLARGE', 'Cliquer pour agrandir');
 
-define('TEXT_OF_5_STARS', '%s sur 5 étoiles !');
+define('TEXT_OF_5_STARS', '%s sur 5 Ã©toiles !');
 ?>

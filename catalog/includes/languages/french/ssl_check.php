@@ -10,11 +10,11 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Contrôle de la sécurité');
-define('HEADING_TITLE', 'Contrôle de la sécurité');
+define('NAVBAR_TITLE', 'ContrÃ´le de la sÃ©curitÃ©');
+define('HEADING_TITLE', 'ContrÃ´le de la sÃ©curitÃ©');
 
-define('TEXT_INFORMATION', 'Nous avons détecté que votre navigateur a généré une session SSL différente de l\'ID employé dans nos pages sécurisées. .<br /><br />Pour des mesures de sécurité vous devrez à à nouveau vous connecter à votre compte.<br /><br />Quelques navigateurs comme Konqueror 3.1 n\'ont pas la capacité de générer un identifiant de session sécurisé. Si vous utilisez un tel navigateur, nous recommandons de changer de navigateur : <a href="http://www.microsoft.com/ie/" target="_blank">Microsoft Internet Explorer</a>, <a href="http://channels.netscape.com/ns/browsers/download_other.jsp" target="_blank">Netscape</a>, ou <a href="http://www.mozilla.org/releases/" target="_blank">Mozilla</a>, pour continuer vos achats en ligne.<br /><br />Nous avons pris cette mesure de sécurité pour protéger vos informations personnelles et nous sommes navrés des désagréments encourus.<br /><br />Entrez en contact avec le gestionnaire du site pour plus d\'informations sur ce sujet.');
+define('TEXT_INFORMATION', 'Nous avons dÃ©tectÃ© que votre navigateur a gÃ©nÃ©rÃ© une session SSL diffÃ©rente de l\'ID employÃ© dans nos pages sÃ©curisÃ©es. .<br /><br />Pour des mesures de sÃ©curitÃ© vous devrez Ã  Ã  nouveau vous connecter Ã  votre compte.<br /><br />Quelques navigateurs comme Konqueror 3.1 n\'ont pas la capacitÃ© de gÃ©nÃ©rer un identifiant de session sÃ©curisÃ©. Si vous utilisez un tel navigateur, nous recommandons de changer de navigateur : <a href="http://www.microsoft.com/ie/" target="_blank">Microsoft Internet Explorer</a>, <a href="http://channels.netscape.com/ns/browsers/download_other.jsp" target="_blank">Netscape</a>, ou <a href="http://www.mozilla.org/releases/" target="_blank">Mozilla</a>, pour continuer vos achats en ligne.<br /><br />Nous avons pris cette mesure de sÃ©curitÃ© pour protÃ©ger vos informations personnelles et nous sommes navrÃ©s des dÃ©sagrÃ©ments encourus.<br /><br />Entrez en contact avec le gestionnaire du site pour plus d\'informations sur ce sujet.');
 
-define('BOX_INFORMATION_HEADING', 'Vie privée et sécurité ');
-define('BOX_INFORMATION', 'Nous validons la session SSL ID automatiquement produit par votre navigateur à chaque demande de page sécurisé faite à ce serveur.<br /><br />Cette validation assure que votre identité ne peut être usurpée durant votre navigation.');
+define('BOX_INFORMATION_HEADING', 'Vie privÃ©e et sÃ©curitÃ© ');
+define('BOX_INFORMATION', 'Nous validons la session SSL ID automatiquement produit par votre navigateur Ã  chaque demande de page sÃ©curisÃ© faite Ã  ce serveur.<br /><br />Cette validation assure que votre identitÃ© ne peut Ãªtre usurpÃ©e durant votre navigation.');
 ?>

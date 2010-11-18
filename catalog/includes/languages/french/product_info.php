@@ -10,12 +10,12 @@
   Released under the GNU General Public License
 */
 
-define('TEXT_PRODUCT_NOT_FOUND', 'Produit non trouvé !');
+define('TEXT_PRODUCT_NOT_FOUND', 'Produit non trouvÃ© !');
 define('TEXT_CURRENT_REVIEWS', 'Avis des clients sur le produit :');
 define('TEXT_MORE_INFORMATION', 'Pour plus d\'informations, veuillez visiter cette <a href="%s" target="_blank"><u>page web</u></a>.');
-define('TEXT_DATE_ADDED', 'Ce produit a été ajouté à notre catalogue le %s.');
+define('TEXT_DATE_ADDED', 'Ce produit a Ã©tÃ© ajoutÃ© Ã  notre catalogue le %s.');
 define('TEXT_DATE_AVAILABLE', '<font color="#ff0000">Ce produit sera en stock le %s.</font>');
-define('TEXT_ALSO_PURCHASED_PRODUCTS', 'Les clients qui ont acheté ce produit ont aussi acheté ');
+define('TEXT_ALSO_PURCHASED_PRODUCTS', 'Les clients qui ont achetÃ© ce produit ont aussi achetÃ© ');
 define('TEXT_PRODUCT_OPTIONS', 'Options :');
 define('TEXT_CLICK_TO_ENLARGE', 'Cliquer pour agrandir');
 ?>
