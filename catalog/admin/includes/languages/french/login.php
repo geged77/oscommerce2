@@ -10,17 +10,16 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Administrator Login');
+define('HEADING_TITLE', 'Connexion administrateur');
 
-define('TEXT_USERNAME', 'Username:');
-define('TEXT_PASSWORD', 'Password:');
+define('TEXT_USERNAME', 'Nom d\'utilisateur :');
+define('TEXT_PASSWORD', 'Mot de Passe :');
 
-define('TEXT_CREATE_FIRST_ADMINISTRATOR', 'No administrators exist in the database table. Please fill in the following information to create the first administrator. (A manual login is still required after this step)');
+define('TEXT_CREATE_FIRST_ADMINISTRATOR', 'Il n\'y a aucun administrateur dans la base de données. Suivez les instructions afin de créer le premier administrateur. (Une identification manuelle est demandée à l\'issue de cette étape)');
+define('ERROR_INVALID_ADMINISTRATOR', 'Erreur : Identification administrateur erronnée.');
 
-define('ERROR_INVALID_ADMINISTRATOR', 'Error: Invalid administrator login attempt.');
+define('BUTTON_LOGIN', 'S\'identifier');
+define('BUTTON_CREATE_ADMINISTRATOR', 'Créer un  Administrateur');
 
-define('BUTTON_LOGIN', 'Login');
-define('BUTTON_CREATE_ADMINISTRATOR', 'Create Administrator');
-
-define('ERROR_ACTION_RECORDER', 'Error: The maximum number of login attempts has been reached. Please try again in %s minutes.');
+define('ERROR_ACTION_RECORDER', 'Erreur: Le nombre maximum de tentative d\'authentification a été atteint. Veuillez réessayer dans %s minutes.');
 ?>

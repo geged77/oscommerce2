@@ -10,16 +10,16 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Send Email To Customers');
+define('HEADING_TITLE', 'Envoyer un courrier électronique aux clients');
 
-define('TEXT_CUSTOMER', 'Customer:');
-define('TEXT_SUBJECT', 'Subject:');
-define('TEXT_FROM', 'From:');
-define('TEXT_MESSAGE', 'Message:');
-define('TEXT_SELECT_CUSTOMER', 'Select Customer');
-define('TEXT_ALL_CUSTOMERS', 'All Customers');
-define('TEXT_NEWSLETTER_CUSTOMERS', 'To All Newsletter Subscribers');
+define('TEXT_CUSTOMER', 'Client :');
+define('TEXT_SUBJECT', 'Sujet :');
+define('TEXT_FROM', 'De :');
+define('TEXT_MESSAGE', 'Message :');
+define('TEXT_SELECT_CUSTOMER', 'Choisissez un client');
+define('TEXT_ALL_CUSTOMERS', 'Tous les clients');
+define('TEXT_NEWSLETTER_CUSTOMERS', 'Tous les abonnés au bulletin d\'informations');
 
-define('NOTICE_EMAIL_SENT_TO', 'Notice: Email sent to: %s');
-define('ERROR_NO_CUSTOMER_SELECTED', 'Error: No customer has been selected.');
+define('NOTICE_EMAIL_SENT_TO', 'Notification : Courrier électronique envoyé à : %s');
+define('ERROR_NO_CUSTOMER_SELECTED', 'Erreur : Aucun client n\'a été sélectionné.');
 ?>
