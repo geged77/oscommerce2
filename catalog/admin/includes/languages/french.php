@@ -304,5 +304,7 @@ define('TEXT_DATE_EXPECTED_CONFIG', 'Par date');
 define('TEXT_PRODUCT_NAME_CONFIG', 'Par nom produit');
 define('TEXT_LEFT_COLUMN_CONFIG', 'Colonne de gauche');
 define('TEXT_RIGHT_COLUMN_CONFIG', 'Colonne de droite');
+define('TEXT_WEIGHT_CONFIG', 'Poids');
+define('TEXT_PRICE_CONFIG', 'Prix');
 
 ?>
