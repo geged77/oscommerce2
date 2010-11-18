@@ -20,7 +20,7 @@ define('DATE_FORMAT_LONG', '%A %d %B, %Y'); // this is used for strftime()
 define('DATE_FORMAT', 'd/m/Y'); // this is used for date()
 define('PHP_DATE_TIME_FORMAT', 'd/m/Y H:i:s'); // this is used for date()
 define('DATE_TIME_FORMAT', DATE_FORMAT_SHORT . ' %H:%M:%S');
-define('JQUERY_DATEPICKER_I18N_CODE', ''); // leave empty for en_US; see http://jqueryui.com/demos/datepicker/#localization
+define('JQUERY_DATEPICKER_I18N_CODE', 'fr'); // leave empty for en_US; see http://jqueryui.com/demos/datepicker/#localization
 define('JQUERY_DATEPICKER_FORMAT', 'dd/mm/yy'); // see http://docs.jquery.com/UI/Datepicker/formatDate
 
 ////
@@ -59,7 +59,7 @@ define('DOB_FORMAT_STRING', 'jj/mm/aaaa');
 
 // configuration box text in includes/boxes/configuration.php
 define('BOX_HEADING_CONFIGURATION', 'Configuration');
-define('BOX_CONFIGURATION_MYSTORE', 'Mon magasin');
+define('BOX_CONFIGURATION_MYSTORE', 'Mon site marchand');
 define('BOX_CONFIGURATION_LOGGING', 'Enregistrement');
 define('BOX_CONFIGURATION_CACHE', 'Cache');
 define('BOX_CONFIGURATION_ADMINISTRATORS', 'Administrateurs');
