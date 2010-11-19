@@ -146,7 +146,7 @@
 
   if (function_exists('ini_get')) {
     if ($compat_register_globals == false) {
-      $warning_array['register_globals'] = 'La compatibilité avec register_globals est supportée depuis PHP 4.3+. Ce paramétrage <u>doit être activé</u> en raison de d\'utilisation d\'une version plus anciennede PHP.';
+      $warning_array['register_globals'] = 'La compatibilité avec register_globals est supportée depuis PHP 4.3+. Ce paramétrage <u>doit être activé</u> en raison de d\'utilisation d\'une version plus ancienne de PHP.';
     }
   }
 
