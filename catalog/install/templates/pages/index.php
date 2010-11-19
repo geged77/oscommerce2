@@ -146,12 +146,12 @@
 
   if (function_exists('ini_get')) {
     if ($compat_register_globals == false) {
-      $warning_array['register_globals'] = 'Compatibility with register_globals is supported from PHP 4.3+. This setting <u>must be enabled</u> due to an older PHP version being used.';
+      $warning_array['register_globals'] = 'La compatibilité avec register_globals est supportée depuis PHP 4.3+. Ce paramétrage <u>doit être activé</u> en raison de d\'utilisation d\'une version plus anciennede PHP.';
     }
   }
 
   if (!extension_loaded('mysql')) {
-    $warning_array['mysql'] = 'The MySQL extension is required but is not installed. Please enable it to continue installation.';
+    $warning_array['mysql'] = 'L\'extension MySQL est requise mais absente. Veuillez l\'activer pour continuer l\'installation.';
   }
 
   if ((sizeof($configfile_array) > 0) || (sizeof($warning_array) > 0)) {
