@@ -11,6 +11,6 @@
 */
 
   define('MODULE_SOCIAL_BOOKMARKS_TWITTER_BUTTON_TITLE', 'Bouton Twitter');
-  define('MODULE_SOCIAL_BOOKMARKS_TWITTER_BUTTON_DESCRIPTION', 'Partager ce produit avec le bouton Twitter.');
+  define('MODULE_SOCIAL_BOOKMARKS_TWITTER_BUTTON_DESCRIPTION', 'Permettre de faire connaitre les produits (partager) avec le bouton Twitter.');
   define('MODULE_SOCIAL_BOOKMARKS_TWITTER_BUTTON_PUBLIC_TITLE', 'Tweet');
 ?>

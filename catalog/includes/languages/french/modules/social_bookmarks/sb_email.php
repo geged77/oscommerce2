@@ -11,6 +11,6 @@
 */
 
   define('MODULE_SOCIAL_BOOKMARKS_EMAIL_TITLE', 'Mail');
-  define('MODULE_SOCIAL_BOOKMARKS_EMAIL_DESCRIPTION', 'Partager le produit via Mail.');
+  define('MODULE_SOCIAL_BOOKMARKS_EMAIL_DESCRIPTION', 'Permettre de faire connaitre les produits (partager) via Mail.');
   define('MODULE_SOCIAL_BOOKMARKS_EMAIL_PUBLIC_TITLE', 'Partager par Mail');
 ?>

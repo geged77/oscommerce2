@@ -10,5 +10,5 @@
   Released under the GNU General Public License
 */
 
-define('MODULE_CFG_MODULE_DASHBOARD_TITLE', 'Tableau d\'affichage');
+define('MODULE_CFG_MODULE_DASHBOARD_TITLE', 'Tableau de Bord');
 ?>
