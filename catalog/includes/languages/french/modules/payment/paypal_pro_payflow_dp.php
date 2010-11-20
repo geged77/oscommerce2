@@ -10,24 +10,24 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_TEXT_TITLE', 'PayPal Website Payments Pro (Payflow Edition) - Direct Payments');
-  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_TEXT_PUBLIC_TITLE', 'Credit or Debit Card');
-  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_TEXT_DESCRIPTION', '<strong>Note: PayPal requires the PayPal Website Payments Pro (Payflow Edition) - Express Checkout payment module to be enabled if this module is activated.</strong><br /><br /><img src="images/icon_popup.gif" border="0">&nbsp;<a href="https://www.paypal.com/mrb/pal=PS2X9Q773CKG4" target="_blank" style="text-decoration: underline; font-weight: bold;">Visit PayPal Website</a>&nbsp;<a href="javascript:toggleDivBlock(\'paypalDirectUKInfo\');">(info)</a><span id="paypalDirectUKInfo" style="display: none;"><br /><i>Using the above link to signup at PayPal grants osCommerce a small financial bonus for referring a customer.</i></span>');
-  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_CARD_OWNER', 'Card Owner:');
-  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_CARD_OWNER_FIRSTNAME', 'Card Owner First Name:');
-  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_CARD_OWNER_LASTNAME', 'Card Owner Last Name:');
-  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_CARD_TYPE', 'Card Type:');
-  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_CARD_NUMBER', 'Card Number:');
-  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_CARD_VALID_FROM', 'Card Valid From Date:');
-  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_CARD_VALID_FROM_INFO', '(if available)');
-  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_CARD_EXPIRES', 'Card Expiry Date:');
-  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_CARD_CVC', 'Card Security Code (CVV2):');
-  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_CARD_ISSUE_NUMBER', 'Card Issue Number:');
-  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_CARD_ISSUE_NUMBER_INFO', '(for Maestro and Solo cards only)');
-  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_ERROR_ALL_FIELDS_REQUIRED', 'Error: All payment information fields are required.');
-  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_ERROR_GENERAL', 'Error: A general problem has occurred with the transaction. Please try again.');
-  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_ERROR_CFG_ERROR', 'Error: Payment module configuration error. Please verify the login credentials.');
-  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_ERROR_ADDRESS', 'Error: A match of the Shipping Address City, State, and Postal Code failed. Please try again.');
-  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_ERROR_DECLINED', 'Error: This transaction has been declined. Please try again.');
-  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_ERROR_INVALID_CREDIT_CARD', 'Error: The provided credit card information is invalid. Please try again.');
+  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_TEXT_TITLE', 'Site PayPal Pro (Payflow Edition) - Paiements Directs');
+  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_TEXT_PUBLIC_TITLE', 'Carte de paiement ou de crédit');
+  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_TEXT_DESCRIPTION', '<strong>NB: le module PayPal Pro (Payflow Edition) - Paiements Directs nécessite que le module Paypal Express soit activé pour fonctionner.</strong><br /><br /><img src="images/icon_popup.gif" border="0">&nbsp;<a href="https://www.paypal.com/mrb/pal=PS2X9Q773CKG4" target="_blank" style="text-decoration: underline; font-weight: bold;">Site PayPal</a>&nbsp;<a href="javascript:toggleDivBlock(\'paypalDirectUKInfo\');">(info)</a><span id="paypalDirectUKInfo" style="display: none;"><br /><i>Utilisez le lien ci-dessus pour faire bénéficier osCommerce d\'une petite commission pour l\'apport d\'un nouveau client Paypal.</i></span>');
+  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_CARD_OWNER', 'Titulaire de la Carte:');
+  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_CARD_OWNER_FIRSTNAME', 'Prénom sur la Carte:');
+  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_CARD_OWNER_LASTNAME', 'Nom sur la Carte:');
+  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_CARD_TYPE', 'Type de Carte:');
+  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_CARD_NUMBER', 'N° de Carte:');
+  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_CARD_VALID_FROM', 'Date de Début de validité:');
+  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_CARD_VALID_FROM_INFO', '(si disponible)');
+  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_CARD_EXPIRES', 'Date de fin de validité:');
+  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_CARD_CVC', 'Code de contrôle visuel (CVV2):');
+  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_CARD_ISSUE_NUMBER', 'N° de carte Spécial:');
+  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_CARD_ISSUE_NUMBER_INFO', '(Pour les cartes Maestro et Solo seulement)');
+  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_ERROR_ALL_FIELDS_REQUIRED', 'Erreur: toutes les informations demandées sont requises.');
+  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_ERROR_GENERAL', 'Erreur: Un problème est intervenu durant l\'opération. Ré-essayez.');
+  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_ERROR_CFG_ERROR', 'Erreur: Configuration du module. Vérifiez le login ou le compte accrédité.');
+  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_ERROR_ADDRESS', 'Erreur: des différences dans l\'adresse de livraison ont été remarquées: rue, ville, code postal ou pays. Ré-essayez.');
+  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_ERROR_DECLINED', 'Erreur: Transaction refusée. Ré-essayez.');
+  define('MODULE_PAYMENT_PAYPAL_PRO_PAYFLOW_DP_ERROR_INVALID_CREDIT_CARD', 'Erreur: Les informations de la carte sont erronées. Ré-essayez.');
 ?>
