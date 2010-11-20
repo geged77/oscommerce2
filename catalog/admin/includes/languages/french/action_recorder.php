@@ -10,7 +10,7 @@
   Released under the GNU General Public License
 */
 
-define('HEADING_TITLE', 'Enregistreur d\'action');
+define('HEADING_TITLE', 'Enregistreur de sécurité');
 
 define('TABLE_HEADING_MODULE', 'Module');
 define('TABLE_HEADING_CUSTOMER', 'Client');

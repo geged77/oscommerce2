@@ -10,5 +10,5 @@
   Released under the GNU General Public License
 */
 
-define('MODULE_CFG_MODULE_ACTION_RECORDER_TITLE', 'Enregistreur d\'actions');
+define('MODULE_CFG_MODULE_ACTION_RECORDER_TITLE', 'Traceur sécurité');
 ?>
