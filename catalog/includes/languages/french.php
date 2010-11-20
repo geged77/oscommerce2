@@ -16,7 +16,11 @@
 // on RedHat try 'en_US'
 // on FreeBSD try 'en_US.ISO_8859-1'
 // on Windows try 'en', or 'English'
-@setlocale(LC_TIME, 'fr_FR.ISO_8859-1');
+if (strtolower(substr(PHP_OS, 0, 3)) === 'win') {
+  @setlocale(LC_TIME, 'fra');
+}else{
+  @setlocale(LC_TIME, 'fr_FR.ISO_8859-1');
+}
 
 define('DATE_FORMAT_SHORT', '%d/%m/%Y');  // this is used for strftime()
 define('DATE_FORMAT_LONG', '%A %d %B %Y'); // this is used for strftime()
