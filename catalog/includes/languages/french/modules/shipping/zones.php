@@ -10,10 +10,10 @@
   Released under the GNU General Public License
 */
 
-define('MODULE_SHIPPING_ZONES_TEXT_TITLE', 'Tableau de coût de livraison par zone et régions');
-define('MODULE_SHIPPING_ZONES_TEXT_DESCRIPTION', 'Coût d\'envoie par zone et région');
+define('MODULE_SHIPPING_ZONES_TEXT_TITLE', 'Tableau de coÃ»t de livraison par zone et rÃ©gions');
+define('MODULE_SHIPPING_ZONES_TEXT_DESCRIPTION', 'CoÃ»t d\'envoie par zone et rÃ©gion');
 define('MODULE_SHIPPING_ZONES_TEXT_WAY', 'Livraison vers');
 define('MODULE_SHIPPING_ZONES_TEXT_UNITS', 'Kg');
-define('MODULE_SHIPPING_ZONES_INVALID_ZONE', 'Pas de livraison possible vers le pays sélectionné');
-define('MODULE_SHIPPING_ZONES_UNDEFINED_RATE', 'Le cout de livraison ne peut etre déterminé pour le moment');
+define('MODULE_SHIPPING_ZONES_INVALID_ZONE', 'Pas de livraison possible vers le pays sÃ©lectionnÃ©');
+define('MODULE_SHIPPING_ZONES_UNDEFINED_RATE', 'Le cout de livraison ne peut etre dÃ©terminÃ© pour le moment');
 ?>
