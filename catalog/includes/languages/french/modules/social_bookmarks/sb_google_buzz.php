@@ -11,6 +11,6 @@
 */
 
   define('MODULE_SOCIAL_BOOKMARKS_GOOGLE_BUZZ_TITLE', 'Google Buzz');
-  define('MODULE_SOCIAL_BOOKMARKS_GOOGLE_BUZZ_DESCRIPTION', 'Partager ce produit sur Google Buzz.');
+  define('MODULE_SOCIAL_BOOKMARKS_GOOGLE_BUZZ_DESCRIPTION', 'Permettre de faire connaitre les produits (partager) sur Google Buzz.');
   define('MODULE_SOCIAL_BOOKMARKS_GOOGLE_BUZZ_PUBLIC_TITLE', 'Partager sur Google Buzz');
 ?>

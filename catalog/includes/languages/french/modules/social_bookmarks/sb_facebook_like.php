@@ -11,6 +11,6 @@
 */
 
   define('MODULE_SOCIAL_BOOKMARKS_FACEBOOK_LIKE_TITLE', 'Facebook Like');
-  define('MODULE_SOCIAL_BOOKMARKS_FACEBOOK_LIKE_DESCRIPTION', 'Partager ce produit sur Facebook Like.');
+  define('MODULE_SOCIAL_BOOKMARKS_FACEBOOK_LIKE_DESCRIPTION', 'Permettre de faire connaitre les produits (partager) sur Facebook Like.');
   define('MODULE_SOCIAL_BOOKMARKS_FACEBOOK_LIKE_PUBLIC_TITLE', 'Partager sur Facebook');
 ?>
