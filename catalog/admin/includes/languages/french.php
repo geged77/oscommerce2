@@ -14,7 +14,11 @@
 // on RedHat6.0 I used 'en_US'
 // on FreeBSD 4.0 I use 'en_US.ISO_8859-1'
 // this may not work under win32 environments..
-setlocale(LC_TIME, 'fr_FR.ISO_8859-1');
+if (strtolower(substr(PHP_OS, 0, 3)) === 'win') {
+  @setlocale(LC_TIME, 'fra');
+}else{
+  setlocale(LC_TIME, 'fr_FR.ISO_8859-1');
+}
 define('DATE_FORMAT_SHORT', '%d/%m/%Y');  // this is used for strftime()
 define('DATE_FORMAT_LONG', '%A %d %B, %Y'); // this is used for strftime()
 define('DATE_FORMAT', 'd/m/Y'); // this is used for date()
@@ -97,8 +101,8 @@ define('BOX_REPORTS_PRODUCTS_PURCHASED', 'Produits achetés');
 define('BOX_REPORTS_ORDERS_TOTAL', 'Total de commande clients');
 
 // tools text in includes/boxes/tools.php
-define('BOX_HEADING_TOOLS', 'Tools');
-define('BOX_TOOLS_ACTION_RECORDER', 'Enregistreur d\'actions');
+define('BOX_HEADING_TOOLS', 'Outils');
+define('BOX_TOOLS_ACTION_RECORDER', 'Traceur Sécurité');
 define('BOX_TOOLS_BACKUP', 'Sauvegarde de base de données');
 define('BOX_TOOLS_BANNER_MANAGER', 'Gestionnaire de bannières');
 define('BOX_TOOLS_CACHE', 'Contrôle du cache');
@@ -219,7 +223,7 @@ define('IMAGE_NEW_LANGUAGE', 'Nouvelle Langue');
 define('IMAGE_NEW_NEWSLETTER', 'Nouveau bulletin d\'informations');
 define('IMAGE_NEW_PRODUCT', 'Nouveau Produit');
 define('IMAGE_NEW_TAX_CLASS', 'Nouvelle classe fiscale');
-define('IMAGE_NEW_TAX_RATE', 'Nouveau taux fiscal');
+define('IMAGE_NEW_TAX_RATE', 'Nouveelle Taxe');
 define('IMAGE_NEW_TAX_ZONE', 'Nouvelle zone fiscale');
 define('IMAGE_NEW_ZONE', 'Nouvelle zone');
 define('IMAGE_ORDERS', 'Commandes');
