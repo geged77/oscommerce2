@@ -223,7 +223,7 @@ define('IMAGE_NEW_LANGUAGE', 'Nouvelle Langue');
 define('IMAGE_NEW_NEWSLETTER', 'Nouveau bulletin d\'informations');
 define('IMAGE_NEW_PRODUCT', 'Nouveau Produit');
 define('IMAGE_NEW_TAX_CLASS', 'Nouvelle classe fiscale');
-define('IMAGE_NEW_TAX_RATE', 'Nouveelle Taxe');
+define('IMAGE_NEW_TAX_RATE', 'Nouvelle Taxe');
 define('IMAGE_NEW_TAX_ZONE', 'Nouvelle zone fiscale');
 define('IMAGE_NEW_ZONE', 'Nouvelle zone');
 define('IMAGE_ORDERS', 'Commandes');
