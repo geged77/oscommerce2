@@ -1,4 +1,0 @@
-catalog/includes/local/configure.php
-catalog/admin/includes/local/configure.php
-catalog/includes/work/*.cache
-catalog/admin/images/graphs/*.png
