@@ -23,7 +23,7 @@ define('MY_ACCOUNT_ADDRESS_BOOK', 'Afficher ou modifier des entrées dans mon ca
 define('MY_ACCOUNT_PASSWORD', 'Modifier le mot de passe de mon compte.');
 
 define('MY_ORDERS_TITLE', 'Mes commandes');
-define('MY_ORDERS_VIEW', 'Afficher les commandes que j\'ai effectuées.');
+define('MY_ORDERS_VIEW', 'Afficher les commandes que j\'ai effectué.');
 
 define('EMAIL_NOTIFICATIONS_TITLE', 'Alertes par courrier électronique');
 define('EMAIL_NOTIFICATIONS_NEWSLETTERS', 'S\'abonner ou se désabonner aux bulletins d\'information.');
