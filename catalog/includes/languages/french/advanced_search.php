@@ -10,8 +10,8 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE_1', 'Advanced Search');
-define('NAVBAR_TITLE_2', 'Search Results');
+define('NAVBAR_TITLE_1', 'Recherche avancée');
+define('NAVBAR_TITLE_2', 'Résultat de la recherche');
 
 define('HEADING_TITLE_1', 'Recherche avancée');
 define('HEADING_TITLE_2', 'Produits répondant aux critères de recherche');
