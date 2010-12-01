@@ -19,7 +19,7 @@
 if (strtolower(substr(PHP_OS, 0, 3)) === 'win') {
   @setlocale(LC_TIME, 'fra');
 }else{
-  @setlocale(LC_TIME, 'fr_FR.ISO_8859-1');
+  @setlocale(LC_TIME, 'fr_FR.UTF-8');
 }
 
 define('DATE_FORMAT_SHORT', '%d/%m/%Y');  // this is used for strftime()
